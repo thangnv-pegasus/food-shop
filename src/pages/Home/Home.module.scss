@@ -1,0 +1,119 @@
+.sub-banner {
+    display: flex;
+}
+
+.about {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+
+    .about-section {
+        overflow: hidden;
+    }
+
+    .about-slogan {
+        padding: 0 150px;
+        margin-top: 15px;
+        text-align: center;
+        color: #8b8b99;
+    }
+}
+
+.about-service {
+    margin-top: 45px;
+    overflow: hidden;
+    transition: all linear;
+}
+
+.list-product {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.list-options {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    li {
+        line-height: 36px;
+        margin: 0 10px;
+        padding: 0 18px;
+        font-size: 1.3rem;
+        font-weight: 400;
+        cursor: pointer;
+        color: var(--text-color);
+        border: 1px solid #e7e9f3;
+        border-radius: 30px;
+        transition: all ease-out 0.2s;
+
+        &:hover {
+            border-color: var(--primary-color);
+            background-color: var(--primary-color);
+            color: var(--white-color);
+        }
+    }
+}
+
+.product-kind {
+    padding-top: 20px;
+}
+
+.hot-line {
+    background-image: url(https://bizweb.dktcdn.net/100/350/980/themes/802125/assets/bg_hotline.jpg?1658680172137);
+    margin: 30px 0;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 360px;
+    color: var(--white-color);
+
+    .hot-line__title {
+        font-size: 2.8rem;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+
+    a {
+        font-size: 4.8rem;
+        font-weight: bold;
+        color: var(--white-color);
+        transition: all 150ms ease-in-out;
+
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+
+    .hot-line__slogan {
+        margin: 0 0 15px 0;
+        width: 470px;
+        margin: 0 auto;
+    }
+}
+
+.products-hot {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.blogs-section,
+.top-brands__section {
+    padding: 40px 0;
+}
+
+.list-brands {
+    overflow: hidden;
+}
+
+.active {
+    background-color: var(--primary-color) !important;
+    color: var(--white-color) !important;
+}

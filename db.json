@@ -1,0 +1,875 @@
+{
+    "Banners": [
+        {
+            "id": 1,
+            "title": "Rau quả tươi",
+            "content": "Chúng tôi cam kết 100% các sản phẩm có nguồn gốc xuất xứ rõ ràng, sạch, an toàn và đảm bảo chất lượng ngon nhất giao đến tận tay người tiêu dùng, để san sẻ sự vất vả của các mẹ, các chị",
+            "img_src": "https://bizweb.dktcdn.net/100/350/980/themes/802125/assets/col_1.png?1658680172137",
+            "bg_color": "#59cca6"
+        },
+        {
+            "id": 2,
+            "title": "Sinh tố hoa quá",
+            "content": "Chúng tôi cam kết 100% các sản phẩm có nguồn gốc xuất xứ rõ ràng, sạch, an toàn và đảm bảo chất lượng ngon nhất giao đến tận tay người tiêu dùng, để san sẻ sự vất vả của các mẹ, các chị",
+            "img_src": "https://bizweb.dktcdn.net/100/350/980/themes/802125/assets/col_2.png?1658680172137",
+            "bg_color": "#91ad41"
+        },
+        {
+            "id": 3,
+            "title": "Thực phẩm tươi",
+            "content": "Chúng tôi cam kết 100% các sản phẩm có nguồn gốc xuất xứ rõ ràng, sạch, an toàn và đảm bảo chất lượng ngon nhất giao đến tận tay người tiêu dùng, để san sẻ sự vất vả của các mẹ, các chị",
+            "img_src": "https://bizweb.dktcdn.net/100/350/980/themes/802125/assets/col_3.png?1658680172137",
+            "bg_color": "#e3b375"
+        },
+        {
+            "id": 4,
+            "title": "Hoa quả tươi mát",
+            "content": "Chúng tôi cam kết 100% các sản phẩm có nguồn gốc xuất xứ rõ ràng, sạch, an toàn và đảm bảo chất lượng ngon nhất giao đến tận tay người tiêu dùng, để san sẻ sự vất vả của các mẹ, các chị",
+            "img_src": "https://bizweb.dktcdn.net/100/350/980/themes/802125/assets/col_4.png?1658680172137",
+            "bg_color": "#ef7f94"
+        }
+    ],
+    "abouts": [
+        {
+            "id": 1,
+            "name": "Trang trại hữu cơ",
+            "content": "Cung cấp 100% thực phẩm sạch đảm bảo an toàn và ngon nhất",
+            "img_src": "https://bizweb.dktcdn.net/100/350/980/themes/802125/assets/icon_uti_1.png?1658680172137"
+        },
+        {
+            "id": 2,
+            "name": "Thực phẩm sạch",
+            "content": "Cung cấp 100% thực phẩm sạch đảm bảo an toàn và ngon nhất",
+            "img_src": "https://bizweb.dktcdn.net/100/350/980/themes/802125/assets/icon_uti_2.png?1658680172137"
+        },
+        {
+            "id": 3,
+            "name": "An toàn sinh học",
+            "content": "Cung cấp 100% thực phẩm sạch đảm bảo an toàn và ngon nhất",
+            "img_src": "https://bizweb.dktcdn.net/100/350/980/themes/802125/assets/icon_uti_3.png?1658680172137"
+        },
+        {
+            "id": 4,
+            "name": "Đa dạng sinh học",
+            "content": "Cung cấp 100% thực phẩm sạch đảm bảo an toàn và ngon nhất",
+            "img_src": "https://bizweb.dktcdn.net/100/350/980/themes/802125/assets/icon_uti_4.png?1658680172137"
+        }
+    ],
+    "productKind": [
+        {
+            "kind_name": "Rau củ",
+            "path": "/vegetable",
+            "products": [
+                {
+                    "id": 1,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/10.jpg?v=1553634594520",
+                    "name": "Chanh tươi",
+                    "price_main": 45000,
+                    "price_sale": 30000,
+                    "brand": "Đang cập nhật",
+                    "remain": 100,
+                    "author": "Việt Nam",
+                    "weight": 1,
+                    "intro": "Các chuyên gia dinh dưỡng khuyên rằng mỗi ngày bạn hãy uống 1 ly nước chanh tươi ấm pha với mật ong để không ngừng nâng cao sức đề kháng, tăng cường hệ thống miễn dịch và bảo vệ sức khỏe"
+                },
+                {
+                    "id": 2,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/38f5a71fcbd96417784fa367c87816.jpg?v=1553634593250   ",
+                    "name": "Quả óc chó",
+                    "price_main": 45000,
+                    "price_sale": 43000,
+                    "brand": "Đang cập nhật",
+                    "remain": 100,
+                    "author": "Mỹ",
+                    "weight": 1,
+                    "intro": "Quả óc chó giúp bà bầu bổ sung các chất dinh dưỡng thiết yếu nhất như Omega-3, Vitamin E, phốt pho và Axit Amin L-Arginne."
+                },
+                {
+                    "id": 3,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/2.jpg?v=1553634592270",
+                    "name": "Hạt điều khô",
+                    "price_main": 28000,
+                    "price_sale": null,
+                    "brand": "Đang cập nhật",
+                    "remain": 100,
+                    "author": "Việt Nam",
+                    "weight": 1,
+                    "intro": "Nói về sức tác dụng hàng đầu của hạt điều phải kể đến là tác dụng tốt cho tim mạch. Vì hạt điều chứa nhiều chất béo không bão hòa đơn, chất béo này tìm thấy nhiều trong dầu oliu."
+                },
+                {
+                    "id": 4,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/16.jpg?v=1553634590390",
+                    "name": "Hành tây đặc biệt",
+                    "price_main": 55000,
+                    "price_sale": null,
+                    "brand": "Đang cập nhật",
+                    "remain": 100,
+                    "author": "Việt Nam",
+                    "weight": 1,
+                    "intro": "Hành không chỉ là thực phẩm rất gần gũi với con người mà nó còn là vị thuốc chữa bệnh rất công hiệu, tốt cho nhóm người mắc bệnh về đường hô hấp, bệnh hen suyễn, chữa chứng mất ngủ và làm giảm cholesterol."
+                },
+                {
+                    "id": 5,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/9ea4a2f9dad46485d9c385955275bb.jpg?v=1553634589380",
+                    "name": "Súp lơ trắng",
+                    "price_main": 20000,
+                    "price_sale": null,
+                    "brand": "Đang cập nhật",
+                    "remain": 100,
+                    "author": "Việt Nam",
+                    "weight": 1,
+                    "intro": "Súp lơ có chứa các thành phần như: Protein 3,5%; gluxit 4,9%; và nhiều khoáng chất, vitamin như: can-xi (26 mg%); phốtpho (51 mg%)"
+                },
+                {
+                    "id": 6,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/anhnho.jpg?v=1553634588157",
+                    "name": "Nho mỹ nhập khẩu",
+                    "price_main": 235000,
+                    "price_sale": 265000,
+                    "brand": "Đang cập nhật",
+                    "remain": 100,
+                    "author": "Mỹ",
+                    "weight": 1,
+                    "intro": "Nho Mỹ được biết đến là một trong những loại trái cây được ưa chuộng nhất trên thế giới với vẻ căng trong mọng nước và vị ngọt thanh đặc trưng."
+                }
+            ]
+        },
+        {
+            "to": "/infor-page",
+            "img_src": "",
+            "kind_name": "Hoa quả",
+            "path": "/fruit",
+            "products": [
+                {
+                    "id": 1,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/676ccb75fcbc84a3db0b69f5af3c22.jpg?v=1553634601407",
+                    "name": "Vải thiều Thanh Hà",
+                    "price_main": 79000,
+                    "price_sale": 40000,
+                    "brand": "Đang cập nhật",
+                    "remain": 100,
+                    "author": "Việt Nam",
+                    "weight": 1,
+                    "intro": "Mùa hè là thời gian lý tưởng để nhâm nhi nhiều loại trái cây và vải nằm trong số những trái ngon và bổ không thể bỏ qua."
+                },
+                {
+                    "id": 2,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/5.jpg?v=1553634600437",
+                    "name": "Đào đỏ Mỹ",
+                    "price_main": 49000,
+                    "price_sale": 31000,
+                    "brand": "Đang cập nhật",
+                    "remain": null,
+                    "author": null,
+                    "weight": null,
+                    "intro": null,
+                    "note": "Thông tin sản phẩm đang được cập nhật."
+                },
+                {
+                    "id": 3,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/13.jpg?v=1553634599460",
+                    "name": "Dâu tây Đà Lạt",
+                    "price_main": 400000,
+                    "price_sale": 300000,
+                    "brand": "Đang cập nhật",
+                    "remain": 100,
+                    "author": "Việt Nam",
+                    "weight": 1,
+                    "intro": "Dâu tây nói chung và dâu tây Đà Lạt nói riêng, từ lâu được biết tới là một loại trái cây rất tốt cho con người."
+                },
+                {
+                    "id": 4,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/11.jpg?v=1553634598330",
+                    "name": "Táo xanh Mỹ",
+                    "price_main": 220000,
+                    "price_sale": 160000,
+                    "brand": "Đang cập nhật",
+                    "remain": 100,
+                    "author": "Mỹ",
+                    "weight": 1,
+                    "intro": "Táo là loại cây ưa khí hậu khô, nóng và ít côn trùng và dịch bệnh. Táo GrannySmith (Táo Xanh) có nguồn gốc từ Úc du nhập vào Mỹ năm 1868. Táo có màu xanh lá, vị chua đậm, rất giòn, nhiều nước."
+                },
+                {
+                    "id": 5,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/14.jpg?v=1553634597507",
+                    "name": "Lê xanh Mỹ",
+                    "price_main": 230000,
+                    "price_sale": null,
+                    "brand": "Đang cập nhật",
+                    "remain": 100,
+                    "author": "Mỹ",
+                    "weight": 1,
+                    "intro": "Theo phân tích khoa học, quả lê chứa protein, lipid, cenlulose, canxi, phốt pho, sắt, caroten, vitamin B1, B2, C, đường gluco, axít acetic..."
+                },
+                {
+                    "id": 6,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/product7600x600.jpg?v=1553634579280",
+                    "name": "Lựu đỏ Nam Phi nhập khẩu",
+                    "price_main": 115000,
+                    "price_sale": 40000,
+                    "brand": "Đang cập nhật",
+                    "remain": 100,
+                    "author": "Mỹ",
+                    "weight": 1,
+                    "intro": "Hạt lựu chín có giá trị dinh dưỡng cao, có tác dụng chống vi khuẩn, chống oxy hóa và tác dụng tẩy giun hiệu quả. Tuy nhiên thực tế đã có trường hợp trẻ em nguy kịch vì tắc ruột do ăn nhiều hạt lựu. Vì vậy, khi ăn không nên nuốt hạt lựu, với người lớn thì cần nhai kỹ trước khi nuốt."
+                },
+                {
+                    "id": 7,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/4.jpg?v=1553634596937",
+                    "name": "Cam Navel ruột vàng",
+                    "price_main": 340000,
+                    "price_sale": 240000,
+                    "brand": "Đang cập nhật",
+                    "remain": 100,
+                    "author": "Úc",
+                    "weight": 1,
+                    "intro": "Cam Navel ruột vàng Úc vỏ màu vàng, ruột màu vàng đậm, vị ngọt thanh, không hạt, mọng nước. Thường dùng để ăn chứ không ép nước. Nên chọn quả sáng màu, da mịn, tròn trịa, cầm nặng tay."
+                }
+            ]
+        },
+        {
+            "kind_name": "Hải sản",
+            "path": "/seafood",
+            "products": [
+                {
+                    "id": 1,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/9288726007031020500.jpg?v=1553634558817",
+                    "name": "Cá hồi Mỹ",
+                    "price_main": 800000,
+                    "price_sale": 600000,
+                    "brand": "Đang cập nhật",
+                    "remain": null,
+                    "author": null,
+                    "weight": null,
+                    "intro": null,
+                    "note": "Thông tin sản phẩm đang được cập nhật."
+                },
+                {
+                    "id": 2,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/92887140889157955001.jpg?v=1553634556110",
+                    "name": "Tôm biển",
+                    "price_main": 350000,
+                    "price_sale": 300000,
+                    "brand": "Đang cập nhật",
+                    "remain": null,
+                    "author": null,
+                    "weight": null,
+                    "intro": null,
+                    "note": "Thông tin sản phẩm đang được cập nhật."
+                },
+                {
+                    "id": 3,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/9288719691687004500.jpg?v=1553634555113",
+                    "name": "Mực Thanh Hóa",
+                    "price_main": 80000,
+                    "price_sale": 70000,
+                    "brand": "Đang cập nhật",
+                    "remain": null,
+                    "author": null,
+                    "weight": null,
+                    "intro": null,
+                    "note": "Thông tin sản phẩm đang được cập nhật."
+                },
+                {
+                    "id": 4,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/9288722308834460500.jpg?v=1553634554267",
+                    "name": "Cua bể",
+                    "price_main": 250000,
+                    "price_sale": null,
+                    "brand": "Đang cập nhật",
+                    "remain": null,
+                    "author": null,
+                    "weight": null,
+                    "intro": null,
+                    "note": "Thông tin sản phẩm đang được cập nhật."
+                },
+                {
+                    "id": 5,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/9288724483351757500.jpg?v=1553634553317",
+                    "name": "Cá hồi",
+                    "price_main": 1200000,
+                    "price_sale": null,
+                    "brand": "Đang cập nhật",
+                    "remain": null,
+                    "author": null,
+                    "weight": null,
+                    "intro": null,
+                    "note": "Thông tin sản phẩm đang được cập nhật."
+                }
+            ]
+        },
+        {
+            "kind_name": "Các loại hạt",
+            "path": "/nuts",
+            "products": [
+                {
+                    "id": 1,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/799f392ed63934c64a2c8829cfdad6-90347a95-1fc7-4c97-8cd3-42e5c2d0641a.jpg?v=1553634595877",
+                    "name": "Hạt điều trắng",
+                    "price_main": 400000,
+                    "price_sale": 300000,
+                    "brand": "Đang cập nhật",
+                    "remain": 100,
+                    "author": "Việt Nam",
+                    "weight": 1,
+                    "intro": "Nói về sức tác dụng hàng đầu của hạt điều phải kể đến là tác dụng tốt cho tim mạch. Vì hạt điều chứa nhiều chất béo không bão hòa đơn, chất béo này tìm thấy nhiều trong dầu oliu."
+                },
+                {
+                    "id": 2,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/124db5143d68ef4e55938ee056be8d.jpg?v=1553634591287",
+                    "name": "Hạt hạnh nhân",
+                    "price_main": 320000,
+                    "price_sale": null,
+                    "brand": "Đang cập nhật",
+                    "remain": 100,
+                    "author": "Việt Nam",
+                    "weight": 1,
+                    "intro": "Hạnh nhân rất tốt cho những người phòng ngừa các vấn đề về hàm lượng glucose và cholesterol. Thành phần trong hạt hạnh nhân giúp điều chỉnh, cân bằng 2 chất này, giúp phòng ngừa tiểu đường, mỡ máu, béo phì, thừa cân."
+                },
+                {
+                    "id": 3,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/38f5a71fcbd96417784fa367c87816.jpg?v=1553634593250   ",
+                    "name": "Quả óc chó",
+                    "price_main": 45000,
+                    "price_sale": 43000,
+                    "brand": "Đang cập nhật",
+                    "remain": 100,
+                    "author": "Mỹ",
+                    "weight": 1,
+                    "intro": "Quả óc chó giúp bà bầu bổ sung các chất dinh dưỡng thiết yếu nhất như Omega-3, Vitamin E, phốt pho và Axit Amin L-Arginne."
+                },
+                {
+                    "id": 4,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/2.jpg?v=1553634592270",
+                    "name": "Hạt điều khô",
+                    "price_main": 28000,
+                    "price_sale": null,
+                    "brand": "Đang cập nhật",
+                    "remain": 100,
+                    "author": "Việt Nam",
+                    "weight": 1,
+                    "intro": "Nói về sức tác dụng hàng đầu của hạt điều phải kể đến là tác dụng tốt cho tim mạch. Vì hạt điều chứa nhiều chất béo không bão hòa đơn, chất béo này tìm thấy nhiều trong dầu oliu."
+                },
+                {
+                    "id": 5,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/16.jpg?v=1553634590390",
+                    "name": "Hành tây đặc biệt",
+                    "price_main": 55000,
+                    "price_sale": null,
+                    "brand": "Đang cập nhật",
+                    "remain": 100,
+                    "author": "Việt Nam",
+                    "weight": 1,
+                    "intro": "Hành không chỉ là thực phẩm rất gần gũi với con người mà nó còn là vị thuốc chữa bệnh rất công hiệu, tốt cho nhóm người mắc bệnh về đường hô hấp, bệnh hen suyễn, chữa chứng mất ngủ và làm giảm cholesterol."
+                }
+            ]
+        },
+        {
+            "kind_name": "Thực phẩm tươi sống",
+            "path": "/freshfood",
+            "products": [
+                {
+                    "id": 1,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/thitbothan600x6001.jpg?v=1553634585177",
+                    "name": "Thịt bò thăn",
+                    "price_main": 460000,
+                    "price_sale": null,
+                    "remain": null,
+                    "author": null,
+                    "weight": null,
+                    "intro": null,
+                    "note": "Thông tin sản phẩm đang được cập nhật."
+                },
+                {
+                    "id": 2,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/resize.jpg?v=1553634584570",
+                    "name": "Thịt bò Canada nhập khẩu",
+                    "price_main": 450000,
+                    "price_sale": null,
+                    "remain": null,
+                    "author": null,
+                    "weight": null,
+                    "intro": null,
+                    "note": "Thông tin sản phẩm đang được cập nhật."
+                },
+                {
+                    "id": 3,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/4921botuoithb.jpg?v=1553634572787",
+                    "name": "Thịt bò Mỹ",
+                    "price_main": 365000,
+                    "price_sale": null,
+                    "remain": null,
+                    "author": null,
+                    "weight": null,
+                    "intro": null,
+                    "note": "Thông tin sản phẩm đang được cập nhật."
+                },
+                {
+                    "id": 4,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/14611211097538664793.jpg?v=1553634572043",
+                    "name": "Thịt lợn nạc vai",
+                    "price_main": 65000,
+                    "price_sale": null,
+                    "remain": null,
+                    "author": null,
+                    "weight": null,
+                    "intro": null,
+                    "note": "Thông tin sản phẩm đang được cập nhật."
+                },
+                {
+                    "id": 5,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/9288704993731176500.jpg?v=1553634552207",
+                    "name": "Sườn lợn Brazil",
+                    "price_main": 200000,
+                    "price_sale": null,
+                    "remain": null,
+                    "author": null,
+                    "weight": null,
+                    "intro": null,
+                    "note": "Thông tin sản phẩm đang được cập nhật."
+                },
+                {
+                    "id": 6,
+                    "to": "/infor-page",
+                    "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/9288716584133519500.jpg?v=1553634551257",
+                    "name": "Ba chỉ bò Mỹ",
+                    "price_main": 500000,
+                    "price_sale": null,
+                    "remain": null,
+                    "author": null,
+                    "weight": null,
+                    "intro": null,
+                    "note": "Thông tin sản phẩm đang được cập nhật."
+                }
+            ]
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "to": "/infor-page",
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/10.jpg?v=1553634594520",
+            "name": "Chanh tươi",
+            "price_main": 45000,
+            "price_sale": 30000,
+            "brand": "Đang cập nhật",
+            "remain": 100,
+            "author": "Việt Nam",
+            "weight": 1,
+            "intro": "Các chuyên gia dinh dưỡng khuyên rằng mỗi ngày bạn hãy uống 1 ly nước chanh tươi ấm pha với mật ong để không ngừng nâng cao sức đề kháng, tăng cường hệ thống miễn dịch và bảo vệ sức khỏe"
+        },
+        {
+            "id": 2,
+            "to": "/infor-page",
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/38f5a71fcbd96417784fa367c87816.jpg?v=1553634593250   ",
+            "name": "Quả óc chó",
+            "price_main": 45000,
+            "price_sale": 43000,
+            "brand": "Đang cập nhật",
+            "remain": 100,
+            "author": "Mỹ",
+            "weight": 1,
+            "intro": "Quả óc chó giúp bà bầu bổ sung các chất dinh dưỡng thiết yếu nhất như Omega-3, Vitamin E, phốt pho và Axit Amin L-Arginne."
+        },
+        {
+            "id": 3,
+            "to": "/infor-page",
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/2.jpg?v=1553634592270",
+            "name": "Hạt điều khô",
+            "price_main": 28000,
+            "price_sale": null,
+            "brand": "Đang cập nhật",
+            "remain": 100,
+            "author": "Việt Nam",
+            "weight": 1,
+            "intro": "Nói về sức tác dụng hàng đầu của hạt điều phải kể đến là tác dụng tốt cho tim mạch. Vì hạt điều chứa nhiều chất béo không bão hòa đơn, chất béo này tìm thấy nhiều trong dầu oliu."
+        },
+        {
+            "id": 4,
+            "to": "/infor-page",
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/16.jpg?v=1553634590390",
+            "name": "Hành tây đặc biệt",
+            "price_main": 55000,
+            "price_sale": null,
+            "brand": "Đang cập nhật",
+            "remain": 100,
+            "author": "Việt Nam",
+            "weight": 1,
+            "intro": "Hành không chỉ là thực phẩm rất gần gũi với con người mà nó còn là vị thuốc chữa bệnh rất công hiệu, tốt cho nhóm người mắc bệnh về đường hô hấp, bệnh hen suyễn, chữa chứng mất ngủ và làm giảm cholesterol."
+        },
+        {
+            "id": 5,
+            "to": "/infor-page",
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/9ea4a2f9dad46485d9c385955275bb.jpg?v=1553634589380",
+            "name": "Súp lơ trắng",
+            "price_main": 20000,
+            "price_sale": null,
+            "brand": "Đang cập nhật",
+            "remain": 100,
+            "author": "Việt Nam",
+            "weight": 1,
+            "intro": "Súp lơ có chứa các thành phần như: Protein 3,5%; gluxit 4,9%; và nhiều khoáng chất, vitamin như: can-xi (26 mg%); phốtpho (51 mg%)"
+        },
+        {
+            "id": 6,
+            "to": "/infor-page",
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/anhnho.jpg?v=1553634588157",
+            "name": "Nho mỹ nhập khẩu",
+            "price_main": 235000,
+            "price_sale": 265000,
+            "brand": "Đang cập nhật",
+            "remain": 100,
+            "author": "Mỹ",
+            "weight": 1,
+            "intro": "Nho Mỹ được biết đến là một trong những loại trái cây được ưa chuộng nhất trên thế giới với vẻ căng trong mọng nước và vị ngọt thanh đặc trưng."
+        },
+        {
+            "id": 7,
+            "to": "/infor-page",
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/676ccb75fcbc84a3db0b69f5af3c22.jpg?v=1553634601407",
+            "name": "Vải thiều Thanh Hà",
+            "price_main": 79000,
+            "price_sale": 40000,
+            "brand": "Đang cập nhật",
+            "remain": 100,
+            "author": "Việt Nam",
+            "weight": 1,
+            "intro": "Mùa hè là thời gian lý tưởng để nhâm nhi nhiều loại trái cây và vải nằm trong số những trái ngon và bổ không thể bỏ qua."
+        },
+        {
+            "id": 8,
+            "to": "/infor-page",
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/5.jpg?v=1553634600437",
+            "name": "Đào đỏ Mỹ",
+            "price_main": 49000,
+            "price_sale": 31000,
+            "brand": "Đang cập nhật",
+            "remain": null,
+            "author": null,
+            "weight": null,
+            "intro": null,
+            "note": "Thông tin sản phẩm đang được cập nhật."
+        },
+        {
+            "id": 9,
+            "to": "/infor-page",
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/13.jpg?v=1553634599460",
+            "name": "Dâu tây Đà Lạt",
+            "price_main": 400000,
+            "price_sale": 300000,
+            "brand": "Đang cập nhật",
+            "remain": 100,
+            "author": "Việt Nam",
+            "weight": 1,
+            "intro": "Dâu tây nói chung và dâu tây Đà Lạt nói riêng, từ lâu được biết tới là một loại trái cây rất tốt cho con người."
+        },
+        {
+            "id": 10,
+            "to": "/infor-page",
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/11.jpg?v=1553634598330",
+            "name": "Táo xanh Mỹ",
+            "price_main": 220000,
+            "price_sale": 160000,
+            "brand": "Đang cập nhật",
+            "remain": 100,
+            "author": "Mỹ",
+            "weight": 1,
+            "intro": "Táo là loại cây ưa khí hậu khô, nóng và ít côn trùng và dịch bệnh. Táo GrannySmith (Táo Xanh) có nguồn gốc từ Úc du nhập vào Mỹ năm 1868. Táo có màu xanh lá, vị chua đậm, rất giòn, nhiều nước."
+        },
+        {
+            "id": 11,
+            "to": "/infor-page",
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/14.jpg?v=1553634597507",
+            "name": "Lê xanh Mỹ",
+            "price_main": 230000,
+            "price_sale": null,
+            "brand": "Đang cập nhật",
+            "remain": 100,
+            "author": "Mỹ",
+            "weight": 1,
+            "intro": "Theo phân tích khoa học, quả lê chứa protein, lipid, cenlulose, canxi, phốt pho, sắt, caroten, vitamin B1, B2, C, đường gluco, axít acetic..."
+        },
+        {
+            "id": 12,
+            "to": "/infor-page",
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/9288726007031020500.jpg?v=1553634558817",
+            "name": "Cá hồi Mỹ",
+            "price_main": 800000,
+            "price_sale": 600000,
+            "brand": "Đang cập nhật",
+            "remain": null,
+            "author": null,
+            "weight": null,
+            "intro": null,
+            "note": "Thông tin sản phẩm đang được cập nhật."
+        },
+        {
+            "id": 13,
+            "to": "/infor-page",
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/92887140889157955001.jpg?v=1553634556110",
+            "name": "Tôm biển",
+            "price_main": 350000,
+            "price_sale": 300000,
+            "brand": "Đang cập nhật",
+            "remain": null,
+            "author": null,
+            "weight": null,
+            "intro": null,
+            "note": "Thông tin sản phẩm đang được cập nhật."
+        },
+        {
+            "id": 14,
+            "to": "/infor-page",
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/9288719691687004500.jpg?v=1553634555113",
+            "name": "Mực Thanh Hóa",
+            "price_main": 80000,
+            "price_sale": 70000,
+            "brand": "Đang cập nhật",
+            "remain": null,
+            "author": null,
+            "weight": null,
+            "intro": null,
+            "note": "Thông tin sản phẩm đang được cập nhật."
+        },
+        {
+            "id": 15,
+            "to": "/infor-page",
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/9288722308834460500.jpg?v=1553634554267",
+            "name": "Cua bể",
+            "price_main": 250000,
+            "price_sale": null,
+            "brand": "Đang cập nhật",
+            "remain": null,
+            "author": null,
+            "weight": null,
+            "intro": null,
+            "note": "Thông tin sản phẩm đang được cập nhật."
+        },
+        {
+            "id": 16,
+            "to": "/infor-page",
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/9288724483351757500.jpg?v=1553634553317",
+            "name": "Cá hồi",
+            "price_main": 1200000,
+            "price_sale": null,
+            "brand": "Đang cập nhật",
+            "remain": null,
+            "author": null,
+            "weight": null,
+            "intro": null,
+            "note": "Thông tin sản phẩm đang được cập nhật."
+        },
+        {
+            "id": 17,
+            "to": "/infor-page",
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/799f392ed63934c64a2c8829cfdad6-90347a95-1fc7-4c97-8cd3-42e5c2d0641a.jpg?v=1553634595877",
+            "name": "Hạt điều trắng",
+            "price_main": 400000,
+            "price_sale": 300000,
+            "brand": "Đang cập nhật",
+            "remain": 100,
+            "author": "Việt Nam",
+            "weight": 1,
+            "intro": "Nói về sức tác dụng hàng đầu của hạt điều phải kể đến là tác dụng tốt cho tim mạch. Vì hạt điều chứa nhiều chất béo không bão hòa đơn, chất béo này tìm thấy nhiều trong dầu oliu."
+        },
+        {
+            "id": 18,
+            "to": "/infor-page",
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/124db5143d68ef4e55938ee056be8d.jpg?v=1553634591287",
+            "name": "Hạt hạnh nhân",
+            "price_main": 320000,
+            "price_sale": null,
+            "brand": "Đang cập nhật",
+            "remain": 100,
+            "author": "Việt Nam",
+            "weight": 1,
+            "intro": "Hạnh nhân rất tốt cho những người phòng ngừa các vấn đề về hàm lượng glucose và cholesterol. Thành phần trong hạt hạnh nhân giúp điều chỉnh, cân bằng 2 chất này, giúp phòng ngừa tiểu đường, mỡ máu, béo phì, thừa cân."
+        },
+        {
+            "id": 19,
+            "to": "/infor-page",
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/thitbothan600x6001.jpg?v=1553634585177",
+            "name": "Thịt bò thăn",
+            "price_main": 460000,
+            "price_sale": null,
+            "remain": null,
+            "author": null,
+            "weight": null,
+            "intro": null,
+            "note": "Thông tin sản phẩm đang được cập nhật."
+        },
+        {
+            "id": 20,
+            "to": "/infor-page",
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/resize.jpg?v=1553634584570",
+            "name": "Thịt bò Canada nhập khẩu",
+            "price_main": 450000,
+            "price_sale": null,
+            "remain": null,
+            "author": null,
+            "weight": null,
+            "intro": null,
+            "note": "Thông tin sản phẩm đang được cập nhật."
+        },
+        {
+            "id": 21,
+            "to": "/infor-page",
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/4921botuoithb.jpg?v=1553634572787",
+            "name": "Thịt bò Mỹ",
+            "price_main": 365000,
+            "price_sale": null,
+            "remain": null,
+            "author": null,
+            "weight": null,
+            "intro": null,
+            "note": "Thông tin sản phẩm đang được cập nhật."
+        },
+        {
+            "id": 22,
+            "to": "/infor-page",
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/14611211097538664793.jpg?v=1553634572043",
+            "name": "Thịt lợn nạc vai",
+            "price_main": 65000,
+            "price_sale": null,
+            "remain": null,
+            "author": null,
+            "weight": null,
+            "intro": null,
+            "note": "Thông tin sản phẩm đang được cập nhật."
+        },
+        {
+            "id": 23,
+            "to": "/infor-page",
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/9288704993731176500.jpg?v=1553634552207",
+            "name": "Sườn lợn Brazil",
+            "price_main": 200000,
+            "price_sale": null,
+            "remain": null,
+            "author": null,
+            "weight": null,
+            "intro": null,
+            "note": "Thông tin sản phẩm đang được cập nhật."
+        },
+        {
+            "id": 24,
+            "to": "/infor-page",
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/products/9288716584133519500.jpg?v=1553634551257",
+            "name": "Ba chỉ bò Mỹ",
+            "price_main": 500000,
+            "price_sale": null,
+            "remain": null,
+            "author": null,
+            "weight": null,
+            "intro": null,
+            "note": "Thông tin sản phẩm đang được cập nhật."
+        }
+    ],
+    "blogs": [
+        {
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/articles/49997669-476326726231228-9092403644171095934-n.jpg?v=1553650991913",
+            "date": "27/03/2019",
+            "author": "Cool Team",
+            "title": "Rau xanh tăng giá mạnh vì trời mưa, người dân nội thành lao đao",
+            "content": "Khoảng gần một tuần nay, do ảnh hưởng của những cơn mưa lớn kéo dài liên tiếp nên nguồn cung rau xanh cho các chợ bắt đầu khan hiếm, giá tăng mạnh, thậm chí nhiều loại giá tăng gần gấp đôi.Khảo sát của người viết tại một số chợ đầu mối, chợ truyền thống trên địa bàn Hà Nội như chợ Đình Công, chợ Cầu Giấy, Phùng Khoang, chợ Hôm, Chợ Dịch Vọng, chợ Nhổn… giá các loại rau, củ đã tăng phổ biến 20 -30% so với 1-2 tuần trước.Cụ thể, tại chợ Dịch Vọng, rau dền, mồng tơi giá 8.000 đồng/mớ, tăng 2.000 đồng/mớ; rau muống tăng 3000 đồng/mớ lên 10.000 đồng/mớ; rau ngót cũng tăng 1.000 đồng/mớ lên 7.000 đồng/mớ; cải xanh tăng từ 5.000 đồng lên 8.000 đồng/mớ; bắp cải tăng 3.000 đồng/kg lên 15.000 đồng/kg; cải thảo tăng 5.000 đồng/kg lên 16.000 đồng/kg, mướp đắng tăng 10.000 đồng/kg lên 16.000 đồng/kg. Hành lá tăng giá mạnh nhất lên 60.000/kg.Một số loại củ quả như cà chua còn có giá tăng gấp đôi, từ 20.000 đồng/kg lên 40.000 đồng/kg, cà rốt có giá từ 25.000 – 30.000 đồng/kg; su hào 8.000 đồng /củ…so với trước đợt bão.Chị Nguyễn Thị Thanh, tiểu thương bán rau ở chợ Dịch Vọng cho biết, giá rau củ tặng mạnh do thời tiết mưa to gây ngập úng khiến nguồn cung rau củ giảm. Bên cạnh đó, đây là thời điểm cuối mùa vụ của một số loại rau củ như các loại rau muống, mồng tơi, mướp ngọt…cũng khiến cho nguồn cung ứng rau thiếu hụt.“Như hôm nay ra chợ đầu mối nhập rau mà mỗi loại chỉ nhập được 5-10kg, bán đến tầm 8 giờ sáng rau ở sạp đã gần hết. Đến chiều, tôi đang không biết lấy hàng đâu bán cho khách”, chị Thanh chia sẻ. Tại nhiều vùng trồng rau ngoại thành Hà Nội như Vân Nội, Song Phương, Tây Tựu... do mưa lớn kéo dài nên rau ít nhiều bị ngập úng, hư hại.Bà Trần Thị Mai, tại xã Tây Tựu - Từ Liêm chuyên trồng sản xuất rau xanh bán buôn cho các chợ đầu mối cho biết, nhà bà trồng 6 sào rau xanh đủ các nhưng mấy ngày gần đây do mưa to ảnh hưởng nên làm cho rau trong vườn phát triển chậm và dập nát hết các luống rau mới gieo trồng.",
+            "to": "/blog-page1"
+        },
+        {
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/articles/41968416-280694729439890-8459559393178510661-n.jpg?v=1553650945157",
+            "date": "27/03/2019",
+            "author": "Cool Team",
+            "title": "Nhập khẩu rau quả vượt mốc 1 tỷ USD, Thái Lan chiếm 60% thị phần",
+            "content": "Theo báo cáo từ Bộ NN&PTNT, giá trị xuất khẩu hàng rau quả tháng 9 năm 2017 ước đạt 294 triệu USD, đưa giá trị xuất khẩu hàng rau quả 9 tháng đầu năm 2017 ước đạt 2,64 tỷ USD, tăng 44,2% so với cùng kỳ năm 2016. Trung Quốc, Nhật Bản, Hoa Kỳ và Hàn Quốc là 4 thị trường nhập khẩu hàng đầu của hàng rau quả Việt Nam trong 8 tháng đầu năm 2017, chiếm 85,2% tổng giá trị xuất khẩu hàng rau quả. Trong 8 tháng đầu năm 2017, các thị trường có giá trị xuất khẩu hàng rau quả tăng mạnh là Nhật Bản (64,6%), Tiểu Vương Quốc Ả Rập Thống Nhất (64,4%), Trung Quốc (60,2%), Nga (41,9%), Hoa Kỳ (26,6%), Đài Loan (16,1%) và Hà Lan (9,4%). Ước giá trị nhập khẩu mặt hàng rau quả tháng 9 năm 2017 đạt 135 triệu USD, đưa giá trị nhập khẩu rau quả 9 tháng đầu năm 2017 đạt 1,15 tỷ USD, tăng 78,2% so với cùng kỳ năm 2016. Trong đó, mặt hàng rau ước đạt 218 triệu USD, tăng 30,1% so với cùng kỳ 2016 và mặt hàng quả đạt 914 triệu USD, tăng gần 2 lần so với cùng kỳ năm 2016. Thị trường nhập khẩu rau quả lớn nhất trong 8 tháng đầu năm 2017 là thị trường Thái Lan (chiếm tới 60,7% thị phần), tiếp đến là thị trường Trung Quốc (chiếm 15,7%). Trong 8 tháng đầu năm 2017 giá trị nhập khẩu rau quả ở tất cả các thị trường đều tăng so với cùng kỳ năm 2016. Trong đó, thị trường có giá trị nhập khẩu rau quả tăng nhiều nhất là Thái Lan (gấp hơn 2,8 lần), tiếp đến là thị trường Ấn Độ (gấp hơn 2,2 lần) và thị trường Hàn Quốc (tăng 70,8%).",
+            "to": "/blog-page1"
+        },
+        {
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/articles/49997669-476326726231228-9092403644171095934-n.jpg?v=1553650991913",
+            "date": "27/03/2019",
+            "author": "Cool Team",
+            "title": "Bí quyết bảo quản nho đen trong tủ lạnh tươi lâu hơn",
+            "content": "Trong tháng 9/2017, trước cơn sốt giá sầu riêng tại các tỉnh Tây Nguyên, nhiều tiểu thương sẵn sàng đổ tiền vào các nhà vườn để thu mua sầu riêng non lẫn chín. Tại huyện Krông Pắk (tỉnh Đắk Lắk), một số loại sầu riêng chất lượng cao được thu mua với giá 54.000 đồng/kg – mức giá kỷ lục nhiều năm. Đồng thời, giá dừa khô tại tỉnh Trà Vinh không ngừng tăng cao với mức thu mua tại vườn 150.000 đồng/chục (12 trái). Đây là mức giá dừa khô cao nhất trong vòng 6 năm qua, đem lại cho mỗi 1 ha vườn dừa thu nhập khoảng 15 triệu đồng/tháng. Trong khi đó, thị trường rau củ tại Lâm Đồng tương đối ổn định chỉ có một số rau như cà chua, hoa lơ xanh và cải bó xôi giảm nhẹ với mức giảm 2.000-3.000 đồng/kg so với đầu tháng. Nhìn lại 9 tháng đầu năm, thị trường trái cây biến động thất thường do đặc tính thời vụ của từng loại trái cây. Trong khi đó, thị trường rau củ bị ảnh hưởng của thời tiết đặc biệt những cơn bão gần đây đã làm nguồn cung giảm khiến thị trường tăng mạnh vào tháng 7 và 8, tuy nhiên đến nay thị trường có dấu hiệu hồi phục.",
+            "to": "/blog-page1"
+        },
+        {
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/articles/49997669-476326726231228-9092403644171095934-n.jpg?v=1553650991913",
+            "date": "27/03/2019",
+            "author": "Cool Team",
+            "title": "Bí quyết bảo quản nho đen trong tủ lạnh tươi lâu hơn",
+            "content": "Trong tháng 9/2017, trước cơn sốt giá sầu riêng tại các tỉnh Tây Nguyên, nhiều tiểu thương sẵn sàng đổ tiền vào các nhà vườn để thu mua sầu riêng non lẫn chín. Tại huyện Krông Pắk (tỉnh Đắk Lắk), một số loại sầu riêng chất lượng cao được thu mua với giá 54.000 đồng/kg – mức giá kỷ lục nhiều năm. Đồng thời, giá dừa khô tại tỉnh Trà Vinh không ngừng tăng cao với mức thu mua tại vườn 150.000 đồng/chục (12 trái). Đây là mức giá dừa khô cao nhất trong vòng 6 năm qua, đem lại cho mỗi 1 ha vườn dừa thu nhập khoảng 15 triệu đồng/tháng. Trong khi đó, thị trường rau củ tại Lâm Đồng tương đối ổn định chỉ có một số rau như cà chua, hoa lơ xanh và cải bó xôi giảm nhẹ với mức giảm 2.000-3.000 đồng/kg so với đầu tháng. Nhìn lại 9 tháng đầu năm, thị trường trái cây biến động thất thường do đặc tính thời vụ của từng loại trái cây. Trong khi đó, thị trường rau củ bị ảnh hưởng của thời tiết đặc biệt những cơn bão gần đây đã làm nguồn cung giảm khiến thị trường tăng mạnh vào tháng 7 và 8, tuy nhiên đến nay thị trường có dấu hiệu hồi phục.",
+            "to": "/blog-page1"
+        },
+        {
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/articles/49997669-476326726231228-9092403644171095934-n.jpg?v=1553650991913",
+            "date": "27/03/2019",
+            "author": "Cool Team",
+            "title": "Bí quyết bảo quản nho đen trong tủ lạnh tươi lâu hơn",
+            "content": "Trong tháng 9/2017, trước cơn sốt giá sầu riêng tại các tỉnh Tây Nguyên, nhiều tiểu thương sẵn sàng đổ tiền vào các nhà vườn để thu mua sầu riêng non lẫn chín. Tại huyện Krông Pắk (tỉnh Đắk Lắk), một số loại sầu riêng chất lượng cao được thu mua với giá 54.000 đồng/kg – mức giá kỷ lục nhiều năm. Đồng thời, giá dừa khô tại tỉnh Trà Vinh không ngừng tăng cao với mức thu mua tại vườn 150.000 đồng/chục (12 trái). Đây là mức giá dừa khô cao nhất trong vòng 6 năm qua, đem lại cho mỗi 1 ha vườn dừa thu nhập khoảng 15 triệu đồng/tháng. Trong khi đó, thị trường rau củ tại Lâm Đồng tương đối ổn định chỉ có một số rau như cà chua, hoa lơ xanh và cải bó xôi giảm nhẹ với mức giảm 2.000-3.000 đồng/kg so với đầu tháng. Nhìn lại 9 tháng đầu năm, thị trường trái cây biến động thất thường do đặc tính thời vụ của từng loại trái cây. Trong khi đó, thị trường rau củ bị ảnh hưởng của thời tiết đặc biệt những cơn bão gần đây đã làm nguồn cung giảm khiến thị trường tăng mạnh vào tháng 7 và 8, tuy nhiên đến nay thị trường có dấu hiệu hồi phục.",
+            "to": "/blog-page1"
+        },
+        {
+            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/articles/49997669-476326726231228-9092403644171095934-n.jpg?v=1553650991913",
+            "date": "27/03/2019",
+            "author": "Cool Team",
+            "title": "Bí quyết bảo quản nho đen trong tủ lạnh tươi lâu hơn",
+            "content": "Trong tháng 9/2017, trước cơn sốt giá sầu riêng tại các tỉnh Tây Nguyên, nhiều tiểu thương sẵn sàng đổ tiền vào các nhà vườn để thu mua sầu riêng non lẫn chín. Tại huyện Krông Pắk (tỉnh Đắk Lắk), một số loại sầu riêng chất lượng cao được thu mua với giá 54.000 đồng/kg – mức giá kỷ lục nhiều năm. Đồng thời, giá dừa khô tại tỉnh Trà Vinh không ngừng tăng cao với mức thu mua tại vườn 150.000 đồng/chục (12 trái). Đây là mức giá dừa khô cao nhất trong vòng 6 năm qua, đem lại cho mỗi 1 ha vườn dừa thu nhập khoảng 15 triệu đồng/tháng. Trong khi đó, thị trường rau củ tại Lâm Đồng tương đối ổn định chỉ có một số rau như cà chua, hoa lơ xanh và cải bó xôi giảm nhẹ với mức giảm 2.000-3.000 đồng/kg so với đầu tháng. Nhìn lại 9 tháng đầu năm, thị trường trái cây biến động thất thường do đặc tính thời vụ của từng loại trái cây. Trong khi đó, thị trường rau củ bị ảnh hưởng của thời tiết đặc biệt những cơn bão gần đây đã làm nguồn cung giảm khiến thị trường tăng mạnh vào tháng 7 và 8, tuy nhiên đến nay thị trường có dấu hiệu hồi phục.",
+            "to": "/blog-page1"
+        }
+    ],
+    "brands": [
+        {
+            "id": 1,
+            "img_src": "https://bizweb.dktcdn.net/thumb/compact/100/350/980/themes/802125/assets/brand_1.png?1658680172137"
+        },
+        {
+            "id": 2,
+            "img_src": "https://bizweb.dktcdn.net/thumb/compact/100/350/980/themes/802125/assets/brand_2.png?1658680172137"
+        },
+        {
+            "id": 3,
+            "img_src": "https://bizweb.dktcdn.net/thumb/compact/100/350/980/themes/802125/assets/brand_3.png?1658680172137"
+        },
+        {
+            "id": 4,
+            "img_src": "https://bizweb.dktcdn.net/thumb/compact/100/350/980/themes/802125/assets/brand_4.png?1658680172137"
+        },
+        {
+            "id": 5,
+            "img_src": "https://bizweb.dktcdn.net/thumb/compact/100/350/980/themes/802125/assets/brand_5.png?1658680172137"
+        },
+        {
+            "id": 6,
+            "img_src": "https://bizweb.dktcdn.net/thumb/compact/100/350/980/themes/802125/assets/brand_6.png?1658680172137"
+        }
+    ],
+    "intro": {
+        "content1": "Cool Oganic là công ty thương mại điện tử chuyên cung cấp các thực phẩm hữu cơ và tự nhiên với chuỗi cửa hàng thực phẩm hữu cơ với mục tiêu giúp người tiêu dùng Việt Nam có một cuộc sống khỏe mạnh hơn thông qua những loại thực phẩm hữu cơ có chứng nhận, thực phẩm tự nhiên và không có nguồn gốc biến đổi gene (GMO). Chúng tôi lựa chọn các loại thực phẩm hữu cơ, thực phẩm tự nhiên từ các nhà sản xuất, các công ty trong và ngoài nước thông qua quá trình lựa chọn kỹ càng về khả năng cung ứng, các giấy chứng nhận tiêu chuẩn do các tổ chức uy tín thế giới cấp. Chúng tôi yêu thích những gì chúng tôi làm và chúng tôi đam mê những lợi ích của một lối sống lành mạnh, tìm nguồn cung cấp sản phẩm hữu cơ chất lượng cao nhất cho khách hàng và cung cấp dịch vụ giao hàng tận nhà tốt nhất. Chúng tôi hoàn toàn tin tưởng rằng những sản phẩm tạo ra từ quá trình canh tác và sản xuất theo phương thức hữu cơ và tự nhiên tốt cho cơ thể mọi người, tốt hơn cho cộng đồng và tốt hơn cho hành tinh mà chúng ta đang sống. Một lần nữa, Cool Oganic được sáng lập bởi các nhà sáng lập muốn tạo dựng một cộng đồng thực phẩm sạch, dựa trên nền tảng hữu cơ (organic) và thuần từ thiên nhiên, nhằm mang lại sức khoẻ tốt nhất cho cộng đồng.",
+        "content2": "Sứ mệnh của Cool Oganic đó là giúp mọi người dễ dàng tiếp cận hơn với các loại thực phẩm hữu cơ, thực phẩm tự nhiên. Không chỉ cung cấp các sản phẩm hữu cơ, chúng tôi còn đem đến những thông tin hữu ích về sức khỏe mà thực phẩm hữu cơ đem lại cho con người và cộng đồng. Mỗi người có nhu cầu và cách tiếp cận với thực phẩm hữu cơ, thực phẩm tự nhiên theo một cách khác nhau, vì vậy, chúng tôi có mặt ở đây để hỗ trợ bạn bằng cách: Chỉ cung cấp những loại thực phẩm hữu cơ, thực phẩm tự nhiên đạt những chứng nhận uy tín nói chung và được kiểm chứng bởi Cool Oganic nói riêng. Khởi tạo những mối quan hệ tích cực, lâu dài và tin tưởng giữa Cool Oganic với khách hàng, nhân viên, nhà cung cấp và cộng đồng. Hỗ trợ phát triển các trang trại, cộng đồng nhỏ vùng sâu vùng xa, vùng dân tộc ít người và các đối tượng dễ bị tổn thương trong xã hội canh tác theo phương thức hữu cơ, phương thức tự nhiên để có cuộc sống tốt đẹp hơn."
+    }
+}

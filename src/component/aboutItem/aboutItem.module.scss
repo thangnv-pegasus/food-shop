@@ -1,0 +1,28 @@
+.about-item {
+    padding: 0 15px;
+    user-select: none;
+}
+
+.about-img {
+    width: 135px;
+    height: 127px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+}
+
+.about-name {
+    text-align: center;
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 15px 0 10px 0;
+    user-select: none;
+}
+
+.about-content {
+    font-weight: 400;
+    color: #707070;
+    user-select: none;
+}

@@ -14,6 +14,7 @@ import ShoppingCart from '~/component/ShoppingCart';
 import ProductKind from '~/pages/Product/productKind';
 import Direct from '~/component/Direct';
 import handleCart from '~/App'
+import data from '~/data/db.json'
 
 const cx = classNames.bind(styles)
 
@@ -67,11 +68,7 @@ function Header({ cart, removeCart }) {
     const [productKind, setProductKind] = useState([])
 
     const getDataProductKind = useEffect(() => {
-        fetch('http://localhost:3000/productKind')
-            .then(res => res.json())
-            .then(res => {
-                setProductKind(res)
-            })
+        setProductKind(data.productKind)
     }, [])
 
     return (

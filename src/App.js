@@ -4,7 +4,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import { createContext, useEffect, useState } from "react";
 import BuyModal from "~/component/BuyModal";
 import InforModal from "~/component/InforModal";
-
+import data from './data/db.json'
 
 function App() {
   const [cart, setCart] = useState([])
@@ -23,11 +23,7 @@ function App() {
 
   // getData all products
   useEffect(() => {
-    fetch('http://localhost:3000/products')
-      .then(res => res.json())
-      .then(res => {
-        setProducts(res)
-      })
+    setProducts(data.products)
   }, [])
 
   // add product in cart
@@ -91,7 +87,7 @@ function App() {
                         cart={cart}
                         setCart={setCart}
                         setUserinfor={setUserinfor}
-                        userinfor = {userinfor}
+                        userinfor={userinfor}
                       />
                     </Layout>
                   }

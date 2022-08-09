@@ -3,6 +3,7 @@ import classNames from 'classnames/bind'
 import { useState, useEffect } from 'react'
 import TitlePage from '~/component/TitlePage'
 import ProductItem from '~/pages/Product/productItem'
+import data from '~/data/db.json'
 
 const cx = classNames.bind(styles)
 
@@ -11,11 +12,7 @@ function VegetablePage({ addCart, removeCart, setOpenBuyModal, setProductActive,
     const [products, setProducts] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:3000/productKind')
-            .then(res => res.json())
-            .then(res => {
-                setProducts(res[0].products)
-            })
+        setProducts(data.productKind[0].products)
     }, [])
 
 

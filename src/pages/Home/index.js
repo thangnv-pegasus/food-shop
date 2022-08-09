@@ -12,6 +12,7 @@ import ProductItem from '~/pages/Product/productItem'
 import Blog from '~/component/Blog'
 import request from '~/utils/request'
 import Brand from '~/component/Brand'
+import data from '~/data/db.json'
 
 const cx = classNames.bind(styles)
 
@@ -38,20 +39,11 @@ function Home({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenI
 
 
     const getDatabanner = useEffect(() => {
-        const fe1 = fetch('http://localhost:3000/Banners')
-            .then(res => res.json())
-            .then(res => {
-                setBanners(res)
-            })
+        setBanners(data.Banners)
     }, []);
 
     const getDataAbout = useEffect(() => {
-        const fe1 = fetch('http://localhost:3000/abouts')
-            .then(res => res.json())
-            .then(res => {
-                setAbouts(res)
-            })
-
+        setAbouts(data.abouts)
     }, [])
 
     const handleActive = (ele) => {
@@ -145,25 +137,18 @@ function Home({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenI
     }, [])
 
     const getDataProduct = useEffect(() => {
-        fetch('http://localhost:3000/products')
-            .then(res => res.json())
-            .then(res => {
-                setProducts(res)
-            })
+        setProducts(data.products)
+
     }, [])
 
     const getDataProductKind = useEffect(() => {
-        fetch('http://localhost:3000/productKind')
-            .then(res => res.json())
-            .then(res => {
-                setProductKind(res)
-                setDataVegetable(res[0].products)
-                setDataFruit(res[1].products)
-                setDataSeaFood(res[2].products)
-                setDataNuts(res[3].products)
-                setDataFreshFood(res[4].products)
-                setProductKindRender(res[0].products)
-            })
+        setProductKind(data.productKind)
+        setDataVegetable(data.productKind[0].products)
+        setDataFruit(data.productKind[1].products)
+        setDataSeaFood(data.productKind[2].products)
+        setDataNuts(data.productKind[3].products)
+        setDataFreshFood(data.productKind[4].products)
+        setProductKindRender(data.productKind[0].products)
     }, [])
 
     const ref1 = useRef(null)
@@ -198,21 +183,12 @@ function Home({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenI
     }
 
     const getDataBlogs = useEffect(() => {
-        fetch('http://localhost:3000/blogs')
-            .then(res => res.json())
-            .then(res => {
-                setBlogs(res)
-            })
+        setBlogs(data.blogs)
     }, [])
 
     const getDataBrands = useEffect(() => {
-        fetch('http://localhost:3000/brands')
-            .then(res => res.json())
-            .then(res => {
-                setBrands(res)
-            })
+        setBrands(data.brands)
     }, [])
-
 
     return (
         <>

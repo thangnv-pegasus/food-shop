@@ -2,6 +2,7 @@ import classNames from 'classnames/bind'
 import { useEffect, useState } from 'react'
 import TitlePage from '~/component/TitlePage'
 import styles from './Intro.module.scss'
+import data from '~/data/db.json'
 
 const cx = classNames.bind(styles)
 
@@ -9,11 +10,7 @@ function Intro() {
     const [content, setContent] = useState('')
 
     useEffect(() => {
-        fetch('http://localhost:3000/intro')
-            .then(res => res.json())
-            .then(res => {
-                setContent(res)
-            })
+        setContent(data.intro)
     }, [])
     return (
         <>

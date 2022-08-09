@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from 'react'
 import ProductItem from './productItem'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
+import data from '~/data/db.json'
 
 const cx = classNames.bind(styles)
 
@@ -13,11 +14,7 @@ function Product() {
     const [products, setProducts] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:3000/products')
-            .then(res => res.json())
-            .then(res => {
-                setProducts(res)
-            })
+        setProducts(data.products)
     }, [])
 
     const handleDefaultSort = () => {
@@ -89,7 +86,7 @@ function Product() {
                                                     price_main={product.price_main}
                                                     price_sale={product.price_sale}
                                                     to={product.to}
-                                                    product = {product}
+                                                    product={product}
                                                 />
                                             </div>
                                         )
@@ -98,7 +95,7 @@ function Product() {
                             }
                         </div>
                         <ul className={cx('page-number')}>
-                           
+
                         </ul>
                     </div>
                 </div>

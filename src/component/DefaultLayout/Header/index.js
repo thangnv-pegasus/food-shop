@@ -62,6 +62,7 @@ const Directions = [
 ]
 
 
+
 function Header({ cart, removeCart }) {
     const [productKind, setProductKind] = useState([])
 
@@ -156,7 +157,7 @@ function Header({ cart, removeCart }) {
                             </li>
                             <li>
                                 <ShoppingCart ListProduct={cart} removeCart={removeCart}>
-                                    <Link to={routes.cart}>
+                                    <Link to={routes.cart} cart={cart}>
                                         <div className={cx('cart-shopping')}>
                                             <FontAwesomeIcon icon={faBasketShopping} />
                                             <div className={cx('cart-size')}>

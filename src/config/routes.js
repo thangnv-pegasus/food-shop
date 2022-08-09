@@ -10,7 +10,9 @@ const routes = {
     fruit: '/fruit',
     seaFood: '/seafood',
     nuts: '/nuts',
-    freshFood: '/freshfood'
+    freshFood: '/freshfood',
+    order: '/order',
+    completeOrder: '/completeOrder'
 }
 
 export {routes}

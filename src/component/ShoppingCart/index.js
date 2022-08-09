@@ -16,6 +16,7 @@ function ShoppingCart({ children, ListProduct, removeCart }) {
             total += element.price_main * element.quantity
         }
     });
+
     return (
         <Tippy
             render={attrs => (
@@ -23,36 +24,38 @@ function ShoppingCart({ children, ListProduct, removeCart }) {
                     {
                         ListProduct.length > 0 ? (
                             <div>
-                                {
-                                    ListProduct.map((prod, index) => {
+                                <div className={cx('list-product')}>
+                                    {
+                                        ListProduct.map((prod, index) => {
 
-                                        return (
+                                            return (
 
-                                            <div key={index} className={cx('product-item')}>
-                                                <div className={cx('product-img')}>
-                                                    <img src={prod.img_src} alt="product" />
-                                                </div>
-                                                <div className={cx('product-infor')}>
-                                                    <div className={cx('product-name')}>
-                                                        {prod.name}
+                                                <div key={index} className={cx('product-item')}>
+                                                    <div className={cx('product-img')}>
+                                                        <img src={prod.img_src} alt="product" />
                                                     </div>
-                                                    <div className={cx('product-price')}>
-                                                        <div>
-                                                            {prod.price_sale || prod.price_main}đ
+                                                    <div className={cx('product-infor')}>
+                                                        <div className={cx('product-name')}>
+                                                            {prod.name}
                                                         </div>
-                                                        <span> x{prod.quantity} </span>
+                                                        <div className={cx('product-price')}>
+                                                            <div>
+                                                                {(prod.price_sale) || (prod.price_main)}đ
+                                                            </div>
+                                                            <span> x{prod.quantity} </span>
+                                                        </div>
+                                                    </div>
+                                                    <div className={cx('close-icon')} onClick={() => removeCart(prod)}>
+                                                        <FontAwesomeIcon icon={faXmark} className={cx('icon')} />
                                                     </div>
                                                 </div>
-                                                <div className={cx('close-icon')} onClick={()=>removeCart(prod)}>
-                                                    <FontAwesomeIcon icon={faXmark} className={cx('icon')} />
-                                                </div>
-                                            </div>
-                                        )
-                                    })
-                                }
+                                            )
+                                        })
+                                    }
+                                </div>
                                 <div className={cx('total')}>
                                     <div className={cx('total-price')}>
-                                        Tổng cộng:<span> {total}đ </span>
+                                        Tổng cộng:<span> {(total)}đ </span>
                                     </div>
                                     <button>
                                         Tiến hành thanh toán

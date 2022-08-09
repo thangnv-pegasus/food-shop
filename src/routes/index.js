@@ -10,6 +10,8 @@ import FruitPage from '~/pages/ProductKindPage/FruitPage'
 import SeaFood from '~/pages/ProductKindPage/SeaFood'
 import NutsPage from '~/pages/ProductKindPage/NutsPage'
 import FreshFoodPage from '~/pages/ProductKindPage/FreshFoodPage'
+import Order from '~/pages/Order'
+import CompleteOrder from '~/pages/CompleteOrder'
 const publicRoutes = [
     {
         path: routes.home,
@@ -54,6 +56,16 @@ const publicRoutes = [
     {
         path: routes.freshFood,
         component: FreshFoodPage
+    },
+    {
+        path: routes.order,
+        component: Order,
+        layout: null
+    },
+    {
+        path: routes.completeOrder,
+        component: CompleteOrder,
+        layout: null
     }
 ]
 

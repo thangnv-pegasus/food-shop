@@ -1,14 +1,19 @@
 .cart {
     width: 260px;
-    max-height: 625px;
-    padding: 15px;
+    max-height: 445px;
     font-size: 1.4rem;
     color: var(--text-color);
     background-color: var(--white-color);
     border-radius: 10px;
     border: 1px solid var(--primary-color);
     cursor: initial;
-
+    display: flex;
+    flex-direction: column;
+    .list-product{
+        overflow-y: auto;
+        max-height: 300px;
+        padding: 15px;
+    }
 
     .product-item {
         display: flex;
@@ -19,6 +24,7 @@
 
 .no-prod {
     line-height: 2rem;
+    padding: 15px;
 }
 
 .product-img {
@@ -70,7 +76,7 @@
 
 .total {
     width: 100%;
-
+    padding: 15px;
     .total-price {
         font-size: 1.6rem;
         padding: 6px 0 3px;

@@ -89,6 +89,7 @@ function Product() {
                                                     price_main={product.price_main}
                                                     price_sale={product.price_sale}
                                                     to={product.to}
+                                                    product = {product}
                                                 />
                                             </div>
                                         )

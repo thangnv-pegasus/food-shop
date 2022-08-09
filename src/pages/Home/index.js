@@ -16,7 +16,7 @@ import Brand from '~/component/Brand'
 const cx = classNames.bind(styles)
 
 
-function Home({ addCart, removeCart, setOpenBuyModal, setProductActive }) {
+function Home({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenInforModal }) {
 
     const [Banners, setBanners] = useState([])
     const [abouts, setAbouts] = useState([])
@@ -313,15 +313,11 @@ function Home({ addCart, removeCart, setOpenBuyModal, setProductActive }) {
                                             return (
                                                 <div key={index} className='col c-3'>
                                                     <ProductItem
-                                                        img_src={product.img_src}
-                                                        name={product.name}
-                                                        price_main={product.price_main}
-                                                        price_sale={product.price_sale}
-                                                        to={product.to}
                                                         addCart={addCart}
                                                         product={product}
-                                                        setOpenBuyModal = {setOpenBuyModal}
-                                                        setProductActive = {setProductActive}
+                                                        setOpenBuyModal={setOpenBuyModal}
+                                                        setProductActive={setProductActive}
+                                                        setOpenInforModal={setOpenInforModal}
                                                     />
                                                 </div>
                                             )
@@ -367,13 +363,11 @@ function Home({ addCart, removeCart, setOpenBuyModal, setProductActive }) {
                                     return (
                                         <div key={index} className='col c-3'>
                                             <ProductItem
-                                                img_src={product.img_src}
-                                                name={product.name}
-                                                price_main={product.price_main}
-                                                price_sale={product.price_sale}
-                                                to={product.to}
                                                 addCart={addCart}
                                                 product={product}
+                                                setOpenBuyModal={setOpenBuyModal}
+                                                setProductActive={setProductActive}
+                                                setOpenInforModal={setOpenInforModal}
                                             />
                                         </div>
                                     )

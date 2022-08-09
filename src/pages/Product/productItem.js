@@ -5,14 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBasketShopping, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 const cx = classNames.bind(styles)
 
-function ProductItem({ img_src, name, price_main, price_sale, to, addCart, product, setOpenBuyModal, setProductActive }) {
+function ProductItem({ addCart, product,setOpenInforModal, setOpenBuyModal, setProductActive }) {
 
-    
 
     return (
         <div className={cx('product-item')}>
-            <NavLink to={to} className={cx('product-img')}>
-                <img src={img_src} />
+            <NavLink to={product.to} className={cx('product-img')}>
+                <img src={product.img_src} />
 
             </NavLink>
             <div className={cx('options')}>
@@ -26,25 +25,30 @@ function ProductItem({ img_src, name, price_main, price_sale, to, addCart, produ
                     >
                         <FontAwesomeIcon icon={faBasketShopping} />
                     </div>
-                    <div className={cx('infor-icon')}>
+                    <div className={cx('infor-icon')}
+                        onClick={()=>{
+                            setOpenInforModal(true)
+                            setProductActive(product)
+                        }}
+                    >
                         <FontAwesomeIcon icon={faMagnifyingGlass} />
                     </div>
                 </div>
             </div>
             <div className={cx('product-infor')}>
-                <NavLink to={to} className={cx('product-name')}>
-                    {name}
+                <NavLink to={product.to} className={cx('product-name')}>
+                    {product.name}
                 </NavLink>
                 <div className={cx('product-price')}>
                     {
-                        price_sale ? (
+                        product.price_sale ? (
                             <>
-                                <span className={cx('price-sale')}>{price_sale}đ</span>
-                                <span className={cx('price-main')}>{price_main}đ</span>
+                                <span className={cx('price-sale')}>{(product.price_sale)}đ</span>
+                                <span className={cx('price-main')}>{(product.price_main)}đ</span>
                             </>
                         ) : (
                             <>
-                                <span className={cx('price-main', 'no-under')}>{price_main}đ</span>
+                                <span className={cx('price-main', 'no-under')}>{(product.price_main)}đ</span>
                             </>
                         )
                     }

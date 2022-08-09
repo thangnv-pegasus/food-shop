@@ -6,7 +6,7 @@ import ProductItem from '~/pages/Product/productItem'
 
 const cx = classNames.bind(styles)
 
-function VegetablePage() {
+function VegetablePage({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenInforModal }) {
 
     const [products, setProducts] = useState([])
 
@@ -83,11 +83,11 @@ function VegetablePage() {
                                         return (
                                             <div className='col c-3' key={index}>
                                                 <ProductItem
-                                                    img_src={product.img_src}
-                                                    name={product.name}
-                                                    price_main={product.price_main}
-                                                    price_sale={product.price_sale}
-                                                    to={product.to}
+                                                    addCart={addCart}
+                                                    product={product}
+                                                    setOpenBuyModal={setOpenBuyModal}
+                                                    setProductActive={setProductActive}
+                                                    setOpenInforModal={setOpenInforModal}
                                                 />
                                             </div>
                                         )

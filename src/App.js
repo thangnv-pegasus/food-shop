@@ -3,6 +3,7 @@ import { publicRoutes } from "~/routes";
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import { createContext, useEffect, useState } from "react";
 import BuyModal from "~/component/BuyModal";
+import InforModal from "~/component/InforModal";
 
 
 function App() {
@@ -10,6 +11,15 @@ function App() {
   const [products, setProducts] = useState([])
   const [openBuyModal, setOpenBuyModal] = useState(false)
   const [productActive, setProductActive] = useState()
+  const [openInforModal, setOpenInforModal] = useState(false)
+  const [userinfor, setUserinfor] = useState({
+    username: '',
+    email: '',
+    add: '',
+    phone: '',
+    note: ''
+  })
+
 
   // getData all products
   useEffect(() => {
@@ -21,13 +31,13 @@ function App() {
   }, [])
 
   // add product in cart
-  const addCart = (product) => {
+  const addCart = (product, state = 1) => {
     const checkProduct = cart.find(item => item.id === product.id)
     if (checkProduct) {
       setCart(
         cart.map(item => {
           return item.id === product.id ?
-            { ...checkProduct, quantity: checkProduct.quantity + 1 } : item
+            { ...checkProduct, quantity: checkProduct.quantity + state } : item
         })
       )
     } else {
@@ -64,6 +74,9 @@ function App() {
               if (routeI.layout) {
                 Layout = routeI.layout
               }
+              else if (routeI.layout === null) {
+                Layout = 'div'
+              }
               return (
                 <Route
                   path={routeI.path}
@@ -71,8 +84,14 @@ function App() {
                   element={
                     <Layout cart={cart} removeCart={removeCart}>
                       <Ele addCart={addCart}
+                        removeCart={removeCart}
                         setOpenBuyModal={setOpenBuyModal}
                         setProductActive={setProductActive}
+                        setOpenInforModal={setOpenInforModal}
+                        cart={cart}
+                        setCart={setCart}
+                        setUserinfor={setUserinfor}
+                        userinfor = {userinfor}
                       />
                     </Layout>
                   }
@@ -89,6 +108,16 @@ function App() {
           cart={cart}
           product={productActive}
           setOpenBuyModal={setOpenBuyModal}
+        />
+      }
+      {
+        openInforModal
+        &&
+        <InforModal
+          product={productActive}
+          setOpenInforModal={setOpenInforModal}
+          setOpenBuyModal={setOpenBuyModal}
+          addCart={addCart}
         />
       }
     </div>

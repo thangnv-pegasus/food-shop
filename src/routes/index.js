@@ -12,6 +12,7 @@ import NutsPage from '~/pages/ProductKindPage/NutsPage'
 import FreshFoodPage from '~/pages/ProductKindPage/FreshFoodPage'
 import Order from '~/pages/Order'
 import CompleteOrder from '~/pages/CompleteOrder'
+import BlogPage from '~/pages/Blog'
 const publicRoutes = [
     {
         path: routes.home,
@@ -66,6 +67,10 @@ const publicRoutes = [
         path: routes.completeOrder,
         component: CompleteOrder,
         layout: null
+    },
+    {
+        path: routes.blog,
+        component: BlogPage
     }
 ]
 

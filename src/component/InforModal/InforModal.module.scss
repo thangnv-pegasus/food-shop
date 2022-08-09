@@ -92,6 +92,13 @@
         text-decoration: line-through;
         opacity: 0.6;
     }
+    .price-main.no-under{
+        text-decoration: none;
+        color: #91ad41;
+        font-weight: bold;
+        opacity: 1;
+        font-size: 24px;
+    }
 }
 
 .product-weight,

@@ -794,52 +794,123 @@
     ],
     "blogs": [
         {
+            "id": 1,
             "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/articles/49997669-476326726231228-9092403644171095934-n.jpg?v=1553650991913",
             "date": "27/03/2019",
             "author": "Cool Team",
             "title": "Rau xanh tăng giá mạnh vì trời mưa, người dân nội thành lao đao",
-            "content": "Khoảng gần một tuần nay, do ảnh hưởng của những cơn mưa lớn kéo dài liên tiếp nên nguồn cung rau xanh cho các chợ bắt đầu khan hiếm, giá tăng mạnh, thậm chí nhiều loại giá tăng gần gấp đôi.Khảo sát của người viết tại một số chợ đầu mối, chợ truyền thống trên địa bàn Hà Nội như chợ Đình Công, chợ Cầu Giấy, Phùng Khoang, chợ Hôm, Chợ Dịch Vọng, chợ Nhổn… giá các loại rau, củ đã tăng phổ biến 20 -30% so với 1-2 tuần trước.Cụ thể, tại chợ Dịch Vọng, rau dền, mồng tơi giá 8.000 đồng/mớ, tăng 2.000 đồng/mớ; rau muống tăng 3000 đồng/mớ lên 10.000 đồng/mớ; rau ngót cũng tăng 1.000 đồng/mớ lên 7.000 đồng/mớ; cải xanh tăng từ 5.000 đồng lên 8.000 đồng/mớ; bắp cải tăng 3.000 đồng/kg lên 15.000 đồng/kg; cải thảo tăng 5.000 đồng/kg lên 16.000 đồng/kg, mướp đắng tăng 10.000 đồng/kg lên 16.000 đồng/kg. Hành lá tăng giá mạnh nhất lên 60.000/kg.Một số loại củ quả như cà chua còn có giá tăng gấp đôi, từ 20.000 đồng/kg lên 40.000 đồng/kg, cà rốt có giá từ 25.000 – 30.000 đồng/kg; su hào 8.000 đồng /củ…so với trước đợt bão.Chị Nguyễn Thị Thanh, tiểu thương bán rau ở chợ Dịch Vọng cho biết, giá rau củ tặng mạnh do thời tiết mưa to gây ngập úng khiến nguồn cung rau củ giảm. Bên cạnh đó, đây là thời điểm cuối mùa vụ của một số loại rau củ như các loại rau muống, mồng tơi, mướp ngọt…cũng khiến cho nguồn cung ứng rau thiếu hụt.“Như hôm nay ra chợ đầu mối nhập rau mà mỗi loại chỉ nhập được 5-10kg, bán đến tầm 8 giờ sáng rau ở sạp đã gần hết. Đến chiều, tôi đang không biết lấy hàng đâu bán cho khách”, chị Thanh chia sẻ. Tại nhiều vùng trồng rau ngoại thành Hà Nội như Vân Nội, Song Phương, Tây Tựu... do mưa lớn kéo dài nên rau ít nhiều bị ngập úng, hư hại.Bà Trần Thị Mai, tại xã Tây Tựu - Từ Liêm chuyên trồng sản xuất rau xanh bán buôn cho các chợ đầu mối cho biết, nhà bà trồng 6 sào rau xanh đủ các nhưng mấy ngày gần đây do mưa to ảnh hưởng nên làm cho rau trong vườn phát triển chậm và dập nát hết các luống rau mới gieo trồng.",
-            "to": "/blog-page1"
+            "content": [
+                "Khoảng gần một tuần nay, do ảnh hưởng của những cơn mưa lớn kéo dài liên tiếp nên nguồn cung rau xanh cho các chợ bắt đầu khan hiếm, giá tăng mạnh, thậm chí nhiều loại giá tăng gần gấp đôi.",
+                "Khảo sát của người viết tại một số chợ đầu mối, chợ truyền thống trên địa bàn Hà Nội như chợ Đình Công, chợ Cầu Giấy, Phùng Khoang, chợ Hôm, Chợ Dịch Vọng, chợ Nhổn… giá các loại rau, củ đã tăng phổ biến 20 -30% so với 1-2 tuần trước.",
+                "Cụ thể, tại chợ Dịch Vọng, rau dền, mồng tơi giá 8.000 đồng/mớ, tăng 2.000 đồng/mớ; rau muống tăng 3000 đồng/mớ lên 10.000 đồng/mớ; rau ngót cũng tăng 1.000 đồng/mớ lên 7.000 đồng/mớ; cải xanh tăng từ 5.000 đồng lên 8.000 đồng/mớ; bắp cải tăng 3.000 đồng/kg lên 15.000 đồng/kg; cải thảo tăng 5.000 đồng/kg lên 16.000 đồng/kg, mướp đắng tăng 10.000 đồng/kg lên 16.000 đồng/kg. Hành lá tăng giá mạnh nhất lên 60.000/kg.",
+                "Một số loại củ quả như cà chua còn có giá tăng gấp đôi, từ 20.000 đồng/kg lên 40.000 đồng/kg, cà rốt có giá từ 25.000 – 30.000 đồng/kg; su hào 8.000 đồng /củ…so với trước đợt bão.",
+                "Chị Nguyễn Thị Thanh, tiểu thương bán rau ở chợ Dịch Vọng cho biết, giá rau củ tặng mạnh do thời tiết mưa to gây ngập úng khiến nguồn cung rau củ giảm. Bên cạnh đó, đây là thời điểm cuối mùa vụ của một số loại rau củ như các loại rau muống, mồng tơi, mướp ngọt…cũng khiến cho nguồn cung ứng rau thiếu hụt.",
+                "“Như hôm nay ra chợ đầu mối nhập rau mà mỗi loại chỉ nhập được 5-10kg, bán đến tầm 8 giờ sáng rau ở sạp đã gần hết. Đến chiều, tôi đang không biết lấy hàng đâu bán cho khách”, chị Thanh chia sẻ.",
+                "Tại nhiều vùng trồng rau ngoại thành Hà Nội như Vân Nội, Song Phương, Tây Tựu... do mưa lớn kéo dài nên rau ít nhiều bị ngập úng, hư hại.",
+                "Bà Trần Thị Mai, tại xã Tây Tựu –Từ Liêm chuyên trồng sản xuất rau xanh bán buôn cho các chợ đầu mối cho biết, nhà bà trồng 6 sào rau xanh đủ các nhưng mấy ngày gần đây do mưa to ảnh hưởng nên làm cho rau trong vườn phát triển chậm và dập nát hết các luống rau mới gieo trồng."
+            ]
         },
         {
+            "id": 2,
             "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/articles/41968416-280694729439890-8459559393178510661-n.jpg?v=1553650945157",
             "date": "27/03/2019",
             "author": "Cool Team",
             "title": "Nhập khẩu rau quả vượt mốc 1 tỷ USD, Thái Lan chiếm 60% thị phần",
-            "content": "Theo báo cáo từ Bộ NN&PTNT, giá trị xuất khẩu hàng rau quả tháng 9 năm 2017 ước đạt 294 triệu USD, đưa giá trị xuất khẩu hàng rau quả 9 tháng đầu năm 2017 ước đạt 2,64 tỷ USD, tăng 44,2% so với cùng kỳ năm 2016. Trung Quốc, Nhật Bản, Hoa Kỳ và Hàn Quốc là 4 thị trường nhập khẩu hàng đầu của hàng rau quả Việt Nam trong 8 tháng đầu năm 2017, chiếm 85,2% tổng giá trị xuất khẩu hàng rau quả. Trong 8 tháng đầu năm 2017, các thị trường có giá trị xuất khẩu hàng rau quả tăng mạnh là Nhật Bản (64,6%), Tiểu Vương Quốc Ả Rập Thống Nhất (64,4%), Trung Quốc (60,2%), Nga (41,9%), Hoa Kỳ (26,6%), Đài Loan (16,1%) và Hà Lan (9,4%). Ước giá trị nhập khẩu mặt hàng rau quả tháng 9 năm 2017 đạt 135 triệu USD, đưa giá trị nhập khẩu rau quả 9 tháng đầu năm 2017 đạt 1,15 tỷ USD, tăng 78,2% so với cùng kỳ năm 2016. Trong đó, mặt hàng rau ước đạt 218 triệu USD, tăng 30,1% so với cùng kỳ 2016 và mặt hàng quả đạt 914 triệu USD, tăng gần 2 lần so với cùng kỳ năm 2016. Thị trường nhập khẩu rau quả lớn nhất trong 8 tháng đầu năm 2017 là thị trường Thái Lan (chiếm tới 60,7% thị phần), tiếp đến là thị trường Trung Quốc (chiếm 15,7%). Trong 8 tháng đầu năm 2017 giá trị nhập khẩu rau quả ở tất cả các thị trường đều tăng so với cùng kỳ năm 2016. Trong đó, thị trường có giá trị nhập khẩu rau quả tăng nhiều nhất là Thái Lan (gấp hơn 2,8 lần), tiếp đến là thị trường Ấn Độ (gấp hơn 2,2 lần) và thị trường Hàn Quốc (tăng 70,8%).",
-            "to": "/blog-page1"
+            "content": [
+                "Theo báo cáo từ Bộ NN&PTNT, giá trị xuất khẩu hàng rau quả tháng 9 năm 2017 ước đạt 294 triệu USD, đưa giá trị xuất khẩu hàng rau quả 9 tháng đầu năm 2017 ước đạt 2,64 tỷ USD, tăng 44,2% so với cùng kỳ năm 2016.",
+                "Trung Quốc, Nhật Bản, Hoa Kỳ và Hàn Quốc là 4 thị trường nhập khẩu hàng đầu của hàng rau quả Việt Nam trong 8 tháng đầu năm 2017, chiếm 85,2% tổng giá trị xuất khẩu hàng rau quả. Trong 8 tháng đầu năm 2017, các thị trường có giá trị xuất khẩu hàng rau quả tăng mạnh là Nhật Bản (64,6%), Tiểu Vương Quốc Ả Rập Thống Nhất (64,4%), Trung Quốc (60,2%), Nga (41,9%), Hoa Kỳ (26,6%), Đài Loan (16,1%) và Hà Lan (9,4%).",
+                "Ước giá trị nhập khẩu mặt hàng rau quả tháng 9 năm 2017 đạt 135 triệu USD, đưa giá trị nhập khẩu rau quả 9 tháng đầu năm 2017 đạt 1,15 tỷ USD, tăng 78,2% so với cùng kỳ năm 2016. Trong đó, mặt hàng rau ước đạt 218 triệu USD, tăng 30,1% so với cùng kỳ 2016 và mặt hàng quả đạt 914 triệu USD, tăng gần 2 lần so với cùng kỳ năm 2016.",
+                "Thị trường nhập khẩu rau quả lớn nhất trong 8 tháng đầu năm 2017 là thị trường Thái Lan (chiếm tới 60,7% thị phần), tiếp đến là thị trường Trung Quốc (chiếm 15,7%). Trong 8 tháng đầu năm 2017 giá trị nhập khẩu rau quả ở tất cả các thị trường đều tăng so với cùng kỳ năm 2016. Trong đó, thị trường có giá trị nhập khẩu rau quả tăng nhiều nhất là Thái Lan (gấp hơn 2,8 lần), tiếp đến là thị trường Ấn Độ (gấp hơn 2,2 lần) và thị trường Hàn Quốc (tăng 70,8%).",
+                "Trong tháng 9/2017, trước cơn sốt giá sầu riêng tại các tỉnh Tây Nguyên, nhiều tiểu thương sẵn sàng đổ tiền vào các nhà vườn để thu mua sầu riêng non lẫn chín. Tại huyện Krông Pắk (tỉnh Đắk Lắk), một số loại sầu riêng chất lượng cao được thu mua với giá 54.000 đồng/kg – mức giá kỷ lục nhiều năm.",
+                "Đồng thời, giá dừa khô tại tỉnh Trà Vinh không ngừng tăng cao với mức thu mua tại vườn 150.000 đồng/chục (12 trái). Đây là mức giá dừa khô cao nhất trong vòng 6 năm qua, đem lại cho mỗi 1 ha vườn dừa thu nhập khoảng 15 triệu đồng/tháng.",
+                "Trong khi đó, thị trường rau củ tại Lâm Đồng tương đối ổn định chỉ có một số rau như cà chua, hoa lơ xanh và cải bó xôi giảm nhẹ với mức giảm 2.000-3.000 đồng/kg so với đầu tháng.",
+                "Nhìn lại 9 tháng đầu năm, thị trường trái cây biến động thất thường do đặc tính thời vụ của từng loại trái cây. Trong khi đó, thị trường rau củ bị ảnh hưởng của thời tiết đặc biệt những cơn bão gần đây đã làm nguồn cung giảm khiến thị trường tăng mạnh vào tháng 7 và 8, tuy nhiên đến nay thị trường có dấu hiệu hồi phục."
+            ]
         },
         {
-            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/articles/49997669-476326726231228-9092403644171095934-n.jpg?v=1553650991913",
+            "id": 3,
+            "img_src": "https://bizweb.dktcdn.net/thumb/1024x1024/100/350/980/articles/istock-688005624-1000-plus-copy.jpg?v=1553650879330",
             "date": "27/03/2019",
             "author": "Cool Team",
             "title": "Bí quyết bảo quản nho đen trong tủ lạnh tươi lâu hơn",
-            "content": "Trong tháng 9/2017, trước cơn sốt giá sầu riêng tại các tỉnh Tây Nguyên, nhiều tiểu thương sẵn sàng đổ tiền vào các nhà vườn để thu mua sầu riêng non lẫn chín. Tại huyện Krông Pắk (tỉnh Đắk Lắk), một số loại sầu riêng chất lượng cao được thu mua với giá 54.000 đồng/kg – mức giá kỷ lục nhiều năm. Đồng thời, giá dừa khô tại tỉnh Trà Vinh không ngừng tăng cao với mức thu mua tại vườn 150.000 đồng/chục (12 trái). Đây là mức giá dừa khô cao nhất trong vòng 6 năm qua, đem lại cho mỗi 1 ha vườn dừa thu nhập khoảng 15 triệu đồng/tháng. Trong khi đó, thị trường rau củ tại Lâm Đồng tương đối ổn định chỉ có một số rau như cà chua, hoa lơ xanh và cải bó xôi giảm nhẹ với mức giảm 2.000-3.000 đồng/kg so với đầu tháng. Nhìn lại 9 tháng đầu năm, thị trường trái cây biến động thất thường do đặc tính thời vụ của từng loại trái cây. Trong khi đó, thị trường rau củ bị ảnh hưởng của thời tiết đặc biệt những cơn bão gần đây đã làm nguồn cung giảm khiến thị trường tăng mạnh vào tháng 7 và 8, tuy nhiên đến nay thị trường có dấu hiệu hồi phục.",
-            "to": "/blog-page1"
+            "content": [
+                "Bí quyết lựa chọn và bảo quản nho tươi – Nho rất ngon và tốt cho sức khỏe, tuy nhiên nếu không biết cách bảo quản nho sẽ không để được lâu hoặc bị hỏng, không tốt cho sức khỏe. Hôm nay hãy tìm hiểu mẹo vặt lựa chọn và bảo quản nho tươi thật lâu mà vẫn giữ được độ tươi ngon nhé bạn.",
+                "Hướng dẫn:",
+                "Nho rất tốt cho sức khỏe, để bảo quản được lâu, trước hết bạn cần chọn được những quả nho tươi ngon. Cách để chọn được nho tươi ngon rất đơn giản, các bạn chỉ cần chú ý đến màu sắc của chúng. Cụ thể, đối với nho xanh, vỏ nho cần có màu xanh mát cùng lớp phấn bên ngoài; không dập nát; khó dứt khỏi cuống; ngửi không thấy mùi chua. Tương tự, nho đỏ vẫn giữ được màu nâu phấn, không thối nhũn, sờ vào quả đanh cứng.",
+                "Sau đó bạn tiếp tục kiểm tra toàn bộ chùm nho xem có phần nào bị mốc hay hiện tượng lạ không nhé, nếu có thì bạn cần loại bỏ ngay tránh ảnh hưởng đến các chùm nho khác nhé.",
+                "Một chú ý tiếp theo nữa đó chính là bạn không nên rửa nho nếu không có ý định ăn ngay. Bởi vì việc rửa nho sẽ làm mất đi lớp phấn bảo vệ bên ngoài, khiến cho quá trình chín diễn ra nhanh hơn.",
+                "Cách bảo quản nho trong tủ lạnh đó là cho nho vào một túi nilon kín và bảo quản chúng ở nhiệt độ từ 30 -32 độ F (tương đương -1 - 0 độ C). Chú ý để nho sát về phía sau tủ bởi vị trí này nhiệt độ thấp, khả năng lưu thông không khí cao. Bạn cũng có thể sử dụng các sản phẩm túi hút chân không hoặc là hộp hút chân không cũng được càng làm tăng hiệu quả khi bảo quản nho.",
+                "Bên cạnh đó bạn cũng nên chú ý một số điểm nhỏ nữa khi bảo quản nho tươi đó là:",
+                "- Không để nho chồng lên nhau bởi như vậy sẽ khiến chúng nhanh hỏng hơn.",
+                "- Tránh bảo quản nho gần các loại thực phẩm có mùi mạnh như hành tây, tỏi. Nguyên nhân là nho có khả năng hấp thụ mùi. Việc để gần hành tây, tỏi dễ khiến mùi vị của nho bị `biến chất`.",
+                "- Khi ăn, bạn cần rửa sạch nho để loại bỏ vi khuẩn cũng như các chất bẩn khác.",
+                "- Một khi đã bỏ ra ngoài, bạn nên ăn càng sớm càng có lợi. Tốt nhất, tiêu thụ nho trước 72 giờ kể từ khi lấy khỏi tủ lạnh. Nếu để lâu, nho sẽ bị nhăn và thu nhỏ lại.",
+                "Trên đây là một số mẹo hay mà sotaynauan mách bạn. Rất mong qua bài này bạn sẽ có cách để bảo quản nho cũng như các thực phẩm khác tươi ngon hơn, tốt hơn cho sức khỏe. Chúc bạn thành công!"
+            ]
         },
         {
-            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/articles/49997669-476326726231228-9092403644171095934-n.jpg?v=1553650991913",
+            "id": 4,
+            "img_src": "https://bizweb.dktcdn.net/thumb/1024x1024/100/350/980/articles/8.jpg?v=1553634487280",
             "date": "27/03/2019",
             "author": "Cool Team",
-            "title": "Bí quyết bảo quản nho đen trong tủ lạnh tươi lâu hơn",
-            "content": "Trong tháng 9/2017, trước cơn sốt giá sầu riêng tại các tỉnh Tây Nguyên, nhiều tiểu thương sẵn sàng đổ tiền vào các nhà vườn để thu mua sầu riêng non lẫn chín. Tại huyện Krông Pắk (tỉnh Đắk Lắk), một số loại sầu riêng chất lượng cao được thu mua với giá 54.000 đồng/kg – mức giá kỷ lục nhiều năm. Đồng thời, giá dừa khô tại tỉnh Trà Vinh không ngừng tăng cao với mức thu mua tại vườn 150.000 đồng/chục (12 trái). Đây là mức giá dừa khô cao nhất trong vòng 6 năm qua, đem lại cho mỗi 1 ha vườn dừa thu nhập khoảng 15 triệu đồng/tháng. Trong khi đó, thị trường rau củ tại Lâm Đồng tương đối ổn định chỉ có một số rau như cà chua, hoa lơ xanh và cải bó xôi giảm nhẹ với mức giảm 2.000-3.000 đồng/kg so với đầu tháng. Nhìn lại 9 tháng đầu năm, thị trường trái cây biến động thất thường do đặc tính thời vụ của từng loại trái cây. Trong khi đó, thị trường rau củ bị ảnh hưởng của thời tiết đặc biệt những cơn bão gần đây đã làm nguồn cung giảm khiến thị trường tăng mạnh vào tháng 7 và 8, tuy nhiên đến nay thị trường có dấu hiệu hồi phục.",
-            "to": "/blog-page1"
+            "title": "Những loại trái cây đắt như vàng ròng đổ bộ về Việt Nam",
+            "content": [
+                "Nhật Bản là đất nước có nhiều loại hoa quả có chất lượng thuộc hàng ngon nhất thế giới nhưng cũng vô cùng đắt đỏ. Đáng chú ý, nhiều loại quả do nông dân Nhật Bản trồng được đem bán đấu giá có mức giá bằng cả gia tài.",
+                "2-3 năm trở lại đây, người tiêu dùng Việt Nam bắt đầu được thưởng thức các loại hoa quả Nhật Bản , thậm chí, ngay cả những loại hoa quả đắt như vàng ròng cũng lần lượt xuất hiện tại thị trường Việt. Thế nhưng, đa phần đều để chỉ để phục vụ giới nhà giàu , bởi khi về đến Việt Nam, giá các loại quả này lên tới tiền triệu, thậm chí là vài triệu đồng/kg.",
+                "Dưới đây là những loại hoa quả siêu đắt đỏ của Nhật có bán tại Việt Nam:",
+                "Loại dưa lưới Yubari giá bằng cả chiếc ô tô",
+                "Đứng đầu trong danh sách các loại hoa quả đắt đỏ nhất Nhật Bản, thậm chí là lọt top quả đắt nhất thế giới phải kể đến loại dưa lưới Yubari . Bởi, hàng năm, loại dưa lưới này đều được đem đi đấu giá tại hội chợ hoa quả ở Nhật, và mức giá được đấu giá cao nhất từ trước đến nay cho cặp dưa Yubari này lên tới 3 triệu Yên (khoảng 600 triệu đồng) – tương đương giá một chiếc ô tô. Song, đây là giá mức giá hiếm hoi dành cho cặp dưa Yubari hoàn hảo nhất, còn ngoài thị trường, dưa lưới Yubari được xếp vào loại trái cây cao cấp của Nhật, thường được người dân mua làm quà biếu tặng.",
+                "Nguyên nhân khiến được yêu thích đến vậy là bởi ngoài độ ngon hiếm thấy, dưa Yubari còn phải trải qua vô số các yêu cầu nghiêm ngặt từ lúc chọn giống, gieo trồng, chăm bón cho tới khi thu hoạch. Nông dân phải luôn theo dõi chặt chẽ chất đất, chất nước, nhiệt độ cho cây trồng. Khi cây ra quả, mỗi cây chỉ được để duy nhất một quả với mục đích để cây có thể tập trung toàn bộ chất dinh dưỡng nuôi quả. Đến lúc thu hoạch, những quả dưa không đủ tiêu chuẩn sẽ bị tiêu hủy, chỉ đưa ra thị trường những quả đạt tiêu chuẩn.",
+                "Nho Ruby Roman đắt như vàng ròng, giá 240 triệu/chùm",
+                "Cũng giống như dưa lưới, nho Ruby Roman (Hồng ngọc La Ma) cũng là loại quả được đấu giá hàng năm. Theo đó, trong các phiên đấu giá, mức giá ghi nhận cao nhất dành cho chùm nho Ruby Roman 30 quả với mức giá lên tới 240 triệu đồng. Và tháng 7 vừa qua, trong phiên đấu giá, một chùm nho Ruby Roman khác cũng được bán với giá lên tới 220 triệu đồng.",
+                "Đây được xem là loại quả đắt hơn vàng ròng. Bởi, theo mức giá được trả trong phiên đấu giá, mỗi quả nho Ruby Roman trọng lượng 20gram có giá khoảng 7,5-8 triệu đồng. Song, người đấu giá thắng chùm nho này hy vọng với mức giá họ trả sẽ làm cho nông dân trồng nho ở tỉnh Ishikawa phấn khởi vì họ phải mất tới 14 năm trời để phát triển thành công giống nho hảo hạng này."
+            ]
         },
         {
-            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/articles/49997669-476326726231228-9092403644171095934-n.jpg?v=1553650991913",
+            "id": 5,
+            "img_src": "https://bizweb.dktcdn.net/thumb/1024x1024/100/350/980/articles/5.jpg?v=1553634464100",
             "date": "27/03/2019",
             "author": "Cool Team",
-            "title": "Bí quyết bảo quản nho đen trong tủ lạnh tươi lâu hơn",
-            "content": "Trong tháng 9/2017, trước cơn sốt giá sầu riêng tại các tỉnh Tây Nguyên, nhiều tiểu thương sẵn sàng đổ tiền vào các nhà vườn để thu mua sầu riêng non lẫn chín. Tại huyện Krông Pắk (tỉnh Đắk Lắk), một số loại sầu riêng chất lượng cao được thu mua với giá 54.000 đồng/kg – mức giá kỷ lục nhiều năm. Đồng thời, giá dừa khô tại tỉnh Trà Vinh không ngừng tăng cao với mức thu mua tại vườn 150.000 đồng/chục (12 trái). Đây là mức giá dừa khô cao nhất trong vòng 6 năm qua, đem lại cho mỗi 1 ha vườn dừa thu nhập khoảng 15 triệu đồng/tháng. Trong khi đó, thị trường rau củ tại Lâm Đồng tương đối ổn định chỉ có một số rau như cà chua, hoa lơ xanh và cải bó xôi giảm nhẹ với mức giảm 2.000-3.000 đồng/kg so với đầu tháng. Nhìn lại 9 tháng đầu năm, thị trường trái cây biến động thất thường do đặc tính thời vụ của từng loại trái cây. Trong khi đó, thị trường rau củ bị ảnh hưởng của thời tiết đặc biệt những cơn bão gần đây đã làm nguồn cung giảm khiến thị trường tăng mạnh vào tháng 7 và 8, tuy nhiên đến nay thị trường có dấu hiệu hồi phục.",
-            "to": "/blog-page1"
+            "title": "Công dụng của chanh ngâm mật ong chữa ho hiệu quả",
+            "content": [
+                "Chắc bạn đã biết, cả chanh và mật ong đều là những nguyên liệu quý bởi những công năng, tác dụng của chúng. Cả hai không chỉ được dùng trong nấu nướng, chế biến món ăn mà còn là những phương thuốc chữa bệnh đáng quý. Bên cạnh đó, chúng còn là những nguyên liệu làm đẹp tuyệt vời. Chanh và mật ong là một sự kết hợp rất hoàn hảo. Bài viết này sẽ cho bạn thông tin về những tác dụng của chanh ngâm mật ong.",
+                "Cả chanh và mật ong đều có thuộc tính khử trùng, diệt khuẩn, chính vì vậy mà tác dụng của chanh ngâm mật ong đó là chữa trị ho rất hiệu quả. Chanh và mật ong thực sự rất tốt cho cổ họng của bạn. Vào những khi thời tiết lạnh, một ly nước chanh mật ong ấm là một thức uống tuyệt vời. Bạn thể dễ dàng làm món đồ uống này với chanh ngâm mật ong.",
+                "Bạn có thể làm món chanh ngâm mật ong nhiều bao nhiêu tùy thích và trữ chúng trong tủ lạnh để dùng lâu dài. Và bất kỳ khi nào bị viêm họng, bạn đều có thể sử dụng. Đặc biệt là nếu bạn có con nhỏ, thì đây là một phương thuốc trị ho và viêm họng rất hay và tốt cho sức khỏe.",
+                "Cách làm chanh ngâm mật ong",
+                "Bạn đã sẵn sàng để thực hiện món chanh ngâm mật ong chưa? Những hướng dẫn bên dưới sẽ giúp bạn mang những tác dụng của chanh ngâm mật ong đến cho bản thân và những thành viên trong gia đình.",
+                "Thành phần:",
+                "3-4 trái chanh vàng (bạn nên dùng loại chanh vàng này vì nó ngon hơn và không đắng)",
+                "Mật ong",
+                "Một cái lọ lớn để ngâm",
+                "Tác dụng của chanh ngâm mật ong",
+                "Thực hiện:",
+                "Bước 1: Rửa sạch chanh và cắt thành lát mỏng",
+                "Bước 2: Khử trùng lọ ngâm bằng nước nóng. Đợi cho lọ ngâm khô. Cho một lớp lát chanh vào đáy lọ rồi rưới ½ muỗng canh mật ong lên. Tiếp tục xếp lát chanh và rưới mật ong lên cho đến khi hết chanh.",
+                "Bước 3: Đậy kín lọ chanh ngâm mật ong và cho vào tủ lạnh 2 ngày trước khi sử dụng.",
+                "Cuối cùng thì bạn cũng đã hoàn thành món chanh ngâm mật ong cho gia đình thân yêu rồi. Lúc dùng, bạn có thể lấy 2-3 muỗng canh hỗn hợp chanh ngâm mật ong cho vào ly, rót vào 250ml nước nóng rồi khuấy đều. Nếu bạn bị bệnh, thì bạn nên dùng nóng. Nếu không, bạn có thể cho thêm đá để uống lạnh, đặc biệt là những ngày hè oi ả.",
+                "Tác dụng của chanh ngâm mật ong đó chính là giúp bạn và gia đình luôn khỏe mạnh. Vì chanh và mật ong không chỉ khử trùng, diệt khuẩn mà còn rất giàu vitamin C, giúp tăng sức đề kháng cho cơ thể."
+            ]
         },
         {
-            "img_src": "https://bizweb.dktcdn.net/thumb/large/100/350/980/articles/49997669-476326726231228-9092403644171095934-n.jpg?v=1553650991913",
+            "id": 6,
+            "img_src": "https://bizweb.dktcdn.net/thumb/1024x1024/100/350/980/articles/6.jpg?v=1553634421470",
             "date": "27/03/2019",
             "author": "Cool Team",
-            "title": "Bí quyết bảo quản nho đen trong tủ lạnh tươi lâu hơn",
-            "content": "Trong tháng 9/2017, trước cơn sốt giá sầu riêng tại các tỉnh Tây Nguyên, nhiều tiểu thương sẵn sàng đổ tiền vào các nhà vườn để thu mua sầu riêng non lẫn chín. Tại huyện Krông Pắk (tỉnh Đắk Lắk), một số loại sầu riêng chất lượng cao được thu mua với giá 54.000 đồng/kg – mức giá kỷ lục nhiều năm. Đồng thời, giá dừa khô tại tỉnh Trà Vinh không ngừng tăng cao với mức thu mua tại vườn 150.000 đồng/chục (12 trái). Đây là mức giá dừa khô cao nhất trong vòng 6 năm qua, đem lại cho mỗi 1 ha vườn dừa thu nhập khoảng 15 triệu đồng/tháng. Trong khi đó, thị trường rau củ tại Lâm Đồng tương đối ổn định chỉ có một số rau như cà chua, hoa lơ xanh và cải bó xôi giảm nhẹ với mức giảm 2.000-3.000 đồng/kg so với đầu tháng. Nhìn lại 9 tháng đầu năm, thị trường trái cây biến động thất thường do đặc tính thời vụ của từng loại trái cây. Trong khi đó, thị trường rau củ bị ảnh hưởng của thời tiết đặc biệt những cơn bão gần đây đã làm nguồn cung giảm khiến thị trường tăng mạnh vào tháng 7 và 8, tuy nhiên đến nay thị trường có dấu hiệu hồi phục.",
-            "to": "/blog-page1"
+            "title": "4 lý do bạn nên ăn dâu tây phòng tránh ung thư hiệu quả",
+            "content": [
+                "Phòng tránh ung thư, điều chỉnh huyết áp, tăng cường hệ miễn dịch... là những tác dụng bổ ích mà quả dâu tây mang đến cho bạn. Dù được sử dụng dưới bất kỳ hình thức nào, từ dâu tươi cho đến dâu sấy khô, mứt dâu hay si-rô…, loại trái cây này cũng mang đến rất nhiều lợi ích cho sức khỏe nhờ vào hàm lượng chất dinh dưỡng dồi dào cùng các chất chống oxy hóa.",
+                "1. Tăng cường hệ miễn dịch",
+                "Dâu tây là nguồn cung cấp vitamin C tuyệt vời. Một chén dâu tây chứa 51,5mg vitamin C, khoảng ½ nhu cầu hàng ngày của cơ thể. Như vậy, chỉ với hai chén dâu tây, bạn đã có đủ 100% lượng vitamin C theo yêu cầu. Vitamin C là chất có khả năng tăng cường miễn dịch đồng thời còn là một chất chống oxy hóa mạnh mẽ. Một cuộc nghiên cứu của trường ĐH California, Los Angeles, Mỹ ,vào năm 2010 đã phát hiện ra rằng, khả năng chống oxy hóa trong dâu tây sẽ trở nên khả dụng về mặt sinh học và sẵn sàng hoạt động trong máu sau khi ăn loại trái cây chỉ trong vài tuần lễ.",
+                "2. Bảo vệ mắt",
+                "Đặc tính chống oxy hóa trong dâu tây có thể giúp ngăn ngừa bệnh đục thủy tinh thể - tình trạng thủy tinh thể bị vẩn đục và có thể dẫn đến mù lòa ở người lớn tuổi. Mắt cần vitamin C để bảo vệ chúng không tiếp xúc với các gốc tự do từ những tia tử ngoại gay gắt của mặt trời, vốn có thể gây tổn hại cho các protein trong tủy tinh thể. Vitamin C còn đóng vai trò quan trọng trong việc tăng cường sự khỏe mạnh cho giác mạc và võng mạc của mắt.",
+                "Tuy nhiên, việc sử dụng vitamin C ở liều cao được cho là có thể làm tăng nguy cơ mắc bệnh đục thủy tinh thể ở những phụ nữ trên 65 tuổi. Những nhà nghiên cứu ở Viện Karolinska ở Stockholm, Thụy Điển cảnh báo rằng nguy cơ này xuất phát từ việc sử dụng các loại thuốc bổ sung vitamin C chứ không liên quan đến nguồn vitamin C do các loại trái cây và rau xanh cung cấp cho cơ thể.",
+                "3. Phòng chống ung thư",
+                "Vitamin C là một trong những chất chống oxy hóa có thể giúp ngăn ngừa bệnh ung thư vì sự khỏe mạnh của hệ miện dịch chính là phòng thủ vững chắc nhất để bảo vệ cơ thể trước sự tấn công của mọi căn bệnh. Một chất hóa học từ thực vật được gọi là axit ellagic có trong dâu tây cũng có khả năng ngăn ngừa ung thư. Axit ellagic đã được chứng minh là có công dụng chống ung thư bằng cách chế ngự sự phát triển các tế bào ung thư.",
+                "Dâu tây còn có các chất chống oxy hóa là lutein và zeathacins. Các chất chống oxy chính là những chiến binh tiêu diệt các gốc tự do và trung hòa những ảnh hưởng tiêu cực có khả năng xảy ra ở các tế bào trong cơ thể. Thuật ngữ các gốc tự do được dùng để chỉ những tế bào bị tổn hại có khả năng làm suy yếu những tế bào khác xung quanh chúng trong nỗ lực hồi phục chính mình. Điều này gây ra những bất thường cho các tế bào và là tiền đề gây bệnh ung thư.",
+                "4. Ngăn ngừa các nếp nhăn",
+                "Khả năng của vitamin C trong dâu tây còn thể hiện ở vai trò thiết yếu của chúng trong việc sản sinh ra collagen, giúp cải thiện độ đàn hồi và co giãn của da. Lượng collagen sẽ mất dần đi khi chúng ta có tuổi, do vậy, tiêu thụ những thực phẩm giàu vitamin C có thể giúp làn da khỏe mạnh và tươi trẻ hơn.",
+                "Vitamin C không phải là nhân tố duy nhất trong dâu tây có khả năng đánh bại vết nhăn một cách tự nhiên. Các nhà nghiên cứu của trường ĐH Hallym, Hàn Quốc kết luận rằng axit ellagic có khả năng ngăn ngừa tình trạng phá hủy collagen và phòng chống viêm nhiễm rất rõ ràng. Đây chính là hai yếu tố chính trong quá trình phát triển các nếp nhăn trên tế bào da của con người sau khi da tiếp xúc liên tục và bị tổn hại bởi tia tử ngoại UVB."
+            ]
         }
     ],
     "brands": [

@@ -34,11 +34,7 @@ function News() {
                                         <div className='col c-4' key={index}>
 
                                             <Blog
-                                                img_src={blog.img_src}
-                                                date={blog.date}
-                                                author={blog.author}
-                                                content={blog.content}
-                                                title={blog.title}
+                                                blog={blog}
                                             />
                                         </div>
                                     )

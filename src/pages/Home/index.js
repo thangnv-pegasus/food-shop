@@ -374,11 +374,7 @@ function Home({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenI
                                         return (
                                             <div className='col c-4' key={index}>
                                                 <Blog
-                                                    img_src={blog.img_src}
-                                                    title={blog.title}
-                                                    author={blog.author}
-                                                    date={blog.date}
-                                                    content={blog.content}
+                                                    blog = {blog}
                                                 />
                                             </div>
                                         )

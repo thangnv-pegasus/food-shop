@@ -1,6 +1,5 @@
 import classNames from 'classnames/bind'
-import { useEffect, useState } from 'react'
-import Blog from '../Blog'
+import Blog from '../../component/Blog'
 import TitlePage from '../../component/TitlePage'
 import styles from './News.module.scss'
 import data from '../../data/db.json'
@@ -9,11 +8,7 @@ const cx = classNames.bind(styles)
 
 function News() {
 
-    const [blogs, setBlogs] = useState([])
-
-    useEffect(() => {
-        setBlogs(data.blogs)
-    }, [])
+    const blogs = data.blogs
 
     return (
         <>

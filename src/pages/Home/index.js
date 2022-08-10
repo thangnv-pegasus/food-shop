@@ -359,7 +359,7 @@ function Home({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenI
             <div className={cx('blogs')}>
                 <Title
                     isHover={true}
-                    to={routes.blog}
+                    to={routes.news}
                 >
                     Tin tức mới nhất
                 </Title>

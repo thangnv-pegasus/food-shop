@@ -12,7 +12,7 @@ import NutsPage from '../pages/ProductKindPage/NutsPage'
 import FreshFoodPage from '../pages/ProductKindPage/FreshFoodPage'
 import Order from '../pages/Order'
 import CompleteOrder from '../pages/CompleteOrder'
-import BlogPage from '../pages/Blog'
+import DetailBlog from '../pages/DetailBlog'
 import DetailProduct from '../pages/DetailProduct'
 const publicRoutes = [
     {
@@ -71,7 +71,7 @@ const publicRoutes = [
     },
     {
         path: routes.blog,
-        component: BlogPage
+        component: DetailBlog
     },
     {
         path: routes.detailProduct,

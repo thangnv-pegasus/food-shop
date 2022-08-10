@@ -20,7 +20,7 @@ function Title({ children, img_src, isHover = false, to }) {
             )
         } else {
             return (
-                <NavLink className={cx('title', 'link')} to={to}>
+                <NavLink className={cx('title', 'link')} to={to} onClick={() => window.scrollTo(0)}>
                     {children}
                     <div className={cx('small-img')}>
 

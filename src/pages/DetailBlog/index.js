@@ -1,7 +1,6 @@
 import styles from './Blog.module.scss'
 import classNames from 'classnames/bind'
 import { Link, useParams } from 'react-router-dom'
-import { useEffect, useState } from 'react'
 import data from '../../data/db.json'
 import TitlePage from '../../component/TitlePage'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -9,7 +8,7 @@ import { faClock } from '@fortawesome/free-solid-svg-icons'
 
 const cx = classNames.bind(styles)
 
-function BlogPage() {
+function DetailBlog() {
 
     const { blogId } = useParams()
 
@@ -77,4 +76,4 @@ function BlogPage() {
     )
 }
 
-export default BlogPage
+export default DetailBlog

@@ -1,11 +1,11 @@
 import styles from './Footer.module.scss'
 import classNames from 'classnames/bind'
-import Logo from '~/component/Logo'
-import Direct from '~/component/Direct'
+import Logo from '../../../component/Logo'
+import Direct from '../../../component/Direct'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faLocation, faLocationDot, faMobileButton, faMobileScreenButton } from '@fortawesome/free-solid-svg-icons'
 import { NavLink } from 'react-router-dom'
-import { routes } from '~/config/routes'
+import { routes } from '../../../config/routes'
 
 const cx = classNames.bind(styles)
 

@@ -1,9 +1,9 @@
 import styles from './ProductKindPage.module.scss'
 import classNames from 'classnames/bind'
 import { useState, useEffect } from 'react'
-import TitlePage from '~/component/TitlePage'
-import ProductItem from '~/pages/Product/productItem'
-import data from '~/data/db.json'
+import TitlePage from '../../component/TitlePage'
+import ProductItem from '../../pages/Product/productItem'
+import data from '../../data/db.json'
 
 const cx = classNames.bind(styles)
 
@@ -80,12 +80,12 @@ function FreshFoodPage({ addCart, removeCart, setOpenBuyModal, setProductActive,
                                         return (
                                             <div className='col c-3' key={index}>
                                                 <ProductItem
-                                                    addCart={addCart}
-                                                    product={product}
-                                                    setOpenBuyModal={setOpenBuyModal}
-                                                    setProductActive={setProductActive}
-                                                    setOpenInforModal={setOpenInforModal}
-                                                />
+                                                        addCart={addCart}
+                                                        product={product}
+                                                        setOpenBuyModal={setOpenBuyModal}
+                                                        setProductActive={setProductActive}
+                                                        setOpenInforModal={setOpenInforModal}
+                                                    />
                                             </div>
                                         )
                                     }

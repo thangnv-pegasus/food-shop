@@ -6,15 +6,15 @@ import { faBasketShopping, faCaretDown, faMagnifyingGlass, faUserPlus } from '@f
 import Tippy from '@tippyjs/react/headless';
 import { useEffect, useState } from 'react';
 
-import Logo from '~/component/Logo'
-import { routes } from '~/config/routes'
-import SearchBlock from '~/component/searchBlock';
-import Login from '~/component/Login';
-import ShoppingCart from '~/component/ShoppingCart';
-import ProductKind from '~/pages/Product/productKind';
-import Direct from '~/component/Direct';
-import handleCart from '~/App'
-import data from '~/data/db.json'
+import Logo from '../../../component/Logo'
+import {routes} from '../../../config/routes'
+import SearchBlock from '../../../component/searchBlock';
+import Login from '../../../component/Login';
+import ShoppingCart from '../../../component/ShoppingCart';
+import ProductKind from '../../../pages/Product/productKind'
+import Direct from '../../../component/Direct';
+import handleCart from '../../../App'
+import data from '../../../data/db.json'
 
 const cx = classNames.bind(styles)
 

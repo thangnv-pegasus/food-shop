@@ -1,18 +1,19 @@
-import Home from '~/pages/Home'
-import Intro from '~/pages/Intro'
-import News from '~/pages/News'
-import Contact from '~/pages/Contact'
-import Product from '~/pages/Product'
-import { routes } from '~/config/routes'
-import Cart from '~/pages/Cart'
-import VegetablePage from '~/pages/ProductKindPage/VegetablePage'
-import FruitPage from '~/pages/ProductKindPage/FruitPage'
-import SeaFood from '~/pages/ProductKindPage/SeaFood'
-import NutsPage from '~/pages/ProductKindPage/NutsPage'
-import FreshFoodPage from '~/pages/ProductKindPage/FreshFoodPage'
-import Order from '~/pages/Order'
-import CompleteOrder from '~/pages/CompleteOrder'
-import BlogPage from '~/pages/Blog'
+import Home from '../pages/Home'
+import Intro from '../pages/Intro'
+import News from '../pages/News'
+import Contact from '../pages/Contact'
+import Product from '../pages/Product'
+import { routes } from '../config/routes'
+import Cart from '../pages/Cart'
+import VegetablePage from '../pages/ProductKindPage/VegetablePage'
+import FruitPage from '../pages/ProductKindPage/FruitPage'
+import SeaFood from '../pages/ProductKindPage/SeaFood'
+import NutsPage from '../pages/ProductKindPage/NutsPage'
+import FreshFoodPage from '../pages/ProductKindPage/FreshFoodPage'
+import Order from '../pages/Order'
+import CompleteOrder from '../pages/CompleteOrder'
+import BlogPage from '../pages/Blog'
+import DetailProduct from '../pages/DetailProduct'
 const publicRoutes = [
     {
         path: routes.home,
@@ -71,6 +72,10 @@ const publicRoutes = [
     {
         path: routes.blog,
         component: BlogPage
+    },
+    {
+        path: routes.detailProduct,
+        component: DetailProduct
     }
 ]
 

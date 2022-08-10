@@ -1,10 +1,9 @@
 import classNames from 'classnames/bind'
 import { useEffect, useState } from 'react'
-import Blog from '~/component/Blog'
-
-import TitlePage from '~/component/TitlePage'
+import Blog from '../Blog'
+import TitlePage from '../../component/TitlePage'
 import styles from './News.module.scss'
-import data from '~/data/db.json'
+import data from '../../data/db.json'
 
 const cx = classNames.bind(styles)
 
@@ -32,7 +31,6 @@ function News() {
                                 blogs.map((blog, index) => {
                                     return (
                                         <div className='col c-4' key={index}>
-
                                             <Blog
                                                 blog={blog}
                                             />

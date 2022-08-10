@@ -1,7 +1,7 @@
 import styles from './Blog.module.scss'
 import classNames from 'classnames/bind'
 import { Link, NavLink } from 'react-router-dom'
-import { routes } from '~/config/routes'
+import { routes } from '../../config/routes'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendarDay } from '@fortawesome/free-solid-svg-icons'
 
@@ -10,7 +10,7 @@ const cx = classNames.bind(styles)
 function Blog({ blog }) {
     return (
         <div className={cx('blog-item')}>
-            <NavLink to={`/blog/${blog.id}`} className={cx('blog-img')}>
+            <NavLink to={`/blog/${blog.id}`} className={cx('blog-img')} onClick = {()=> window.scrollTo(0)}>
                 <img src={blog.img_src} />
             </NavLink>
             <div className={cx('blog-time')}>
@@ -24,9 +24,8 @@ function Blog({ blog }) {
                 </div>
             </div>
             <div className={cx('blog-infor')}>
-                <Link to={routes.blog} className={cx('blog-title')}>
+                <Link to={routes.blog} className={cx('blog-title')} onClick = {()=> window.scrollTo(0)}>
                     {blog.title}
-                    
                 </Link>
                 <div className={cx('blog-content')}>
                     {blog.content}

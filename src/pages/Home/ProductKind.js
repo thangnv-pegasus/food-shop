@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 const cx = classNames.bind(styles)
 
-function ProductKind({ children }) {
+function ProductKind() {
     return (
         <ul className={cx('product-kind')}>
             <li>

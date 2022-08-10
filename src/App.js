@@ -1,9 +1,9 @@
-import DefaultLayout from "~/component/DefaultLayout";
-import { publicRoutes } from "~/routes";
+import DefaultLayout from "./component/DefaultLayout";
+import { publicRoutes } from "./routes"
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import { createContext, useEffect, useState } from "react";
-import BuyModal from "~/component/BuyModal";
-import InforModal from "~/component/InforModal";
+import BuyModal from "./component/BuyModal";
+import InforModal from "./component/InforModal";
 import data from './data/db.json'
 
 function App() {
@@ -94,28 +94,31 @@ function App() {
                 />
               )
             })
+
           }
+
         </Routes>
+        {
+          openBuyModal
+          &&
+          <BuyModal
+            cart={cart}
+            product={productActive}
+            setOpenBuyModal={setOpenBuyModal}
+            setCart={setCart}
+          />
+        }
+        {
+          openInforModal
+          &&
+          <InforModal
+            product={productActive}
+            setOpenInforModal={setOpenInforModal}
+            setOpenBuyModal={setOpenBuyModal}
+            addCart={addCart}
+          />
+        }
       </BrowserRouter>
-      {
-        openBuyModal
-        &&
-        <BuyModal
-          cart={cart}
-          product={productActive}
-          setOpenBuyModal={setOpenBuyModal}
-        />
-      }
-      {
-        openInforModal
-        &&
-        <InforModal
-          product={productActive}
-          setOpenInforModal={setOpenInforModal}
-          setOpenBuyModal={setOpenBuyModal}
-          addCart={addCart}
-        />
-      }
     </div>
   );
 }

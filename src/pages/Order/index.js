@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import classNames from "classnames/bind"
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import { routes } from "~/config/routes"
+import { routes } from "../../config/routes"
 import styles from './Order.module.scss'
 
 
@@ -14,9 +14,9 @@ function Order({ cart, setUserinfor, userinfor }) {
     const [checkPay, setCheckPay] = useState(false)
 
     let size = 0;
-    cart.forEach((product) => {
-        size += product.quantity
-    })
+    // let size = cart.reduce((pre, product) => {
+    //     return pre.quantity + product.quantity
+    // })
 
     let total = 0;
     cart.forEach((product) => {
@@ -58,11 +58,11 @@ function Order({ cart, setUserinfor, userinfor }) {
                                         onChange={(e) => setUserinfor((pre) => ({ ...pre, phone: e.target.value }))}
                                     />
                                     <input type="text" placeholder="Địa chỉ(tùy chọn)" className={cx('address')}
-                                        value = {userinfor.add}
+                                        value={userinfor.add}
                                         onChange={e => setUserinfor((pre) => ({ ...pre, add: e.target.value }))}
                                     />
                                     <textarea placeholder="Ghi chú"
-                                        value = {userinfor.note}
+                                        value={userinfor.note}
                                         onChange={e => setUserinfor(pre => ({ ...pre, note: e.target.value }))}
                                     />
                                 </form>
@@ -139,12 +139,13 @@ function Order({ cart, setUserinfor, userinfor }) {
                                         <p>{total}đ</p>
                                     </div>
                                     <div className={cx('charge-ship')}>
-                                        Phí vận chuyển
+                                        <p>Phí vận chuyển</p>
+                                        <p>40000đ</p>
                                     </div>
                                 </div>
                                 <div className={cx('price-result')}>
                                     <p>Tổng cộng</p>
-                                    <p className={cx('result')}>{total}đ</p>
+                                    <p className={cx('result')}>{total + 40000}đ</p>
                                 </div>
                                 <div className={cx('selection')}>
                                     <Link to={routes.cart} className={cx('back-to-cart')}>

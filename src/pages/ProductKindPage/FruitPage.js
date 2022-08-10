@@ -1,9 +1,9 @@
 import styles from './ProductKindPage.module.scss'
 import classNames from 'classnames/bind'
 import { useState, useEffect } from 'react'
-import TitlePage from '~/component/TitlePage'
-import ProductItem from '~/pages/Product/productItem'
-import data from '~/data/db.json'
+import TitlePage from '../../component/TitlePage'
+import ProductItem from '../../pages/Product/productItem'
+import data from '../../data/db.json'
 
 const cx = classNames.bind(styles)
 

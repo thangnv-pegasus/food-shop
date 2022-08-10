@@ -1,15 +1,15 @@
 import classNames from 'classnames/bind'
 import styles from './Product.module.scss'
-import TitlePage from '~/component/TitlePage'
+import TitlePage from '../../component/TitlePage'
 import { useEffect, useRef, useState } from 'react'
 import ProductItem from './productItem'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
-import data from '~/data/db.json'
+import data from '../../data/db.json'
 
 const cx = classNames.bind(styles)
 
-function Product() {
+function Product({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenInforModal }) {
 
     const [products, setProducts] = useState([])
 
@@ -81,12 +81,11 @@ function Product() {
                                         return (
                                             <div className='col c-3' key={index}>
                                                 <ProductItem
-                                                    img_src={product.img_src}
-                                                    name={product.name}
-                                                    price_main={product.price_main}
-                                                    price_sale={product.price_sale}
-                                                    to={product.to}
+                                                    addCart={addCart}
                                                     product={product}
+                                                    setOpenBuyModal={setOpenBuyModal}
+                                                    setProductActive={setProductActive}
+                                                    setOpenInforModal={setOpenInforModal}
                                                 />
                                             </div>
                                         )

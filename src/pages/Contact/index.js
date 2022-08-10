@@ -1,7 +1,7 @@
 import { faEnvelope, faLocationDot, faMobile } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import classNames from 'classnames/bind'
-import TitlePage from '~/component/TitlePage'
+import TitlePage from '../../component/TitlePage'
 import styles from './Contact.module.scss'
 
 const cx = classNames.bind(styles)

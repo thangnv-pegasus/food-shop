@@ -2,8 +2,8 @@ import styles from './Blog.module.scss'
 import classNames from 'classnames/bind'
 import { Link, useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import data from '~/data/db.json'
-import TitlePage from '~/component/TitlePage'
+import data from '../../data/db.json'
+import TitlePage from '../../component/TitlePage'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock } from '@fortawesome/free-solid-svg-icons'
 
@@ -63,7 +63,7 @@ function BlogPage() {
                             blogs.map(blog => {
                                 return (
                                     <li key={blog.id}>
-                                        <Link to="/blog/:blogId">
+                                        <Link to={`/blog/${blog.id}`} onClick = {()=> window.scrollTo(0)}>
                                             {blog.title}
                                         </Link>
                                     </li>

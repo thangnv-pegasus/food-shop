@@ -151,6 +151,7 @@
     padding: 15px 0;
     display: flex;
     font-size: 1.6rem;
+
     input {
         border-radius: 4px;
         display: block;
@@ -163,6 +164,7 @@
         transition: all ease-in 0.2s;
         outline-color: var(--blue-color);
         flex: 1;
+
         &::placeholder {
             color: var(--text-color);
         }
@@ -183,61 +185,73 @@
         text-align: center;
         transition: all ease 0.2s;
         margin-left: 10px;
-        &:hover{
+
+        &:hover {
             background-color: #2a6395;
             border-color: #225179;
         }
     }
 }
-.quick-sum{
+
+.quick-sum {
     padding: 15px 0;
-    div{
+
+    div {
         padding-bottom: 12px;
     }
-    .temp-total{
+
+    .temp-total,
+    .charge-ship {
         display: flex;
         justify-content: space-between;
     }
 }
-.price-result{
+
+.price-result {
     font-size: 1.8rem;
     display: flex;
     padding: 15px 0;
     justify-content: space-between;
-    .result{
+
+    .result {
         color: var(--blue-color);
         font-weight: 600;
     }
 }
 
-.selection{
+.selection {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .complete{
+
+    .complete {
         cursor: pointer;
         background-color: #357ebd;
         border-color: #2f71a9;
         border: 1px transparent solid;
         border-radius: 5px;
-        color:var(--white-color);
+        color: var(--white-color);
         font-weight: 500;
-        padding: 14px 24px;  
+        padding: 14px 24px;
         text-align: center;
     }
-    .back-to-cart{
+
+    .back-to-cart {
         color: var(--text-color);
         display: flex;
         margin-left: 10px;
-        span{
+
+        span {
             transition: all ease 0.2s;
             margin-left: -5px;
             margin-right: 5px;
         }
-        &:hover{
+
+        &:hover {
             color: var(--blue-color);
         }
-        &:hover span{
+
+        &:hover span {
             margin-left: -15px;
             color: var(--blue-color);
         }

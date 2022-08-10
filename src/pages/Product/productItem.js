@@ -5,8 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBasketShopping, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 const cx = classNames.bind(styles)
 
-function ProductItem({ addCart, product,setOpenInforModal, setOpenBuyModal, setProductActive }) {
-
+function ProductItem({ addCart, product, setOpenInforModal, setOpenBuyModal, setProductActive }) {
 
     return (
         <div className={cx('product-item')}>
@@ -36,7 +35,7 @@ function ProductItem({ addCart, product,setOpenInforModal, setOpenBuyModal, setP
                 </div>
             </div>
             <div className={cx('product-infor')}>
-                <NavLink to={product.to} className={cx('product-name')}>
+                <NavLink to={`/product/${product.id}`} className={cx('product-name')}>
                     {product.name}
                 </NavLink>
                 <div className={cx('product-price')}>

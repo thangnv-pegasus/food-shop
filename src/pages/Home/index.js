@@ -1,18 +1,16 @@
 import classNames from 'classnames/bind'
-import { Link, NavLink, Route, Routes } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'
 
 import styles from './Home.module.scss'
-import AboutItem from '~/component/aboutItem'
-import Banner from '~/component/Banner'
-import BannerItem from '~/component/Banner/bannerItem'
-import Title from '~/component/Title'
-import { routes } from '~/config/routes'
-import ProductItem from '~/pages/Product/productItem'
-import Blog from '~/component/Blog'
-import request from '~/utils/request'
-import Brand from '~/component/Brand'
-import data from '~/data/db.json'
+import AboutItem from '../../component/aboutItem'
+import Banner from '../../component/Banner'
+import BannerItem from '../../component/Banner/bannerItem'
+import Title from '../../component/Title'
+import { routes } from '../../config/routes'
+import ProductItem from '../../pages/Product/productItem'
+import Blog from '../../component/Blog'
+import Brand from '../../component/Brand'
+import data from '../../data/db.json'
 
 const cx = classNames.bind(styles)
 

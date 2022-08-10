@@ -5,7 +5,7 @@ import { faCheck, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const cx = classNames.bind(styles)
 
-function BuyModal({ product, cart, setOpenBuyModal }) {
+function BuyModal({ product, cart, setOpenBuyModal, setCart }) {
     let total = 0;
     cart.forEach(element => {
         if (element.price_sale > 0) {

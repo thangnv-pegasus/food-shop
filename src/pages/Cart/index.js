@@ -1,10 +1,10 @@
 import styles from './Cart.module.scss'
 import classNames from 'classnames/bind'
-import TitlePage from '~/component/TitlePage'
+import TitlePage from '../../component/TitlePage'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
-import { routes } from '~/config/routes'
+import { routes } from '../../config/routes'
 
 const cx = classNames.bind(styles)
 
@@ -40,11 +40,11 @@ function Cart({ cart, addCart, removeCart, setCart }) {
                                     return (
                                         <li className={cx('product-item')} key={index}>
                                             <div className={cx('product-infor')}>
-                                                <Link to={product.to} className={cx('product-img')}>
+                                                <Link to={`/product/${product.id}`} className={cx('product-img')}>
                                                     <img src={product.img_src} alt="product" />
                                                 </Link>
                                                 <div className={cx('product-name')}>
-                                                    <Link to={product.to}>
+                                                    <Link to={`/product/${product.id}`}>
                                                         {product.name}
                                                     </Link>
                                                     <div className={cx('product-price')}>

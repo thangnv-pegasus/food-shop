@@ -3,7 +3,7 @@ const routes = {
     intro: '/intropage',
     contact: '/contact',
     news: '/news',
-    product: '/product/:productId',
+    product: '/product',
     cart: '/cart',
     blog: '/blog/:blogId',
     vegetable: '/vegetable',
@@ -12,7 +12,8 @@ const routes = {
     nuts: '/nuts',
     freshFood: '/freshfood',
     order: '/order',
-    completeOrder: '/completeOrder'
+    completeOrder: '/completeOrder',
+    detailProduct: '/product/:productId'
 }
 
 export {routes}

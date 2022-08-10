@@ -1,6 +1,5 @@
 import styles from './InforModal.module.scss'
 import classNames from 'classnames/bind'
-import { Link } from 'react-router-dom'
 import { useReducer } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'

@@ -10,7 +10,7 @@ const cx = classNames.bind(styles)
 function Blog({ blog }) {
     return (
         <div className={cx('blog-item')}>
-            <NavLink to={`/blog/${blog.id}`} className={cx('blog-img')} onClick = {()=> window.scrollTo(0)}>
+            <NavLink to={`/blog/${blog.id}`} className={cx('blog-img')} onClick={() => window.scrollTo(0)}>
                 <img src={blog.img_src} />
             </NavLink>
             <div className={cx('blog-time')}>
@@ -24,7 +24,7 @@ function Blog({ blog }) {
                 </div>
             </div>
             <div className={cx('blog-infor')}>
-                <Link to={routes.blog} className={cx('blog-title')} onClick = {()=> window.scrollTo(0)}>
+                <Link to={`/blog/${blog.id}`} className={cx('blog-title')} onClick={() => window.scrollTo(0)}>
                     {blog.title}
                 </Link>
                 <div className={cx('blog-content')}>

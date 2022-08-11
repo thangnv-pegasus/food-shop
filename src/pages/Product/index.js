@@ -1,21 +1,16 @@
 import classNames from 'classnames/bind'
 import styles from './Product.module.scss'
 import TitlePage from '../../component/TitlePage'
-import { useEffect, useRef, useState } from 'react'
+import { useState } from 'react'
 import ProductItem from './productItem'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import data from '../../data/db.json'
 
 const cx = classNames.bind(styles)
 
 function Product({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenInforModal }) {
 
-    const [products, setProducts] = useState([])
+    const [products, setProducts] = useState(data.products)
 
-    useEffect(() => {
-        setProducts(data.products)
-    }, [])
 
     const handleDefaultSort = () => {
         const newProd = products.sort((a, b) => {

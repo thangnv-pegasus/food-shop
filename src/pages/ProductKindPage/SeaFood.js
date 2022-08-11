@@ -1,6 +1,6 @@
 import styles from './ProductKindPage.module.scss'
 import classNames from 'classnames/bind'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import TitlePage from '../../component/TitlePage'
 import ProductItem from '../../pages/Product/productItem'
 import data from '../../data/db.json'
@@ -9,13 +9,7 @@ const cx = classNames.bind(styles)
 
 function SeaFood({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenInforModal }) {
 
-    const [products, setProducts] = useState([])
-
-    useEffect(() => {
-
-        setProducts(data.productKind[2].products)
-    }, [])
-
+    const [products, setProducts] = useState(data.productKind[2].products)
 
     const handleDefaultSort = () => {
         const newProd = products.sort((a, b) => {

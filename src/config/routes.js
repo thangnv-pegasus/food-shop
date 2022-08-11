@@ -13,7 +13,9 @@ const routes = {
     freshFood: '/freshfood',
     order: '/order',
     completeOrder: '/completeOrder',
-    detailProduct: '/product/:productId'
+    detailProduct: '/product/:productId',
+    login: '/login',
+    signup: '/signup'
 }
 
 export {routes}

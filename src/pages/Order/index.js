@@ -14,9 +14,9 @@ function Order({ cart, setUserinfor, userinfor }) {
     const [checkPay, setCheckPay] = useState(false)
 
     let size = 0;
-    // let size = cart.reduce((pre, product) => {
-    //     return pre.quantity + product.quantity
-    // })
+    cart.forEach(product => {
+        size += product.quantity
+    })
 
     let total = 0;
     cart.forEach((product) => {

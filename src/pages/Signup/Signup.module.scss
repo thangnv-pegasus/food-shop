@@ -1,0 +1,76 @@
+.signup-section {
+    padding-top: 40px;
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    margin-bottom: 25px;
+    padding-top: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+}
+.signup-with-socialNetwork{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    .signup-btn{
+        display: flex;
+        margin: 0 10px;
+        font-size: 1.5rem;
+        color: var(--white-color);
+        align-items: center;
+        border-radius: 2px;
+        cursor: pointer;
+        span{
+            padding: 4px 10px;
+            border-right: 1.5px solid rgba(255,255,255,0.2);
+            font-size: 1.8rem;
+        }
+        p{
+            padding: 0 10px;
+        }
+        &.facebook{
+            background-color: #3b5998;
+        }
+        &.google{
+            background-color: #e14b33;
+        }
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+}
+.signup-form{
+    width: 540px;
+    margin: 0 auto;
+    input,
+    .submit{
+        min-height: 50px;
+        padding: 10px 25px;
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #000;
+        background-color: #fff;
+        border: 1px solid #ebebeb;
+        box-shadow: none;
+        outline: none;
+        border-radius: 30px;
+        margin-bottom: 10px;
+    }
+    .submit{
+        background: var(--bg-color);
+        color: var(--white-color);
+        &:hover{
+            background: var(--primary-color);
+            cursor: pointer;
+        }
+    }
+}

@@ -1,5 +1,4 @@
 import classNames from 'classnames/bind'
-import { useEffect, useState } from 'react'
 import TitlePage from '../../component/TitlePage'
 import styles from './Intro.module.scss'
 import data from '../../data/db.json'
@@ -7,11 +6,9 @@ import data from '../../data/db.json'
 const cx = classNames.bind(styles)
 
 function Intro() {
-    const [content, setContent] = useState('')
 
-    useEffect(() => {
-        setContent(data.intro)
-    }, [])
+    const content = data.intro
+
     return (
         <>
             <TitlePage>

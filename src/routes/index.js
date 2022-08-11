@@ -14,6 +14,8 @@ import Order from '../pages/Order'
 import CompleteOrder from '../pages/CompleteOrder'
 import DetailBlog from '../pages/DetailBlog'
 import DetailProduct from '../pages/DetailProduct'
+import Login from '../pages/Login'
+import Signup from '../pages/Signup'
 const publicRoutes = [
     {
         path: routes.home,
@@ -76,6 +78,14 @@ const publicRoutes = [
     {
         path: routes.detailProduct,
         component: DetailProduct
+    },
+    {
+        path: routes.login,
+        component: Login
+    },
+    {
+        path: routes.signup,
+        component: Signup
     }
 ]
 

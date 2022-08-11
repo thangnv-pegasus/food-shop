@@ -1,7 +1,6 @@
 import styles from './Title.module.scss'
 import classNames from 'classnames/bind'
 import { NavLink } from 'react-router-dom'
-import { useEffect, useRef } from 'react'
 
 const cx = classNames.bind(styles)
 

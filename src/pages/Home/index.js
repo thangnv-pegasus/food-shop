@@ -16,32 +16,27 @@ const cx = classNames.bind(styles)
 
 
 function Home({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenInforModal }) {
-
-    const [Banners, setBanners] = useState([])
-    const [abouts, setAbouts] = useState([])
-    const [products, setProducts] = useState([])
-    const [blogs, setBlogs] = useState([])
-    const [brands, setBrands] = useState([])
-    const [productKind, setProductKind] = useState([])
     const [productKindRender, setProductKindRender] = useState([])
-    const [dataVegetable, setDataVegetable] = useState([])
-    const [dataFruit, setDataFruit] = useState([])
-    const [dataSeaFood, setDataSeaFood] = useState([])
-    const [dataNuts, setDataNuts] = useState([])
-    const [dataFreshFood, setDataFreshFood] = useState([])
     const [check, setCheck] = useState(0)
     const [elementActive, setElementActive] = useState()
 
     const refAbout = useRef(null)
     const refBrands = useRef(null)
 
+    const Banners = data.Banners
+    const abouts = data.abouts
+    const blogs = data.blogs
+    const brands = data.brands
+    const products = data.products
+    const dataVegetable = data.productKind[0].products
+    const dataFruit = data.productKind[1].products
+    const dataSeaFood = data.productKind[2].products
+    const dataNuts = data.productKind[3].products
+    const dataFreshFood = data.productKind[4].products
+    const productKind = data.productKind
 
-    const getDatabanner = useEffect(() => {
-        setBanners(data.Banners)
-    }, []);
-
-    const getDataAbout = useEffect(() => {
-        setAbouts(data.abouts)
+    const getDataProductKind = useEffect(() => {
+        setProductKindRender(data.productKind[0].products)
     }, [])
 
     const handleActive = (ele) => {
@@ -134,20 +129,7 @@ function Home({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenI
         }
     }, [])
 
-    const getDataProduct = useEffect(() => {
-        setProducts(data.products)
 
-    }, [])
-
-    const getDataProductKind = useEffect(() => {
-        setProductKind(data.productKind)
-        setDataVegetable(data.productKind[0].products)
-        setDataFruit(data.productKind[1].products)
-        setDataSeaFood(data.productKind[2].products)
-        setDataNuts(data.productKind[3].products)
-        setDataFreshFood(data.productKind[4].products)
-        setProductKindRender(data.productKind[0].products)
-    }, [])
 
     const ref1 = useRef(null)
     useEffect(() => {
@@ -180,13 +162,8 @@ function Home({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenI
         }
     }
 
-    const getDataBlogs = useEffect(() => {
-        setBlogs(data.blogs)
-    }, [])
 
-    const getDataBrands = useEffect(() => {
-        setBrands(data.brands)
-    }, [])
+
 
     return (
         <>
@@ -372,7 +349,7 @@ function Home({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenI
                                         return (
                                             <div className='col c-4' key={index}>
                                                 <Blog
-                                                    blog = {blog}
+                                                    blog={blog}
                                                 />
                                             </div>
                                         )

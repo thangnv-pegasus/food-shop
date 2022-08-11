@@ -3,6 +3,8 @@ import classNames from 'classnames/bind'
 import Tippy from '@tippyjs/react/headless'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
+import { routes } from '../../config/routes'
 
 const cx = classNames.bind(styles)
 
@@ -57,9 +59,9 @@ function ShoppingCart({ children, ListProduct, removeCart }) {
                                     <div className={cx('total-price')}>
                                         Tổng cộng:<span> {(total)}đ </span>
                                     </div>
-                                    <button>
+                                    <Link to={routes.cart}>
                                         Tiến hành thanh toán
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
 

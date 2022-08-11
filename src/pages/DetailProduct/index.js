@@ -3,7 +3,7 @@ import classNames from 'classnames/bind'
 import { useParams } from 'react-router-dom'
 import data from '../../data/db.json'
 import TitlePage from '../../component/TitlePage'
-import { useEffect, useRef, useState } from 'react'
+import { useState } from 'react'
 import Title from '../../component/Title'
 import ProductItem from '../Product/productItem'
 

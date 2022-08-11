@@ -1,14 +1,20 @@
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
+import { createContext,  useEffect,  useState } from "react";
+import className from 'classnames/bind'
+import styles from './App.module.scss'
+
 import DefaultLayout from "./component/DefaultLayout";
 import { publicRoutes } from "./routes"
-import { Routes, Route, BrowserRouter } from 'react-router-dom'
-import { createContext, useEffect, useState } from "react";
 import BuyModal from "./component/BuyModal";
 import InforModal from "./component/InforModal";
 import data from './data/db.json'
 
+const cx = className.bind(styles)
+
+export const account = createContext()
+
 function App() {
   const [cart, setCart] = useState([])
-  const [products, setProducts] = useState([])
   const [openBuyModal, setOpenBuyModal] = useState(false)
   const [productActive, setProductActive] = useState()
   const [openInforModal, setOpenInforModal] = useState(false)
@@ -20,11 +26,14 @@ function App() {
     note: ''
   })
 
+  const [indexScroll, setIndexScroll] = useState(0)
+  const [searchResult, setSearchResult] = useState([])
+  const [login, setLogin] = useState(true)
+  const [newAccount, setNewAccount] = useState({})
 
+  
   // getData all products
-  useEffect(() => {
-    setProducts(data.products)
-  }, [])
+  const products = data.products
 
   // add product in cart
   const addCart = (product, state = 1) => {
@@ -55,71 +64,105 @@ function App() {
     }
   }
 
+  const GoToTop = () => {
+    return (
+      <div className={cx('go-to-top')}
+        onClick={() => {
+          window.scrollTo(0, 0)
+        }}
+      >
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAPxJREFUSEvt1G0RwjAMBuA3CkACDkDCkIADJCABCUjAARKYBHCABFAQLncZV0Y/kt6O/el+bXdpn/ZdWsJMD83kosF/S746amZeyiqJ6Fmz2ipY0auC2xrcDQfoRuEbADfugiPokLIbN8MZtAo3wRH0BWChYvhu3nkRjqB3AEcAF4V3+r32/PMsnEA7ANJYn64GIDvtAZjxJJxC5egws+Dhceq13oyX4GEiibcbzmsMlphH+NeY8SVjifoE4BBeEik4wH/GuODUVZiDrddnsatjEzWYiKQJXU+L2hQXM68A7LX4TEQP08CgqCpqLxKrb/AUKZrmaFGbYpqi6A3yIIof2ITnzwAAAABJRU5ErkJggg==" />
+        {/* <FontAwesomeIcon icon={faCircleUp} /> */}
+      </div>
+    )
+  }
 
+  window.addEventListener('scroll', (e) => {
+    setIndexScroll(e.currentTarget.scrollY)
+  })
 
 
   return (
-    <div className="App">
+    <account.Provider
+      value={(
+        {
+          email: 'test@gmail.com',
+          password: '123456',
+          phone: '0123456',
+          add: 'Ha Noi'
+        }
+      )}
+    >
+      <div className="App">
 
-      <BrowserRouter>
-        <Routes>
-          {
-            publicRoutes.map((routeI, index) => {
-              let Ele = routeI.component
-              let Layout = DefaultLayout
-              if (routeI.layout) {
-                Layout = routeI.layout
-              }
-              else if (routeI.layout === null) {
-                Layout = 'div'
-              }
-              return (
-                <Route
-                  path={routeI.path}
-                  key={index}
-                  element={
-                    <Layout cart={cart} removeCart={removeCart}>
-                      <Ele addCart={addCart}
+        <BrowserRouter>
+          <Routes>
+            {
+              publicRoutes.map((routeI, index) => {
+                let Ele = routeI.component
+                let Layout = DefaultLayout
+                if (routeI.layout) {
+                  Layout = routeI.layout
+                }
+                else if (routeI.layout === null) {
+                  Layout = 'div'
+                }
+                return (
+                  <Route
+                    path={routeI.path}
+                    key={index}
+                    element={
+                      <Layout cart={cart}
                         removeCart={removeCart}
-                        setOpenBuyModal={setOpenBuyModal}
-                        setProductActive={setProductActive}
-                        setOpenInforModal={setOpenInforModal}
-                        cart={cart}
-                        setCart={setCart}
-                        setUserinfor={setUserinfor}
-                        userinfor={userinfor}
-                      />
-                    </Layout>
-                  }
-                />
-              )
-            })
+                        setSearchResult={setSearchResult}
+                        login={login}
+                      >
+                        <Ele addCart={addCart}
+                          removeCart={removeCart}
+                          setOpenBuyModal={setOpenBuyModal}
+                          setProductActive={setProductActive}
+                          setOpenInforModal={setOpenInforModal}
+                          cart={cart}
+                          setCart={setCart}
+                          setUserinfor={setUserinfor}
+                          userinfor={userinfor}
+                          searchResult={searchResult}
+                          setLogin={setLogin}
+                          setNewAccount = {setNewAccount}
+                        />
+                      </Layout>
+                    }
+                  />
+                )
+              })
 
+            }
+
+          </Routes>
+          {
+            openBuyModal
+            &&
+            <BuyModal
+              cart={cart}
+              product={productActive}
+              setOpenBuyModal={setOpenBuyModal}
+              setCart={setCart}
+            />
           }
-
-        </Routes>
-        {
-          openBuyModal
-          &&
-          <BuyModal
-            cart={cart}
-            product={productActive}
-            setOpenBuyModal={setOpenBuyModal}
-            setCart={setCart}
-          />
-        }
-        {
-          openInforModal
-          &&
-          <InforModal
-            product={productActive}
-            setOpenInforModal={setOpenInforModal}
-            setOpenBuyModal={setOpenBuyModal}
-            addCart={addCart}
-          />
-        }
-      </BrowserRouter>
-    </div>
+          {
+            openInforModal
+            &&
+            <InforModal
+              product={productActive}
+              setOpenInforModal={setOpenInforModal}
+              setOpenBuyModal={setOpenBuyModal}
+              addCart={addCart}
+            />
+          }
+          {indexScroll > 120 && <GoToTop />}
+        </BrowserRouter>
+      </div>
+    </account.Provider>
   );
 }
 

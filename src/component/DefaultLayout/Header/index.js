@@ -4,10 +4,10 @@ import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBasketShopping, faCaretDown, faMagnifyingGlass, faUserPlus } from '@fortawesome/free-solid-svg-icons'
 import Tippy from '@tippyjs/react/headless';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import Logo from '../../../component/Logo'
-import {routes} from '../../../config/routes'
+import { routes } from '../../../config/routes'
 import SearchBlock from '../../../component/searchBlock';
 import Login from '../../../component/Login';
 import ShoppingCart from '../../../component/ShoppingCart';
@@ -17,22 +17,6 @@ import handleCart from '../../../App'
 import data from '../../../data/db.json'
 
 const cx = classNames.bind(styles)
-
-const shopping = [
-    // {
-    //     product_id: 1, // id của hàng
-    //     product_name: 'Quả óc chó', // tên hàng
-    //     product_price: 530000, // giá gốc hàng
-    //     product_sale_price: 430000, // giá hàng sale
-    //     product_img: 'https://bizweb.dktcdn.net/thumb/compact/100/350/980/products/38f5a71fcbd96417784fa367c87816.jpg', // link src của ảnh
-    //     product_brand: '', // thương hiệu hàng
-    //     product_quantity: 3, // Số lượng hàng
-    //     product_root: '', // nguồn gốc hàng
-    //     product_weight: '', // khối lượng hàng(kg) / hộp
-    //     product_intro: '', // lời giới thiệu hàng
-    // }
-]
-
 
 const Directions = [
     {
@@ -63,13 +47,21 @@ const Directions = [
 ]
 
 
+function Header({ cart, removeCart, setSearchResult, login }) {
+    const [searchValue, setSearchValue] = useState('')
+    const productKind = data.productKind
+    const products = data.products
 
-function Header({ cart, removeCart }) {
-    const [productKind, setProductKind] = useState([])
+    const Search = () => {
+        const result2 = []
+        products.forEach(product => {
+            if (product.name.toUpperCase().includes(searchValue.trim().toUpperCase())) {
+                result2.push(product)
+            }
+        })
+        setSearchResult(result2)
+    }
 
-    const getDataProductKind = useEffect(() => {
-        setProductKind(data.productKind)
-    }, [])
 
     return (
         <div className={cx('header')}>
@@ -139,18 +131,26 @@ function Header({ cart, removeCart }) {
                     <div className={cx('c-3')}>
                         <ul className={cx('cart-group')}>
                             <li className={cx('search-btn')}>
-                                <SearchBlock>
+                                <SearchBlock searchValue={searchValue} setSearchValue={setSearchValue} Search={Search}>
                                     <div>
                                         <FontAwesomeIcon icon={faMagnifyingGlass} />
                                     </div>
                                 </SearchBlock>
                             </li>
                             <li>
-                                <Login>
-                                    <div>
-                                        <FontAwesomeIcon icon={faUserPlus} />
-                                    </div>
-                                </Login>
+                                {
+                                    login ? (
+                                        <>
+
+                                        </>
+                                    ) : (
+                                        <Login >
+                                            <div>
+                                                <FontAwesomeIcon icon={faUserPlus} />
+                                            </div>
+                                        </Login>
+                                    )
+                                }
                             </li>
                             <li>
                                 <ShoppingCart ListProduct={cart} removeCart={removeCart}>

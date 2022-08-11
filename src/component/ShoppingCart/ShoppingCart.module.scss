@@ -89,13 +89,15 @@
         }
     }
 
-    button {
+    a {
         width: 100%;
         display: block;
         height: 50px;
         border: none;
         outline: none;
         border-radius: 25px;
+        line-height: 50px;
+        text-align: center;
         font-size: 1.6rem;
         background: var(--bg-color);
         color: var(--white-color);

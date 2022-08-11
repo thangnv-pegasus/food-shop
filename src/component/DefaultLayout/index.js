@@ -2,7 +2,6 @@ import Header from "./Header"
 import Footer from './Footer'
 import className from 'classnames/bind'
 import styles from './DefaultLayout.module.scss'
-import { useState, useEffect } from "react"
 
 const cx = className.bind(styles)
 

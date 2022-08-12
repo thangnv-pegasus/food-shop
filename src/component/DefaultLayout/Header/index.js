@@ -47,20 +47,10 @@ const Directions = [
 ]
 
 
-function Header({ cart, removeCart, setSearchResult, login }) {
-    const [searchValue, setSearchValue] = useState('')
+function Header({ cart, removeCart, login }) {
     const productKind = data.productKind
     const products = data.products
 
-    const Search = () => {
-        const result2 = []
-        products.forEach(product => {
-            if (product.name.toUpperCase().includes(searchValue.trim().toUpperCase())) {
-                result2.push(product)
-            }
-        })
-        setSearchResult(result2)
-    }
 
 
     return (
@@ -131,11 +121,8 @@ function Header({ cart, removeCart, setSearchResult, login }) {
                     <div className={cx('c-3')}>
                         <ul className={cx('cart-group')}>
                             <li className={cx('search-btn')}>
-                                <SearchBlock searchValue={searchValue} setSearchValue={setSearchValue} Search={Search}>
-                                    <div>
-                                        <FontAwesomeIcon icon={faMagnifyingGlass} />
-                                    </div>
-                                </SearchBlock>
+                                <SearchBlock
+                                />
                             </li>
                             <li>
                                 {

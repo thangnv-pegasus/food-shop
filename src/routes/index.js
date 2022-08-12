@@ -16,6 +16,7 @@ import DetailBlog from '../pages/DetailBlog'
 import DetailProduct from '../pages/DetailProduct'
 import Login from '../pages/Login'
 import Signup from '../pages/Signup'
+import SearchResult from '../pages/SearchResult'
 const publicRoutes = [
     {
         path: routes.home,
@@ -86,6 +87,10 @@ const publicRoutes = [
     {
         path: routes.signup,
         component: Signup
+    },
+    {
+        path: routes.searchResult,
+        component: SearchResult
     }
 ]
 

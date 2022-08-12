@@ -15,8 +15,6 @@ function DetailProduct({ addCart, setOpenBuyModal, setProductActive, setOpenInfo
     const [quantity, setQuantity] = useState(1)
     const thisProduct = data.products.find(product => product.id == productId)
 
-
-    console.log(thisProduct.description)
     return (
         <div className={cx('product-detail')}>
             <TitlePage>

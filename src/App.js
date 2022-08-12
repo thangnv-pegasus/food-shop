@@ -27,7 +27,6 @@ function App() {
   })
 
   const [indexScroll, setIndexScroll] = useState(0)
-  const [searchResult, setSearchResult] = useState([])
   const [login, setLogin] = useState(true)
   const [newAccount, setNewAccount] = useState({})
 
@@ -114,7 +113,6 @@ function App() {
                     element={
                       <Layout cart={cart}
                         removeCart={removeCart}
-                        setSearchResult={setSearchResult}
                         login={login}
                       >
                         <Ele addCart={addCart}
@@ -126,7 +124,6 @@ function App() {
                           setCart={setCart}
                           setUserinfor={setUserinfor}
                           userinfor={userinfor}
-                          searchResult={searchResult}
                           setLogin={setLogin}
                           setNewAccount = {setNewAccount}
                         />

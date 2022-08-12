@@ -15,7 +15,8 @@ const routes = {
     completeOrder: '/completeOrder',
     detailProduct: '/product/:productId',
     login: '/login',
-    signup: '/signup'
+    signup: '/signup',
+    searchResult: '/search/:searchValue'
 }
 
 export {routes}

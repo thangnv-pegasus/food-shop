@@ -2,16 +2,17 @@ import { faAngleLeft, faMoneyBill1Wave, faMoneyCheck } from "@fortawesome/free-s
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import classNames from "classnames/bind"
 import { useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { routes } from "../../config/routes"
 import styles from './Order.module.scss'
 
 
 const cx = classNames.bind(styles)
 
-function Order({ cart, setUserinfor, userinfor }) {
+function Order({ cart, setUserinfor, userinfor, setCart }) {
 
     const [checkPay, setCheckPay] = useState(false)
+    const [checkbtn, setCheckBtn] = useState(false)
 
     let size = 0;
     cart.forEach(product => {
@@ -27,6 +28,18 @@ function Order({ cart, setUserinfor, userinfor }) {
             total += product.price_main * product.quantity
         }
     })
+    const navigate = useNavigate()
+    const checkInfor = () => {
+        if (userinfor.name === '' || userinfor.email === '' || userinfor.phone === '' || userinfor.add === '') {
+            alert('Vui lòng nhập đầy đủ thông tin!')
+        }
+        else if (!checkPay) {
+            alert('Hãy xác nhận thanh toán khi giao hàng!')
+        }
+        else {
+            navigate('/completeOrder')
+        }
+    }
 
     return (
         <div className={cx('order')}>
@@ -156,9 +169,11 @@ function Order({ cart, setUserinfor, userinfor }) {
                                             Quay về giỏ hàng
                                         </p>
                                     </Link>
-                                    <Link to={routes.completeOrder} className={cx('complete')}>
+                                    <div to={routes.completeOrder} className={cx('complete')}
+                                        onClick={() => checkInfor()}
+                                    >
                                         Đặt hàng
-                                    </Link>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -2,6 +2,7 @@ import styles from './BuyModal.module.scss'
 import classNames from 'classnames/bind'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
 const cx = classNames.bind(styles)
 
@@ -19,6 +20,14 @@ function BuyModal({ product, cart, setOpenBuyModal, setCart }) {
     cart.forEach(product => {
         size += product.quantity
     })
+
+    const navigate = useNavigate()
+
+    const goToCart = () => {
+        navigate('/cart')
+        window.scrollTo(0,0)
+        setOpenBuyModal(false)
+    }
 
     return (
         <div className={cx('overlay')}
@@ -53,7 +62,7 @@ function BuyModal({ product, cart, setOpenBuyModal, setCart }) {
                     <div className={cx('total-price')}>
                         Tổng tiền: <span>{total}đ</span>
                     </div>
-                    <button className={cx('pay')}>
+                    <button className={cx('pay')} onClick = {()=>goToCart()}>
                         Tiến hành thanh toán
                     </button>
                     <div className={cx('close-modal')} onClick={() => setOpenBuyModal(false)}>

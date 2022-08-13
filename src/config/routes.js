@@ -16,7 +16,11 @@ const routes = {
     detailProduct: '/product/:productId',
     login: '/login',
     signup: '/signup',
-    searchResult: '/search/:searchValue'
+    searchResult: '/search/:searchValue',
+    member: '/member/:memberId',
+    memberOrder: '/member/:memberId/order',
+    memberChangePassword: '/member/:memberId/changePassword',
+    memberAddress: '/member/:memberId/memberAddress'
 }
 
 export {routes}

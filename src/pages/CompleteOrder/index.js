@@ -7,7 +7,7 @@ import { routes } from '../../config/routes'
 
 const cx = classNames.bind(styles)
 
-function CompleteOrder({ cart, userinfor }) {
+function CompleteOrder({ cart, userinfor, setCart }) {
 
     let sizeCart = 0;
     cart.forEach(product => {
@@ -127,7 +127,7 @@ function CompleteOrder({ cart, userinfor }) {
                         </div>
                     </div>
                     <div className={cx('selection')}>
-                        <Link to={routes.home}>
+                        <Link to={routes.home} onClick={()=>{setCart([])}}>
                             Tiếp tục mua hàng
                         </Link>
                         <div className={cx('print')} 

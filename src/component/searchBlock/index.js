@@ -112,7 +112,7 @@ function SearchBlock() {
             interactive
             onClickOutside={() => setShowResult(false)}
         >
-            <div className={cx('search-block')}>
+            <form className={cx('search-block')} onSubmit ={(e)=>ToSearchPage()}>
                 <input type="text" placeholder='Tìm kiếm...'
                     value={searchValue}
                     onChange={(e) => setSearchValue(e.target.value)}
@@ -124,7 +124,7 @@ function SearchBlock() {
                 >
                     <FontAwesomeIcon icon={faMagnifyingGlass} />
                 </button>
-            </div>
+            </form>
         </Tippy>
 
 

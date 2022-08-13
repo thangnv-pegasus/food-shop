@@ -1,5 +1,5 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
-import { createContext,  useEffect,  useState } from "react";
+import { useState } from "react";
 import className from 'classnames/bind'
 import styles from './App.module.scss'
 
@@ -10,8 +10,6 @@ import InforModal from "./component/InforModal";
 import data from './data/db.json'
 
 const cx = className.bind(styles)
-
-export const account = createContext()
 
 function App() {
   const [cart, setCart] = useState([])
@@ -27,10 +25,11 @@ function App() {
   })
 
   const [indexScroll, setIndexScroll] = useState(0)
-  const [login, setLogin] = useState(true)
+  const [login, setLogin] = useState('true')
   const [newAccount, setNewAccount] = useState({})
+  const [userLogin, setUserLogin] = useState()
 
-  
+
   // getData all products
   const products = data.products
 
@@ -82,84 +81,70 @@ function App() {
 
 
   return (
-    <account.Provider
-      value={(
-        {
-          email: 'test@gmail.com',
-          password: '123456',
-          phone: '0123456',
-          add: 'Ha Noi'
-        }
-      )}
-    >
-      <div className="App">
 
-        <BrowserRouter>
-          <Routes>
-            {
-              publicRoutes.map((routeI, index) => {
-                let Ele = routeI.component
-                let Layout = DefaultLayout
-                if (routeI.layout) {
-                  Layout = routeI.layout
-                }
-                else if (routeI.layout === null) {
-                  Layout = 'div'
-                }
-                return (
-                  <Route
-                    path={routeI.path}
-                    key={index}
-                    element={
-                      <Layout cart={cart}
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          {
+            publicRoutes.map((routeI, index) => {
+              let Ele = routeI.component
+              let Layout = DefaultLayout
+              if (routeI.layout) {
+                Layout = routeI.layout
+              }
+              else if (routeI.layout === null) {
+                Layout = 'div'
+              }
+              return (
+                <Route
+                  path={routeI.path}
+                  key={index}
+                  element={
+                    <Layout cart={cart}
+                      removeCart={removeCart}
+                    >
+                      <Ele addCart={addCart}
                         removeCart={removeCart}
-                        login={login}
-                      >
-                        <Ele addCart={addCart}
-                          removeCart={removeCart}
-                          setOpenBuyModal={setOpenBuyModal}
-                          setProductActive={setProductActive}
-                          setOpenInforModal={setOpenInforModal}
-                          cart={cart}
-                          setCart={setCart}
-                          setUserinfor={setUserinfor}
-                          userinfor={userinfor}
-                          setLogin={setLogin}
-                          setNewAccount = {setNewAccount}
-                        />
-                      </Layout>
-                    }
-                  />
-                )
-              })
+                        setOpenBuyModal={setOpenBuyModal}
+                        setProductActive={setProductActive}
+                        setOpenInforModal={setOpenInforModal}
+                        cart={cart}
+                        setCart={setCart}
+                        setUserinfor={setUserinfor}
+                        userinfor={userinfor}
+                      />
+                    </Layout>
+                  }
+                />
+              )
+            })
 
-            }
+          }
 
-          </Routes>
-          {
-            openBuyModal
-            &&
-            <BuyModal
-              cart={cart}
-              product={productActive}
-              setOpenBuyModal={setOpenBuyModal}
-              setCart={setCart}
-            />
-          }
-          {
-            openInforModal
-            &&
-            <InforModal
-              product={productActive}
-              setOpenInforModal={setOpenInforModal}
-              setOpenBuyModal={setOpenBuyModal}
-              addCart={addCart}
-            />
-          }
-          {indexScroll > 120 && <GoToTop />}
-        </BrowserRouter>
-      </div>
-    </account.Provider>
+        </Routes>
+        {
+          openBuyModal
+          &&
+          <BuyModal
+            cart={cart}
+            product={productActive}
+            setOpenBuyModal={setOpenBuyModal}
+            setCart={setCart}
+          />
+        }
+        {
+          openInforModal
+          &&
+          <InforModal
+            product={productActive}
+            setOpenInforModal={setOpenInforModal}
+            setOpenBuyModal={setOpenBuyModal}
+            addCart={addCart}
+          />
+        }
+        {indexScroll > 120 && <GoToTop />}
+      </BrowserRouter>
+    </div>
   );
 }
 

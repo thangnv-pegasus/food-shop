@@ -14,8 +14,6 @@ import Order from '../pages/Order'
 import CompleteOrder from '../pages/CompleteOrder'
 import DetailBlog from '../pages/DetailBlog'
 import DetailProduct from '../pages/DetailProduct'
-import Login from '../pages/Login'
-import Signup from '../pages/Signup'
 import SearchResult from '../pages/SearchResult'
 const publicRoutes = [
     {
@@ -79,14 +77,6 @@ const publicRoutes = [
     {
         path: routes.detailProduct,
         component: DetailProduct
-    },
-    {
-        path: routes.login,
-        component: Login
-    },
-    {
-        path: routes.signup,
-        component: Signup
     },
     {
         path: routes.searchResult,

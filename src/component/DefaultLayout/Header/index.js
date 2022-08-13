@@ -9,7 +9,6 @@ import { useState } from 'react';
 import Logo from '../../../component/Logo'
 import { routes } from '../../../config/routes'
 import SearchBlock from '../../../component/searchBlock';
-import Login from '../../../component/Login';
 import ShoppingCart from '../../../component/ShoppingCart';
 import ProductKind from '../../../pages/Product/productKind'
 import Direct from '../../../component/Direct';
@@ -47,17 +46,15 @@ const Directions = [
 ]
 
 
-function Header({ cart, removeCart, login }) {
+function Header({ cart, removeCart }) {
     const productKind = data.productKind
     const products = data.products
-
-
 
     return (
         <div className={cx('header')}>
             <div className={cx('grid wide')}>
                 <div className={cx('header-section')}>
-                    <div className={cx('c-2')}>
+                    <div className={cx('col c-2')}>
                         <div className={cx('logo')}>
                             <Logo
                                 src="https://bizweb.dktcdn.net/100/350/980/themes/802125/assets/logo.png?1658680172137"
@@ -65,7 +62,7 @@ function Header({ cart, removeCart, login }) {
                             />
                         </div>
                     </div>
-                    <div className={cx('c-7')}>
+                    <div className={cx('col c-7')}>
                         <ul className={cx('nav')}>
                             {
                                 Directions.map((direct, index) => {
@@ -118,26 +115,10 @@ function Header({ cart, removeCart, login }) {
                         </ul>
                     </div>
 
-                    <div className={cx('c-3')}>
+                    <div className={cx('col c-3')}>
                         <ul className={cx('cart-group')}>
                             <li className={cx('search-btn')}>
-                                <SearchBlock
-                                />
-                            </li>
-                            <li>
-                                {
-                                    login ? (
-                                        <>
-
-                                        </>
-                                    ) : (
-                                        <Login >
-                                            <div>
-                                                <FontAwesomeIcon icon={faUserPlus} />
-                                            </div>
-                                        </Login>
-                                    )
-                                }
+                                <SearchBlock />
                             </li>
                             <li>
                                 <ShoppingCart ListProduct={cart} removeCart={removeCart}>

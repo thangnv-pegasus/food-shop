@@ -9,7 +9,9 @@ function ProductItem({ addCart, product, setOpenInforModal, setOpenBuyModal, set
 
     return (
         <div className={cx('product-item')}>
-            <NavLink to={product.to} className={cx('product-img')}>
+            <NavLink to={product.to} className={cx('product-img')}
+                onClick = {()=>window.scrollTo(0,0)}
+            >
                 <img src={product.img_src} />
 
             </NavLink>
@@ -35,7 +37,9 @@ function ProductItem({ addCart, product, setOpenInforModal, setOpenBuyModal, set
                 </div>
             </div>
             <div className={cx('product-infor')}>
-                <NavLink to={`/product/${product.id}`} className={cx('product-name')}>
+                <NavLink to={`/product/${product.id}`} className={cx('product-name')}
+                    onClick = {()=>window.scrollTo(0,0)}
+                >
                     {product.name}
                 </NavLink>
                 <div className={cx('product-price')}>

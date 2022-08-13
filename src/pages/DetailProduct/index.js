@@ -99,7 +99,11 @@ function DetailProduct({ addCart, setOpenBuyModal, setProductActive, setOpenInfo
                                     </div>
                                     <div className={cx('add-to-cart')}>
                                         <button
-                                            onClick={() => addCart(thisProduct, quantity)}
+                                            onClick={() => {
+                                                addCart(thisProduct, quantity)
+                                                setOpenBuyModal(true)
+                                                setProductActive(thisProduct)
+                                            }}
                                         >
                                             Thêm vào giỏ hàng
                                         </button>
@@ -155,7 +159,7 @@ function DetailProduct({ addCart, setOpenBuyModal, setProductActive, setOpenInfo
                             <div className='row'>
                                 {
                                     data.products.map((product, index) => {
-                                        if(product.id == productId){
+                                        if (product.id == productId) {
                                             return;
                                         }
                                         if (index < 4) {

@@ -33,9 +33,9 @@ function ShoppingCart({ children, ListProduct, removeCart }) {
                                             return (
 
                                                 <div key={index} className={cx('product-item')}>
-                                                    <div className={cx('product-img')}>
+                                                    <Link to={`/product/${prod.id}`} className={cx('product-img')}>
                                                         <img src={prod.img_src} alt="product" />
-                                                    </div>
+                                                    </Link>
                                                     <div className={cx('product-infor')}>
                                                         <div className={cx('product-name')}>
                                                             {prod.name}

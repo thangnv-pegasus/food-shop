@@ -78,10 +78,15 @@
         background: #91ad41;
         cursor: pointer;
     }
+    margin-bottom: 10px;
 }
 .contact__map{
     iframe{
         width: 100%;
         height: 600px;
     }
+}
+
+@media (max-width: 780px){
+    
 }

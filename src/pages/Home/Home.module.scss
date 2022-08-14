@@ -1,5 +1,6 @@
 .sub-banner {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .about {
@@ -12,7 +13,7 @@
     }
 
     .about-slogan {
-        padding: 0 150px;
+        padding: 0;
         margin-top: 15px;
         text-align: center;
         color: #8b8b99;
@@ -21,7 +22,7 @@
 
 .about-service {
     margin-top: 45px;
-    overflow: hidden;
+
     transition: all linear;
 }
 
@@ -36,6 +37,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 
     li {
         line-height: 36px;
@@ -48,6 +50,7 @@
         border: 1px solid #e7e9f3;
         border-radius: 30px;
         transition: all ease-out 0.2s;
+        margin-bottom: 10px;
 
         &:hover {
             border-color: var(--primary-color);
@@ -82,7 +85,7 @@
     }
 
     a {
-        font-size: 4.8rem;
+        font-size: 3.6rem;
         font-weight: bold;
         color: var(--white-color);
         transition: all 150ms ease-in-out;
@@ -94,7 +97,6 @@
 
     .hot-line__slogan {
         margin: 0 0 15px 0;
-        width: 470px;
         margin: 0 auto;
     }
 }
@@ -104,11 +106,18 @@
     padding: 40px 0;
 }
 
+.blogs {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 .blogs-section,
 .top-brands__section {
     padding: 40px 0;
+    overflow: hidden;
 }
 
+.about-service,
 .list-brands {
     overflow: hidden;
 }
@@ -116,4 +125,32 @@
 .active {
     background-color: var(--primary-color) !important;
     color: var(--white-color) !important;
+}
+
+@media (min-width: 740px) {
+    .about-service {
+        overflow: unset;
+    }
+
+    .about-slogan {
+        padding: 0 150px;
+    }
+
+    .list-options {
+        li {
+            padding: 0 10px;
+            margin-bottom: 0;
+        }
+    }
+
+    .hot-line {
+        a {
+            font-size: 4.8rem;
+        }
+
+        .hot-line__slogan {
+            width: 470px;
+
+        }
+    }
 }

@@ -17,21 +17,23 @@
     align-items: center;
     font-weight: 500;
     height: 60px;
+
     li {
         padding: 0 10px;
         margin: 0 8px;
         height: 100%;
         display: flex;
         align-items: center;
-    
+
         a {
             color: var(--text-color);
             line-height: 60px;
-            &:hover{
+
+            &:hover {
                 color: var(--primary-color);
             }
         }
-    
+
         .active {
             color: var(--primary-color);
         }
@@ -77,9 +79,27 @@
     }
 }
 
-.product-kinds{
+.product-kinds {
     width: 215px;
     background-color: var(--white-color);
     padding: 0 20px;
-    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+.menu{
+    font-size: 2.4rem;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+    .nav {
+        font-size: 1.4rem;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1239px){
+    .nav{
+        li{
+            margin: 0;
+        }
+    }
 }

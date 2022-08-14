@@ -14,8 +14,8 @@ function Contact() {
             </TitlePage>
             <div className={cx('contact')}>
                 <div className='grid wide'>
-                    <div className='row'>
-                        <div className='col c-4'>
+                    <div className='row row-product'>
+                        <div className='col l-4 m-12 c-12'>
                             <div className={cx('contact__infor')}>
                                 <ul className={cx('address')}>
                                     <li>
@@ -72,7 +72,7 @@ function Contact() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col c-8'>
+                        <div className='col l-8 m-12 c-12'>
                             <div className={cx('contact__map')}>
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.9042741015214!2d105.8158777!3d21.036515899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab128b45bf23%3A0xd1d32b58169417cd!2zMjY2IMSQ4buZaSBD4bqlbiwgTGnhu4V1IEdpYWksIEJhIMSQw6xuaCwgSMOgIE7hu5lp!5e0!3m2!1svi!2s!4v1659564914292!5m2!1svi!2s"

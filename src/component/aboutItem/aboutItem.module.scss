@@ -25,4 +25,11 @@
     font-weight: 400;
     color: #707070;
     user-select: none;
+    white-space: initial !important;
+}
+
+@media (min-width: 740px) {
+    .about-content{
+        padding: 0;
+    }
 }

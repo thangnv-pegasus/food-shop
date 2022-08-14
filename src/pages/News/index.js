@@ -21,11 +21,11 @@ function News() {
                         Tin tức
                     </div>
                     <div className={cx('news-section')}>
-                        <div className='row'>
+                        <div className='row row-product'>
                             {
                                 blogs.map((blog, index) => {
                                     return (
-                                        <div className='col c-4' key={index}>
+                                        <div className='col c-12 m-6 l-4' key={index}>
                                             <Blog
                                                 blog={blog}
                                             />

@@ -1,5 +1,5 @@
 .search-block {
-    width: 250px;
+    width: 200px;
     height: 40px;
     background: var(--bg-color);
     border-radius: 20px;
@@ -8,7 +8,7 @@
     input {
         display: block;
         height: 100%;
-        width: 210px;
+        width: 160px;
         border: none;
         outline: none;
         padding: 10px 0 10px 15px;
@@ -88,4 +88,24 @@
         font-size: 1.4rem;
     }
     
+}
+@media (min-width: 740px) {
+    .search-block{
+        width: 250px;
+        input{
+            width: 210px;
+        }
+    }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+    .search-block{
+        width: 200px;
+        input{
+
+            width: 160px;
+        }
+        .search-result{
+            width: 200px;
+        }
+    }
 }

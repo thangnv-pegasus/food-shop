@@ -9,16 +9,14 @@ function ProductItem({ addCart, product, setOpenInforModal, setOpenBuyModal, set
 
     return (
         <div className={cx('product-item')}>
-            <NavLink to={product.to} className={cx('product-img')}
+            <div className={cx('product-img')}
                 onClick = {()=>window.scrollTo(0,0)}
             >
                 <img src={product.img_src} />
-
-            </NavLink>
-            <div className={cx('options')}>
+                <div className={cx('options')}>
                 <div className={cx('options-icon')}>
                     <div className={cx('cart-icon')}
-                        onClick={() => {
+                        onClick={(e) => {
                             addCart(product)
                             setOpenBuyModal(true)
                             setProductActive(product)
@@ -35,7 +33,9 @@ function ProductItem({ addCart, product, setOpenInforModal, setOpenBuyModal, set
                         <FontAwesomeIcon icon={faMagnifyingGlass} />
                     </div>
                 </div>
+            </div>  
             </div>
+            
             <div className={cx('product-infor')}>
                 <NavLink to={`/product/${product.id}`} className={cx('product-name')}
                     onClick = {()=>window.scrollTo(0,0)}

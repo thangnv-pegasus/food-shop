@@ -1,6 +1,6 @@
 import styles from './ProductKindPage.module.scss'
 import classNames from 'classnames/bind'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import TitlePage from '../../component/TitlePage'
 import ProductItem from '../Product/productItem'
 import data from '../../data/db.json'
@@ -37,7 +37,27 @@ function VegetablePage({ addCart, removeCart, setOpenBuyModal, setProductActive,
         })
         setProducts([...dataNew])
     }
+    const refOption = useRef()
+    useEffect(() => {
 
+        const element = refOption.current
+        element.addEventListener('change', (e) => {
+            switch(e.target.value){
+                case '1':
+                    handleDefaultSort()
+                    break;
+                case '2':
+                    handleReverseProduct()
+                    break;
+                case '3':
+                    handleSortBigToSmall()
+                    break;
+                case '4':
+                    handleSortSmallToBig()
+                    break;
+            }
+        })
+    }, [])
     return (
         <>
             <TitlePage>
@@ -67,6 +87,17 @@ function VegetablePage({ addCart, removeCart, setOpenBuyModal, setProductActive,
                             </label>
                         </div>
                     </div>
+                    <div className={cx('option-group')}>
+                            <div className={cx('group-title')}>
+                                Sắp xếp theo:
+                            </div>
+                            <select className={cx('select-btns-mobile')} ref={refOption}>
+                                <option value="1">Hàng mới nhất</option>
+                                <option value="2">Hàng cũ nhất</option>
+                                <option value="3">Giá tăng dần</option>
+                                <option value="4">Giá giảm dần</option>
+                            </select>
+                        </div>
                     <div className={cx('products-section')}>
                         <div className='row'>
                             {

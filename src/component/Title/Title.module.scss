@@ -1,7 +1,7 @@
 .title {
-    font-size: 3.4rem;
     display: inline-block;
     position: relative;
+    font-size: 2.6rem;
     background: -webkit-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -10,6 +10,7 @@
     transition: all ease 0.5s;
     display: flex;
     justify-content: center;
+
     .small-img {
         background: url(https://bizweb.dktcdn.net/100/350/980/themes/802125/assets/bg_title.png?1608187967113);
         background-repeat: no-repeat;
@@ -27,5 +28,11 @@
         background: var(--primary-color);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+}
+
+@media (min-width: 740px) {
+    .title {
+        font-size: 3.4rem;
     }
 }

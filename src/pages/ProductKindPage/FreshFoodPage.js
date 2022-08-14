@@ -1,6 +1,6 @@
 import styles from './ProductKindPage.module.scss'
 import classNames from 'classnames/bind'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import TitlePage from '../../component/TitlePage'
 import ProductItem from '../../pages/Product/productItem'
 import data from '../../data/db.json'
@@ -37,6 +37,27 @@ function FreshFoodPage({ addCart, removeCart, setOpenBuyModal, setProductActive,
         })
         setProducts([...dataNew])
     }
+    const refOption = useRef()
+    useEffect(() => {
+
+        const element = refOption.current
+        element.addEventListener('change', (e) => {
+            switch(e.target.value){
+                case '1':
+                    handleDefaultSort()
+                    break;
+                case '2':
+                    handleReverseProduct()
+                    break;
+                case '3':
+                    handleSortBigToSmall()
+                    break;
+                case '4':
+                    handleSortSmallToBig()
+                    break;
+            }
+        })
+    }, [])
 
     return (
         <>
@@ -66,14 +87,25 @@ function FreshFoodPage({ addCart, removeCart, setOpenBuyModal, setProductActive,
                                 <input type="radio" name="1" onChange={handleSortSmallToBig} />Giá giảm dần
                             </label>
                         </div>
+                        <div className={cx('option-group')}>
+                            <div className={cx('group-title')}>
+                                Sắp xếp theo:
+                            </div>
+                            <select className={cx('select-btns-mobile')} ref={refOption}>
+                                <option value="1">Hàng mới nhất</option>
+                                <option value="2">Hàng cũ nhất</option>
+                                <option value="3">Giá tăng dần</option>
+                                <option value="4">Giá giảm dần</option>
+                            </select>
+                        </div>
                     </div>
                     <div className={cx('products-section')}>
-                        <div className='row'>
+                        <div className='row row-product'>
                             {
                                 products.map((product, index) => {
                                     if (index < 12) {
                                         return (
-                                            <div className='col c-3' key={index}>
+                                            <div className='col c-6 m-4 l-3' key={index}>
                                                 <ProductItem
                                                         addCart={addCart}
                                                         product={product}

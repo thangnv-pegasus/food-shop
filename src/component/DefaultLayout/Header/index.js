@@ -2,9 +2,8 @@ import styles from './Header.module.scss'
 import classNames from 'classnames/bind'
 import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBasketShopping, faCaretDown, faMagnifyingGlass, faUserPlus } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faBasketShopping, faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import Tippy from '@tippyjs/react/headless';
-import { useState } from 'react';
 
 import Logo from '../../../component/Logo'
 import { routes } from '../../../config/routes'
@@ -12,8 +11,8 @@ import SearchBlock from '../../../component/searchBlock';
 import ShoppingCart from '../../../component/ShoppingCart';
 import ProductKind from '../../../pages/Product/productKind'
 import Direct from '../../../component/Direct';
-import handleCart from '../../../App'
 import data from '../../../data/db.json'
+import { useEffect, useRef } from 'react'
 
 const cx = classNames.bind(styles)
 
@@ -46,15 +45,30 @@ const Directions = [
 ]
 
 
-function Header({ cart, removeCart }) {
+
+function Header({ cart, removeCart, setMenuModal }) {
     const productKind = data.productKind
     const products = data.products
+
+    const menuRef = useRef(null)
+    useEffect(()=>{
+        let element = menuRef.current
+
+        element.addEventListener('click',()=>{
+            setMenuModal(true)
+        })
+    },[])
 
     return (
         <div className={cx('header')}>
             <div className={cx('grid wide')}>
                 <div className={cx('header-section')}>
-                    <div className={cx('col c-2')}>
+                    <div className={cx('col c-4 m-2 l-0')}>
+                        <div className={cx('menu')} ref = {menuRef}>
+                            <FontAwesomeIcon icon={faBars} />
+                        </div>
+                    </div>
+                    <div className={cx('col c-0 m-7 l-2')}>
                         <div className={cx('logo')}>
                             <Logo
                                 src="https://bizweb.dktcdn.net/100/350/980/themes/802125/assets/logo.png?1658680172137"
@@ -62,7 +76,7 @@ function Header({ cart, removeCart }) {
                             />
                         </div>
                     </div>
-                    <div className={cx('col c-7')}>
+                    <div className={cx('col c-0 m-0 l-7')}>
                         <ul className={cx('nav')}>
                             {
                                 Directions.map((direct, index) => {
@@ -115,7 +129,7 @@ function Header({ cart, removeCart }) {
                         </ul>
                     </div>
 
-                    <div className={cx('col c-3')}>
+                    <div className={cx('col c-8 m-3 l-3')}>
                         <ul className={cx('cart-group')}>
                             <li className={cx('search-btn')}>
                                 <SearchBlock />
@@ -134,7 +148,6 @@ function Header({ cart, removeCart }) {
                             </li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         </div>

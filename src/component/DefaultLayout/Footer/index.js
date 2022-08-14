@@ -42,13 +42,13 @@ function Footer() {
         <div className={cx('footer')}>
             <div className={cx('subscribe-to-sale')}>
                 <div className='grid wide'>
-                    <div className='row no-gutters'>
-                        <div className='c-6'>
+                    <div className='row no-gutters row-product'>
+                        <div className='col c-12 m-6 l-6'>
                             <div className={cx('subscribe-to-sale__title')}>
                                 Đăng kí nhận tin khuyến mãi
                             </div>
                         </div>
-                        <div className='c-6'>
+                        <div className='col c-12 m-6 l-6'>
                             <div className={cx('subscribe-to-sale__inputForm')}>
                                 <input type="email"
                                     placeholder='Nhập email của bạn'
@@ -61,8 +61,8 @@ function Footer() {
             </div>
             <div className={cx('footer-contact')}>
                 <div className='grid wide'>
-                    <div className='row no-gutters'>
-                        <div className='c-4'>
+                    <div className='row no-gutters row-product'>
+                        <div className='col c-12 l-4 m-12'>
                             <div className={cx('contact__logo')}>
                                 <Logo
                                     src="https://bizweb.dktcdn.net/100/350/980/themes/802125/assets/logo.png?1658680172137"
@@ -97,9 +97,9 @@ function Footer() {
                                 </li>
                             </ul>
                         </div>
-                        <div className='c-8'>
+                        <div className='col c-12 m-12 l-8'>
                             <div className='row no-gutters'>
-                                <div className='c-4'>
+                                <div className='c-4 l-4 m-4'>
                                     <div className={cx('footer__service--title')}>
                                         Cẩm nang sử dụng
                                     </div>
@@ -119,7 +119,7 @@ function Footer() {
                                         }
                                     </ul>
                                 </div>
-                                <div className='c-4'>
+                                <div className='c-4 l-4 m-4'>
                                     <div className={cx('footer__service--title')}>
                                         Chính sách
                                     </div>
@@ -139,7 +139,7 @@ function Footer() {
                                         }
                                     </ul>
                                 </div>
-                                <div className='c-4'>
+                                <div className='c-4 l-4 m-4'>
                                     <div className={cx('footer__service--title')}>
                                         Dịch vụ
                                     </div>

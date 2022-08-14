@@ -34,6 +34,7 @@ function Home({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenI
     const dataNuts = data.productKind[3].products
     const dataFreshFood = data.productKind[4].products
     const productKind = data.productKind
+    const blogsRef = useRef(null)
 
     const getDataProductKind = useEffect(() => {
         setProductKindRender(data.productKind[0].products)
@@ -53,31 +54,27 @@ function Home({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenI
     const HandleScrollX = (element) => {
         let isMouseDown = false
         let startX;
-        let endX;
+        let scrollLeftX
         element.addEventListener('mousedown', (e) => {
             isMouseDown = true;
-            startX = e.pageX
+            startX = e.pageX - element.offsetLeft
+            scrollLeftX = element.scrollLeft
+            console.log('scrollleft: ', scrollLeftX)
         })
         element.addEventListener('mouseleave', (e) => {
             isMouseDown = false;
-            element.style.transform = `translateX(0px)`
         })
         element.addEventListener('mouseup', () => {
             isMouseDown = false;
-            element.style.transform = `translateX(0px)`
         })
         element.addEventListener('mousemove', (e) => {
-            if (isMouseDown) {
-                e.target.style.cursor = 'grabbing'
-                endX = e.pageX;
-                let ScrollX = (endX - startX) * 0.4;
+            if (!isMouseDown) return
 
-                element.style.transform = `translateX(${ScrollX}px)`
-            }
-            else {
-                e.target.style.cursor = 'auto'
-                element.style.transform = `translateX(0px)`
-            }
+            e.target.style.cursor = 'grabbing'
+            let x = e.pageX - element.offsetLeft
+            let walk = x - startX;
+            element.scrollLeft = scrollLeftX - walk;
+            // element.style.transform = `translateX(${ScrollX}px)`
         })
     }
 
@@ -101,13 +98,12 @@ function Home({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenI
             if (isMouseDown) {
                 e.target.style.cursor = 'grabbing'
                 endX = e.pageX;
-                let ScrollX = (endX - startX) * 0.4;
-
+                let ScrollX = (endX - startX) * 0.6;
                 element.style.transform = `translateX(${ScrollX}px)`
             }
             else {
                 e.target.style.cursor = 'auto'
-                element.style.transform = `translateX(0px)`
+                return;
             }
         })
     }
@@ -116,20 +112,13 @@ function Home({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenI
         const AboutElement = refAbout.current
 
         HandleScrollX(AboutElement)
-        return () => {
-            DelelteHandleScrollX(AboutElement)
-        }
+
     }, [])
 
     const HandleBrands = useEffect(() => {
         const brandsElement = refBrands.current
         HandleScrollX(brandsElement)
-        return () => {
-            DelelteHandleScrollX(brandsElement)
-        }
     }, [])
-
-
 
     const ref1 = useRef(null)
     useEffect(() => {
@@ -161,7 +150,11 @@ function Home({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenI
                 break;
         }
     }
+    useEffect(() => {
+        let blogs = blogsRef.current
+        HandleScrollX(blogs)
 
+    }, [])
 
 
 
@@ -201,13 +194,13 @@ function Home({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenI
                         </div>
 
                         <div className={cx('about-service')}
-                            ref={refAbout}
+
                         >
-                            <div className='row no-gutters'>
+                            <div className='row no-gutters' ref={refAbout} style={{ overflow: 'hidden', height: 'auto', whiteSpace: 'nowrap' }}>
                                 {
                                     abouts.map((item) => {
                                         return (
-                                            <div className='c-3' key={item.id}>
+                                            <div className='col c-12 m-4 l-3' key={item.id}>
                                                 <AboutItem
                                                     content={item.content}
                                                     name={item.name}
@@ -257,12 +250,12 @@ function Home({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenI
                                     Thực phẩm tươi sống
                                 </li>
                             </ul>
-                            <div className='row'>
+                            <div className='row row-product'>
                                 {
                                     productKindRender.map((product, index) => {
                                         if (index < 8) {
                                             return (
-                                                <div key={index} className='col c-3'>
+                                                <div key={index} className='col c-6 m-4 l-3'>
                                                     <ProductItem
                                                         addCart={addCart}
                                                         product={product}
@@ -307,12 +300,12 @@ function Home({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenI
                     Sản phẩm bán chạy
                 </Title>
                 <div className='grid wide'>
-                    <div className='row no-gutter'>
+                    <div className='row no-gutter row-product'>
                         {
                             products.map((product, index) => {
                                 if (index < 4) {
                                     return (
-                                        <div key={index} className='col c-3'>
+                                        <div key={index} className='col c-6 m-4 l-3'>
                                             <ProductItem
                                                 addCart={addCart}
                                                 product={product}
@@ -334,31 +327,33 @@ function Home({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenI
 
             {/* blogs */}
             <div className={cx('blogs')}>
-                <Title
-                    isHover={true}
-                    to={routes.news}
-                >
-                    Tin tức mới nhất
-                </Title>
-                <div className={cx('blogs-section')}>
-                    <div className='grid wide'>
-                        <div className='row'>
-                            {
-                                blogs.map((blog, index) => {
-                                    if (index < 3) {
-                                        return (
-                                            <div className='col c-4' key={index}>
-                                                <Blog
-                                                    blog={blog}
-                                                />
-                                            </div>
-                                        )
-                                    }
-                                    else {
-                                        return;
-                                    }
-                                })
-                            }
+                <div className='grid wide'>
+                    <div className={cx('blogs-section')}>
+                        <Title
+                            isHover={true}
+                            to={routes.news}
+                        >
+                            Tin tức mới nhất
+                        </Title>
+                        <div className={cx('list-blog')} >
+                            <div className='row' ref={blogsRef} style={{ overflow: 'hidden', height: 'auto', whiteSpace: 'nowrap' }}>
+                                {
+                                    blogs.map((blog, index) => {
+                                        if (index < 3) {
+                                            return (
+                                                <div className='col c-12 m-6 l-4' key={index}>
+                                                    <Blog
+                                                        blog={blog}
+                                                    />
+                                                </div>
+                                            )
+                                        }
+                                        else {
+                                            return;
+                                        }
+                                    })
+                                }
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -376,7 +371,7 @@ function Home({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenI
                                 {
                                     brands.map((brand) => {
                                         return (
-                                            <div className='col c-2' key={brand.id}>
+                                            <div className='col c-6 m-3 l-2' key={brand.id}>
                                                 <Brand
                                                     img_src={brand.img_src}
                                                 />

@@ -8,6 +8,7 @@ import { publicRoutes } from "./routes"
 import BuyModal from "./component/BuyModal";
 import InforModal from "./component/InforModal";
 import data from './data/db.json'
+import Menu from './component/Menu';
 
 const cx = className.bind(styles)
 
@@ -28,6 +29,7 @@ function App() {
   const [login, setLogin] = useState('true')
   const [newAccount, setNewAccount] = useState({})
   const [userLogin, setUserLogin] = useState()
+  const [menuModal, setMenuModal] = useState(false)
 
 
   // getData all products
@@ -102,6 +104,7 @@ function App() {
                   element={
                     <Layout cart={cart}
                       removeCart={removeCart}
+                      setMenuModal = {setMenuModal}
                     >
                       <Ele addCart={addCart}
                         removeCart={removeCart}
@@ -143,6 +146,7 @@ function App() {
           />
         }
         {indexScroll > 120 && <GoToTop />}
+        {menuModal && <Menu />}
       </BrowserRouter>
     </div>
   );

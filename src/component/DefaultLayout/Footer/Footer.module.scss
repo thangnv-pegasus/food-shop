@@ -3,18 +3,18 @@
 .subscribe-to-sale {
     background-color: rgba(232, 218, 199, 0.6);
     margin-top: 60px;
-    padding: 60px 0;
+    padding: 60px 15px;
     border-top: 1px solid #e8dac7;
     background-repeat: no-repeat;
     background-position: center top;
-
     .subscribe-to-sale__title {
-        font-size: 2.8rem;
+        font-size: 2.6rem;
         width: 100%;
         padding-left: 0px;
         padding-top: 5px;
         color: var(--text-color);
         font-weight: 600;
+        margin-bottom: 20px;
     }
 }
 
@@ -46,12 +46,14 @@
             color: var(--text-color);
             opacity: 0.9;
         }
+
         &::placeholder {
             color: var(--text-color);
             opacity: 0.9;
         }
     }
-    button{
+
+    button {
         width: 110px;
         border: none;
         background: var(--bg-color);
@@ -59,27 +61,30 @@
         color: var(--white-color);
         font-size: 1.5rem;
         cursor: pointer;
-        &:hover{
+
+        &:hover {
             background: var(--primary-color);
         }
     }
 }
 
-.footer-contact{
+.footer-contact {
     padding: 50px 0;
     background-color: var(--white-color);
 
-    .contact__add{
+    .contact__add {
         margin-top: 20px;
         font-size: 1.4rem;
         color: var(--text-color);
-        li{
+
+        li {
             display: flex;
             align-items: center;
             margin-top: 20px;
         }
     }
-    .contact__icon{
+
+    .contact__icon {
         width: 30px;
         height: 30px;
         border-radius: 50%;
@@ -90,48 +95,81 @@
         color: var(--primary-color);
         font-size: 1.4rem;
         margin-right: 10px;
-        &.map-icon{
+
+        &.map-icon {
             padding: 0 8px;
         }
     }
-    .contact__add--title{
+
+    .contact__add--title {
         color: var(--text-color);
         display: block;
         line-height: 2.2rem;
     }
 }
 
-.footer__service--title{
+.footer__service--title {
     font-size: 1.4rem;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 20px;
+    margin-top: 15px;
 }
-.footer__service{
+
+.footer__service {
     list-style-type: none;
     font-size: 1.4rem;
     padding-right: 20px;
-    li{
+
+    li {
         line-height: 2.8rem;
         margin-bottom: 10px;
-        a{
+
+        a {
             color: var(--text-color);
             transition: all linear 0.2s;
-            &:hover{
+
+            &:hover {
                 color: var(--primary-color);
             }
         }
     }
 }
-.footer__copyRight{
+
+.footer__copyRight {
     line-height: 40px;
     text-align: center;
     font-size: 14px;
     position: relative;
     padding: 5px 0px;
-    background-color: rgba(232,218,199,0.6);
-    a{
+    background-color: rgba(232, 218, 199, 0.6);
+
+    a {
         display: inline-block;
         color: var(--primary-color);
+    }
+}
+
+@media (min-width: 740px) {
+    .footer__service--title {
+        margin-top: 15px;
+    }
+    .subscribe-to-sale{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .subscribe-to-sale__title{
+        margin: 0;
+    }
+    .footer__service--title{
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .contact__add {
+        li {
+            padding-right: 10px;
+        }
     }
 }

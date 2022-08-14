@@ -11,9 +11,12 @@
 
 .row {
     display: flex;
-    flex-wrap: wrap; /* tất cả đối tượng có class này đều cùng 1 hàng */
+    flex-wrap: nowrap; /* tất cả đối tượng có class này đều cùng 1 hàng */
     margin-left: -4px;
     margin-right: -4px;
+}
+.row-product{
+    flex-wrap: wrap !important;
 }
 
 .row.no-gutters {
@@ -142,6 +145,7 @@
 /* >= Tablet */
 @media (min-width: 740px) {
     .row {
+        flex-wrap: nowrap;
         margin-left: -8px;
         margin-right: -8px;
     }
@@ -596,3 +600,8 @@
 .hide{
     display: none;
 }
+/*
+mobile & tablet => max-width: 1023px
+tablet => min-width: 740px and max-width: 1023px
+mobile => max-width: 739px
+*/

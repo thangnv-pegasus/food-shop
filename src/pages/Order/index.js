@@ -48,8 +48,8 @@ function Order({ cart, setUserinfor, userinfor, setCart }) {
                     <div className={cx('shop-name')}>
                         Cool Organic
                     </div>
-                    <div className="row">
-                        <div className="col c-4">
+                    <div className="row row-product">
+                        <div className="col c-12 l-4 m-12 ">
                             <div className={cx('user-infor')}>
 
                                 <div className={cx("title")}>
@@ -81,7 +81,7 @@ function Order({ cart, setUserinfor, userinfor, setCart }) {
                                 </form>
                             </div>
                         </div>
-                        <div className='col c-4'>
+                        <div className='col c-12 l-4 m-12'>
                             <div className={cx('ship')}>
                                 <div className={cx("title")}>
                                     Vận chuyển
@@ -111,7 +111,7 @@ function Order({ cart, setUserinfor, userinfor, setCart }) {
                                 </div>
                             </div>
                         </div>
-                        <div className="col c-4">
+                        <div className="col c-12 l-4 m-12">
                             <div className={cx('cart')}>
                                 <div className={cx('title', 'border')}>
                                     Đơn hàng ({size} sản phẩm)

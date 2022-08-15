@@ -23,8 +23,8 @@ function DetailProduct({ addCart, setOpenBuyModal, setProductActive, setOpenInfo
             <div className='grid wide'>
                 <div className={cx('product-detail__section')}>
                     <div className={cx('product-detail-infor')}>
-                        <div className='row'>
-                            <div className='col c-6'>
+                        <div className='row row-product'>
+                            <div className='col l-6 m-12 c-12'>
                                 <div className={cx('product-img')}>
                                     <img src={thisProduct.img_src} />
                                 </div>
@@ -32,7 +32,7 @@ function DetailProduct({ addCart, setOpenBuyModal, setProductActive, setOpenInfo
                                     <img src={thisProduct.img_src} />
                                 </div>
                             </div>
-                            <div className='col c-6'>
+                            <div className='col l-6 m-12 c-12'>
                                 <div className={cx('product-infor')}>
                                     <div className={cx('product-name')}>
                                         {thisProduct.name}
@@ -132,7 +132,7 @@ function DetailProduct({ addCart, setOpenBuyModal, setProductActive, setOpenInfo
                                                     <div key={index} className={cx('decription-img')}>
                                                         <img src={thisProduct.img_src} />
                                                     </div>
-                                                    <div>
+                                                    <div className={cx('text')} >
                                                         {text}
                                                     </div>
                                                 </>
@@ -140,7 +140,7 @@ function DetailProduct({ addCart, setOpenBuyModal, setProductActive, setOpenInfo
                                         }
                                         else {
                                             return (
-                                                <div>
+                                                <div className={cx('text')}>
                                                     {text}
                                                 </div>
                                             )
@@ -156,7 +156,7 @@ function DetailProduct({ addCart, setOpenBuyModal, setProductActive, setOpenInfo
                             Sản phẩm liên quan
                         </Title>
                         <div className={cx('list-related')}>
-                            <div className='row'>
+                            <div className='row row-product'>
                                 {
                                     data.products.map((product, index) => {
                                         if (product.id == productId) {
@@ -164,7 +164,7 @@ function DetailProduct({ addCart, setOpenBuyModal, setProductActive, setOpenInfo
                                         }
                                         if (index < 4) {
                                             return (
-                                                <div key={product.id} className='col c-3'>
+                                                <div key={product.id} className='col c-6 m-4 l-3'>
                                                     <ProductItem
                                                         addCart={addCart}
                                                         product={product}

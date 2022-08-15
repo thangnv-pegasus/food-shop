@@ -115,6 +115,7 @@ function App() {
                         setCart={setCart}
                         setUserinfor={setUserinfor}
                         userinfor={userinfor}
+                        setMenuModal = {setMenuModal}
                       />
                     </Layout>
                   }
@@ -126,7 +127,7 @@ function App() {
 
         </Routes>
         {
-          openBuyModal
+          (openBuyModal)
           &&
           <BuyModal
             cart={cart}
@@ -136,7 +137,7 @@ function App() {
           />
         }
         {
-          openInforModal
+          (openInforModal)
           &&
           <InforModal
             product={productActive}
@@ -146,7 +147,7 @@ function App() {
           />
         }
         {indexScroll > 120 && <GoToTop />}
-        {menuModal && <Menu />}
+        {menuModal && <Menu setMenuModal={setMenuModal} />}
       </BrowserRouter>
     </div>
   );

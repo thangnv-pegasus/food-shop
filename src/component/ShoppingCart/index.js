@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import { routes } from '../../config/routes'
+import { useState } from 'react'
 
 const cx = classNames.bind(styles)
 
@@ -18,6 +19,7 @@ function ShoppingCart({ children, ListProduct, removeCart }) {
             total += element.price_main * element.quantity
         }
     });
+
 
     return (
         <Tippy

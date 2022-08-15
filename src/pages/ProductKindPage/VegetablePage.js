@@ -99,12 +99,12 @@ function VegetablePage({ addCart, removeCart, setOpenBuyModal, setProductActive,
                             </select>
                         </div>
                     <div className={cx('products-section')}>
-                        <div className='row'>
+                        <div className='row row-product'>
                             {
                                 products.map((product, index) => {
                                     if (index < 12) {
                                         return (
-                                            <div className='col c-3' key={index}>
+                                            <div className='col l-3 m-4 c-6' key={index}>
                                                 <ProductItem
                                                     addCart={addCart}
                                                     product={product}

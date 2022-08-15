@@ -9,6 +9,7 @@
     cursor: initial;
     display: flex;
     flex-direction: column;
+    display: none;
     .list-product{
         overflow-y: auto;
         max-height: 300px;
@@ -107,5 +108,10 @@
         &:hover {
             background: var(--primary-color);
         }
+    }
+}
+@media (min-width: 1025px) {
+    .cart{
+        display: block;
     }
 }

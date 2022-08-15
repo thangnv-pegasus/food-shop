@@ -71,7 +71,7 @@
     }
 
     span {
-        margin-left: 60px;
+        margin-left: 5px;
         color: #1990c6;
         font-size: 1.6rem;
     }
@@ -150,12 +150,11 @@
 .input-voucher {
     padding: 15px 0;
     display: flex;
-    font-size: 1.6rem;
 
     input {
         border-radius: 4px;
         display: block;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         padding: 15px 12px;
         border: 1px #d9d9d9 solid;
         height: 44px;
@@ -179,7 +178,7 @@
         border-radius: 5px;
         color: var(--white-color);
         font-weight: 500;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         height: 44px;
         width: 100px;
         text-align: center;
@@ -223,6 +222,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
     .complete {
         cursor: pointer;
@@ -234,13 +234,17 @@
         font-weight: 500;
         padding: 14px 24px;
         text-align: center;
+        width: 100%;
+        
     }
 
     .back-to-cart {
         color: var(--text-color);
         display: flex;
         margin-left: 10px;
-
+        width: 100%;
+        order: 1;
+        margin-top: 10px;
         span {
             transition: all ease 0.2s;
             margin-left: -5px;
@@ -262,4 +266,22 @@
 .border {
     border-bottom: 1px solid #e1e1e1 !important;
     padding-bottom: 20px !important;
+}
+
+@media (min-width: 1025px) {
+    .pay-form{
+        span{
+            margin-left: 60px;
+        }
+    }
+    .back-to-cart,
+    .complete{
+        width: unset;
+        order: 0;
+    }
+    .input-voucher{
+        input,button{
+            font-size: 1.6rem;
+        }
+    }
 }

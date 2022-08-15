@@ -1,8 +1,85 @@
-.overlay{
+.overlay {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.menu {
+    background-color: #9fbc4c;
+    width: 280px;
+    height: 100vh;
+}
+
+.logo {
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.nav {
+    >li {
+        position: relative;
+
+        a {
+            display: block;
+            font-size: 14px;
+            line-height: 36px;
+            padding: 0px 15px;
+            color: #fff;
+            text-align: left;
+            text-transform: uppercase;
+            padding: 5px 40px 5px 25px;
+            width: 100%;
+        }
+
+        ::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 40px;
+            height: 1px;
+            width: 80%;
+            background: rgba(235, 235, 235, 0.302);
+        }
+    }
+
+    .more {
+        position: absolute;
+        right: 0;
+        color: var(--white-color);
+        margin-right: 20px;
+        font-size: 1.6rem;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    .content {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+}
+
+.product-kind {
+    li {
+        a {
+            display: block;
+            font-size: 14px;
+            line-height: normal;
+            margin: 10px 0;
+            padding: 5px 35px 5px 35px;
+            color: #fff;
+            text-transform: none;
+            transition: all 150ms ease-in-out;
+            &:hover{
+                color: var(--text-color);
+            }
+        }
+    }
+    height: 0;
+    overflow: hidden;
 }

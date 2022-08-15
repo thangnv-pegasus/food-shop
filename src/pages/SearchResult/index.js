@@ -45,7 +45,7 @@ function SearchResult({ addCart, setOpenBuyModal, setProductActive, setOpenInfor
                                     {
                                         searchResult.map(product => {
                                             return (
-                                                <div className='col c-3' key={product.id}>
+                                                <div className='col c-6 m-4 l-3' key={product.id}>
                                                     <ProductItem
                                                         addCart={addCart}
                                                         product={product}

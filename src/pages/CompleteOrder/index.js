@@ -26,8 +26,8 @@ function CompleteOrder({ cart, userinfor, setCart }) {
                     <div className={cx('shop-name')}>
                         Cool Organic
                     </div>
-                    <div className='row'>
-                        <div className='col c-6'>
+                    <div className='row row-product'>
+                        <div className='col l-6 m-12'>
                             <div className={cx('heading')}>
                                 <div className={cx('heading-icon')}>
                                     <FontAwesomeIcon icon={faCheck} />
@@ -43,8 +43,8 @@ function CompleteOrder({ cart, userinfor, setCart }) {
                                 </div>
                             </div>
                             <div className={cx('user-infor')}>
-                                <div className='row no-gutters'>
-                                    <div className='col c-6'>
+                                <div className='row no-gutters row-product'>
+                                    <div className='col l-6 m-6'>
                                         <div className={cx('infor-title')}>
                                             Thông tin mua hàng
                                             <p>{userinfor.username}</p>
@@ -53,7 +53,7 @@ function CompleteOrder({ cart, userinfor, setCart }) {
                                             <p>{userinfor.note}</p>
                                         </div>
                                     </div>
-                                    <div className='col c-6'>
+                                    <div className='col l-6 m-6 c-12'>
                                         <div className={cx('infor-title')}>
                                             Địa chỉ nhận hàng
                                             <p>{userinfor.username}</p>
@@ -62,14 +62,14 @@ function CompleteOrder({ cart, userinfor, setCart }) {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='row no-gutters'>
-                                    <div className='col c-6'>
+                                <div className='row no-gutters row-product'>
+                                    <div className='col l-6 m-6 c-12'>
                                         <div className={cx('infor-title')}>
                                             Phương thức thanh toán
                                             <p>Than toán khi giao hàng (COD)</p>
                                         </div>
                                     </div>
-                                    <div className='col c-6'>
+                                    <div className='col l-6 m-6 c-12'>
                                         <div className={cx('infor-title')}>
                                             Phương thức vận chuyển
                                             <p>Giao hàng tận nơi</p>
@@ -78,7 +78,7 @@ function CompleteOrder({ cart, userinfor, setCart }) {
                                 </div>
                             </div>
                         </div>
-                        <div className='col c-6'>
+                        <div className='col l-6 m-12 c-12'>
                             <div className={cx('sumary')}>
                                 <div className={cx('sumary-title', 'border')}>
                                     Đơn hàng #1 ({sizeCart} Sản phẩm)

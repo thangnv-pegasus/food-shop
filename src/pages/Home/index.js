@@ -59,7 +59,6 @@ function Home({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenI
             isMouseDown = true;
             startX = e.pageX - element.offsetLeft
             scrollLeftX = element.scrollLeft
-            console.log('scrollleft: ', scrollLeftX)
         })
         element.addEventListener('mouseleave', (e) => {
             isMouseDown = false;

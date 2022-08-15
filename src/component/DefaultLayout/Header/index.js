@@ -50,21 +50,21 @@ function Header({ cart, removeCart, setMenuModal }) {
     const productKind = data.productKind
     const products = data.products
 
-    const menuRef = useRef(null)
-    useEffect(()=>{
-        let element = menuRef.current
+    // const menuRef = useRef(null)
+    // useEffect(()=>{
+    //     let element = menuRef.current
 
-        element.addEventListener('click',()=>{
-            setMenuModal(true)
-        })
-    },[])
+    //     element.addEventListener('click',()=>{
+    //         handleMenu()
+    //     })
+    // },[])
 
     return (
         <div className={cx('header')}>
             <div className={cx('grid wide')}>
                 <div className={cx('header-section')}>
                     <div className={cx('col c-4 m-2 l-0')}>
-                        <div className={cx('menu')} ref = {menuRef}>
+                        <div className={cx('menu')} onClick={()=>setMenuModal(true)}>
                             <FontAwesomeIcon icon={faBars} />
                         </div>
                     </div>

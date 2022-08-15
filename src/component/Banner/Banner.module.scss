@@ -48,6 +48,7 @@
     margin: 0;
     line-height: normal;
     padding-bottom: 10px;
+    padding-top: 10px;
     color: var(--white-color);
     transition: all ease 0.5s;
 
@@ -79,17 +80,6 @@
     }
 }
 
-
-@media screen and (min-width: 740px) and (max-width: 1023px) {
-    .banner {
-        height: 350px;
-    }
-
-    .banner-item {
-        width: 50%;
-    }
-}
-
 @media (min-width: 740px) {
     .banner {
         width: 100%;
@@ -101,14 +91,20 @@
     }
 }
 
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+    .banner {
+        height: 350px;
+    }
+
+}
+
+
+
 @media (min-width: 1024px) and (max-width: 1239px) {
     .banner {
         height: 455px;
     }
 
-    .banner-item {
-        width: 25%;
-    }
 }
 
 @media (min-width: 1240px) {

@@ -24,7 +24,8 @@
 
     button {
         height: 40px;
-        width: 40px;
+        display: block;
+        flex: 1;
         font-size: 1.6rem;
         border: none;
         outline: none;

@@ -15,6 +15,12 @@ import CompleteOrder from '../pages/CompleteOrder'
 import DetailBlog from '../pages/DetailBlog'
 import DetailProduct from '../pages/DetailProduct'
 import SearchResult from '../pages/SearchResult'
+import Member from '../pages/Member'
+import { SignIn } from '../pages/SignIn/SignIn'
+import { SignUp } from '../pages/SignIn/SignUp'
+import { MemberOrder } from '../pages/Member/MemberOrder'
+import { MemberUpdate } from '../pages/Member/MemberUpdate'
+import { MemberAdd } from '../pages/Member/MemberAdd'
 const publicRoutes = [
     {
         path: routes.home,
@@ -81,6 +87,30 @@ const publicRoutes = [
     {
         path: routes.searchResult,
         component: SearchResult
+    },
+    {
+        path: routes.member,
+        component: Member
+    },
+    {
+        path: routes.signup,
+        component: SignUp
+    },
+    {
+        path: routes.login,
+        component: SignIn
+    },
+    {
+        path: routes.memberOrder,
+        component: MemberOrder
+    },
+    {
+        path: routes.memberChangePassword,
+        component: MemberUpdate
+    },
+    {
+        path: routes.memberAddress,
+        component: MemberAdd
     }
 ]
 
@@ -88,4 +118,4 @@ const privateRoutes = [
 
 ]
 
-export { publicRoutes } 
+export { publicRoutes,privateRoutes } 

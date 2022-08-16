@@ -5,11 +5,19 @@ import styles from './DefaultLayout.module.scss'
 
 const cx = className.bind(styles)
 
-function DefaultLayout({ children, cart, removeCart, setMenuModal }) {
+function DefaultLayout({ children, cart, removeCart, setMenuModal, login, setLogin, userLogin, setUserLogin }) {
 
     return (
         <div>
-            <Header cart={cart} removeCart = {removeCart} setMenuModal={setMenuModal}/>
+            <Header
+                cart={cart}
+                removeCart={removeCart}
+                setMenuModal={setMenuModal}
+                login={login}
+                setLogin={setLogin}
+                userLogin={userLogin}
+                setUserLogin={setUserLogin}
+            />
 
             <div className={cx('content')}>
                 {children}

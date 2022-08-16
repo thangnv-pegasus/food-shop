@@ -4,7 +4,7 @@ import className from 'classnames/bind'
 import styles from './App.module.scss'
 
 import DefaultLayout from "./component/DefaultLayout";
-import { publicRoutes } from "./routes"
+import { privateRoutes, publicRoutes } from "./routes"
 import BuyModal from "./component/BuyModal";
 import InforModal from "./component/InforModal";
 import data from './data/db.json'
@@ -26,11 +26,11 @@ function App() {
   })
 
   const [indexScroll, setIndexScroll] = useState(0)
-  const [login, setLogin] = useState('true')
   const [newAccount, setNewAccount] = useState({})
-  const [userLogin, setUserLogin] = useState()
   const [menuModal, setMenuModal] = useState(false)
 
+  const [login, setLogin] = useState(false)
+  const [userLogin, setUserLogin] = useState()
 
   // getData all products
   const products = data.products
@@ -105,6 +105,9 @@ function App() {
                     <Layout cart={cart}
                       removeCart={removeCart}
                       setMenuModal = {setMenuModal}
+                      login = {login}
+                      setLogin = {setLogin}
+                      userLogin = {userLogin}
                     >
                       <Ele addCart={addCart}
                         removeCart={removeCart}
@@ -116,6 +119,8 @@ function App() {
                         setUserinfor={setUserinfor}
                         userinfor={userinfor}
                         setMenuModal = {setMenuModal}
+                        setLogin = {setLogin}
+                        setUserLogin = {setUserLogin}
                       />
                     </Layout>
                   }
@@ -124,7 +129,6 @@ function App() {
             })
 
           }
-
         </Routes>
         {
           (openBuyModal)

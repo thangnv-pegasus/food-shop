@@ -10,7 +10,7 @@ import Tippy from '@tippyjs/react/headless';
 
 const cx = classNames.bind(styles)
 
-function SearchBlock() {
+function SearchBlock({children}) {
 
     const [searchValue, setSearchValue] = useState('')
     const [searchResult, setSearchResult] = useState([])
@@ -34,19 +34,6 @@ function SearchBlock() {
         }
     }, [searchValue])
 
-    useEffect(()=>{
-        const InputElement = inputRef.current
-        InputElement.addEventListener('keyup',(e)=>{
-            if(e.keyCode === 13){
-                e.preventDefault()
-                return ToSearchPage()
-            }
-            else{
-                return;
-            }
-        })
-    },[])
-
     const navigate = useNavigate()
 
     const ToSearchPage = () => {
@@ -65,66 +52,20 @@ function SearchBlock() {
 
         <Tippy
             render={attrs => (
-                <div className={cx('search-result')} tabIndex="-1" {...attrs}>
-                    {
-                        searchResult.map(product => {
-                            return (
-                                <Link to={`/product/${product.id}`}
-                                    className={cx('product')}
-                                    key={product.id}
-                                >
-                                    <div className={cx("product-img")}>
-                                        <img src={product.img_src} />
-                                    </div>
-                                    <div className={cx('product-infor')}>
-                                        <div className={cx('product-name')}>
-                                            {product.name}
-                                        </div>
-                                        <div className={cx('product-price')}>
-                                            {
-                                                product.price_sale ? (
-                                                    <>
-                                                        <span className={cx('price-sale')}>
-                                                            {product.price_sale}đ
-                                                        </span>
-                                                        <span className={cx('price-main')}>
-                                                            {product.price_main}đ
-                                                        </span>
-                                                    </>
-                                                ) : (
-                                                    <>
-                                                        <span className={cx('price-main', 'no-under')}>
-                                                            {product.price_main}đ
-                                                        </span>
-                                                    </>
-                                                )
-                                            }
-                                        </div>
-                                    </div>
-                                </Link>
-                            )
-                        })
-                    }
-                </div>
+                <form className={cx('search-block')} tabIndex="-1" {...attrs} onSubmit = {()=>ToSearchPage()}>
+                    <input type="text" placeholder="Tìm kiếm..." 
+                        value = {searchValue}
+                        onChange = {e => setSearchValue(e.target.value)}
+                    />
+                    <button>
+                        <FontAwesomeIcon icon={faMagnifyingGlass} />
+                    </button>
+                </form>
             )}
-            placement='bottom'
-            visible={searchResult.length > 0 && showResult}
+            placement='bottom-end'
             interactive
-            onClickOutside={() => setShowResult(false)}
         >
-            <form className={cx('search-block')} onSubmit ={(e)=>ToSearchPage()}>
-                <input type="text" placeholder='Tìm kiếm...'
-                    value={searchValue}
-                    onChange={(e) => setSearchValue(e.target.value)}
-                    onFocus={() => setShowResult(true)}
-                    ref = {inputRef}
-                />
-                <button className={cx('search-btn')}
-                    onClick={() => ToSearchPage()}
-                >
-                    <FontAwesomeIcon icon={faMagnifyingGlass} />
-                </button>
-            </form>
+            {children}
         </Tippy>
 
 

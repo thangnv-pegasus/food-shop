@@ -2,8 +2,9 @@ import styles from './Header.module.scss'
 import classNames from 'classnames/bind'
 import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faBasketShopping, faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faBasketShopping, faCaretDown, faMagnifyingGlass, faUser, faUserPlus } from '@fortawesome/free-solid-svg-icons'
 import Tippy from '@tippyjs/react/headless';
+import { useEffect, useRef } from 'react'
 
 import Logo from '../../../component/Logo'
 import { routes } from '../../../config/routes'
@@ -12,7 +13,8 @@ import ShoppingCart from '../../../component/ShoppingCart';
 import ProductKind from '../../../pages/Product/productKind'
 import Direct from '../../../component/Direct';
 import data from '../../../data/db.json'
-import { useEffect, useRef } from 'react'
+import { User } from '../../User/User'
+import { Guest } from '../../User/Guest'
 
 const cx = classNames.bind(styles)
 
@@ -46,7 +48,7 @@ const Directions = [
 
 
 
-function Header({ cart, removeCart, setMenuModal }) {
+function Header({ cart, removeCart, setMenuModal, login, setLogin, userLogin, setUserLogin }) {
     const productKind = data.productKind
     const products = data.products
 
@@ -64,7 +66,7 @@ function Header({ cart, removeCart, setMenuModal }) {
             <div className={cx('grid wide')}>
                 <div className={cx('header-section')}>
                     <div className={cx('col c-4 m-2 l-0')}>
-                        <div className={cx('menu')} onClick={()=>setMenuModal(true)}>
+                        <div className={cx('menu')} onClick={() => setMenuModal(true)}>
                             <FontAwesomeIcon icon={faBars} />
                         </div>
                     </div>
@@ -76,6 +78,7 @@ function Header({ cart, removeCart, setMenuModal }) {
                             />
                         </div>
                     </div>
+
                     <div className={cx('col c-0 m-0 l-7')}>
                         <ul className={cx('nav')}>
                             {
@@ -132,7 +135,30 @@ function Header({ cart, removeCart, setMenuModal }) {
                     <div className={cx('col c-8 m-3 l-3')}>
                         <ul className={cx('cart-group')}>
                             <li className={cx('search-btn')}>
-                                <SearchBlock />
+                                <SearchBlock>
+                                    <div>
+                                        <FontAwesomeIcon icon={faMagnifyingGlass} />
+                                    </div>
+                                </SearchBlock>
+                            </li>
+                            <li className={cx('login-logout')}>
+                                {
+                                    login ? (
+                                        <>
+                                            <User setLogin={setLogin} setUserLogin={setUserLogin} userLogin = {userLogin}>
+                                                <div>
+                                                    <FontAwesomeIcon icon={faUser} />
+                                                </div>
+                                            </User>
+                                        </>
+                                    ) : (
+                                        <Guest setLogin={setLogin}>
+                                            <div>
+                                                <FontAwesomeIcon icon={faUserPlus} />
+                                            </div>
+                                        </Guest>
+                                    )
+                                }
                             </li>
                             <li>
                                 <ShoppingCart ListProduct={cart} removeCart={removeCart}>

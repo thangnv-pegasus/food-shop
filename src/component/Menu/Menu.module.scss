@@ -12,6 +12,7 @@
     background-color: #9fbc4c;
     width: 280px;
     height: 100vh;
+    animation: SlideSlip ease 0.2s;
 }
 
 .logo {
@@ -82,4 +83,13 @@
     }
     height: 0;
     overflow: hidden;
+}
+
+@keyframes SlideSlip {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
 }

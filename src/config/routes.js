@@ -14,13 +14,13 @@ const routes = {
     order: '/order',
     completeOrder: '/completeOrder',
     detailProduct: '/product/:productId',
-    login: '/login',
-    signup: '/signup',
     searchResult: '/search/:searchValue',
-    member: '/member/:memberId',
     memberOrder: '/member/:memberId/order',
     memberChangePassword: '/member/:memberId/changePassword',
-    memberAddress: '/member/:memberId/memberAddress'
+    memberAddress: '/member/:memberId/memberAddress',
+    member: '/member/:memberId',
+    login: '/login',
+    signup: '/signup'
 }
 
-export {routes}
+export { routes }

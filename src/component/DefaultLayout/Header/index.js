@@ -4,7 +4,6 @@ import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faBasketShopping, faCaretDown, faMagnifyingGlass, faUser, faUserPlus } from '@fortawesome/free-solid-svg-icons'
 import Tippy from '@tippyjs/react/headless';
-import { useEffect, useRef } from 'react'
 
 import Logo from '../../../component/Logo'
 import { routes } from '../../../config/routes'
@@ -51,15 +50,6 @@ const Directions = [
 function Header({ cart, removeCart, setMenuModal, login, setLogin, userLogin, setUserLogin }) {
     const productKind = data.productKind
     const products = data.products
-
-    // const menuRef = useRef(null)
-    // useEffect(()=>{
-    //     let element = menuRef.current
-
-    //     element.addEventListener('click',()=>{
-    //         handleMenu()
-    //     })
-    // },[])
 
     return (
         <div className={cx('header')}>

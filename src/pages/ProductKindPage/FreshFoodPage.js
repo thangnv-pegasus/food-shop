@@ -7,7 +7,7 @@ import data from '../../data/db.json'
 
 const cx = classNames.bind(styles)
 
-function FreshFoodPage({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenInforModal }) {
+function FreshFoodPage({ addCart, removeCart, cart }) {
 
     const [products, setProducts] = useState(data.productKind[4].products)
 
@@ -42,7 +42,7 @@ function FreshFoodPage({ addCart, removeCart, setOpenBuyModal, setProductActive,
 
         const element = refOption.current
         element.addEventListener('change', (e) => {
-            switch(e.target.value){
+            switch (e.target.value) {
                 case '1':
                     handleDefaultSort()
                     break;
@@ -107,12 +107,10 @@ function FreshFoodPage({ addCart, removeCart, setOpenBuyModal, setProductActive,
                                         return (
                                             <div className='col c-6 m-4 l-3' key={index}>
                                                 <ProductItem
-                                                        addCart={addCart}
-                                                        product={product}
-                                                        setOpenBuyModal={setOpenBuyModal}
-                                                        setProductActive={setProductActive}
-                                                        setOpenInforModal={setOpenInforModal}
-                                                    />
+                                                    cart={cart}
+                                                    addCart={addCart}
+                                                    product={product}
+                                                />
                                             </div>
                                         )
                                     }

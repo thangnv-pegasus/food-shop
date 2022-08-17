@@ -144,7 +144,8 @@
         margin: 0 0 15px 0;
     }
 }
-.remove-add{
+
+.remove-add {
     height: 50px;
     line-height: 50px;
     padding: 0 25px;
@@ -268,4 +269,23 @@
 
 .active {
     color: var(--primary-color);
+}
+
+@media (max-width: 740px) {
+    .member-page {
+        form {
+            padding: 0 10px;
+        }
+
+        input {
+            width: 100%;
+        }
+    }
+
+    .remove-add {
+        background: #EB5757 !important;
+        color: #fff !important;
+        border: 1px solid #EB5757 !important;
+        border-radius: 25px;
+    }
 }

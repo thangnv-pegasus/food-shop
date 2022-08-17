@@ -7,7 +7,7 @@ import data from '../../data/db.json'
 
 const cx = classNames.bind(styles)
 
-function FruitPage({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenInforModal }) {
+function FruitPage({ addCart, removeCart, cart }) {
 
     const [products, setProducts] = useState(data.productKind[1].products)
 
@@ -43,7 +43,7 @@ function FruitPage({ addCart, removeCart, setOpenBuyModal, setProductActive, set
 
         const element = refOption.current
         element.addEventListener('change', (e) => {
-            switch(e.target.value){
+            switch (e.target.value) {
                 case '1':
                     handleDefaultSort()
                     break;
@@ -107,11 +107,9 @@ function FruitPage({ addCart, removeCart, setOpenBuyModal, setProductActive, set
                                         return (
                                             <div className='col l-3 m-4 c-6' key={index}>
                                                 <ProductItem
+                                                    cart={cart}
                                                     addCart={addCart}
                                                     product={product}
-                                                    setOpenBuyModal={setOpenBuyModal}
-                                                    setProductActive={setProductActive}
-                                                    setOpenInforModal={setOpenInforModal}
                                                 />
                                             </div>
                                         )

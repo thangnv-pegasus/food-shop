@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 const cx = classNames.bind(styles)
 
-function BuyModal({ product, cart, setOpenBuyModal, setCart }) {
+function BuyModal({ product, cart, setOpenBuyModal }) {
     let total = 0;
     cart.forEach(element => {
         if (element.price_sale > 0) {

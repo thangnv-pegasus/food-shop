@@ -3,22 +3,29 @@ import classNames from 'classnames/bind'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBasketShopping, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { useState } from 'react'
+import BuyModal from '../../component/BuyModal'
+import InforModal from '../../component/InforModal'
+
 const cx = classNames.bind(styles)
 
-function ProductItem({ addCart, product, setOpenInforModal, setOpenBuyModal, setProductActive }) {
+function ProductItem({ addCart, product, cart }) {
+    const [openInforModal, setOpenInforModal] = useState(false)
+    const [openBuyModal, setOpenBuyModal] = useState(false)
+
     const navigate = useNavigate()
+
     return (
         <div className={cx('product-item')}>
             <div className={cx('product-img')}>
                 <img src={product.img_src} />
-                
+
                 <div className={cx('options')}>
                     <div className={cx('options-icon')}>
                         <div className={cx('cart-icon')}
                             onClick={(e) => {
                                 addCart(product)
                                 setOpenBuyModal(true)
-                                setProductActive(product)
                             }}
                         >
                             <FontAwesomeIcon icon={faBasketShopping} />
@@ -26,7 +33,6 @@ function ProductItem({ addCart, product, setOpenInforModal, setOpenBuyModal, set
                         <div className={cx('infor-icon')}
                             onClick={() => {
                                 setOpenInforModal(true)
-                                setProductActive(product)
                             }}
                         >
                             <FontAwesomeIcon icon={faMagnifyingGlass} />
@@ -57,6 +63,24 @@ function ProductItem({ addCart, product, setOpenInforModal, setOpenBuyModal, set
                 </div>
 
             </div>
+            {
+                openBuyModal &&
+                <BuyModal
+                    product={product}
+                    setOpenBuyModal={setOpenBuyModal}
+                    cart={cart}
+                />
+            }
+            {
+                openInforModal &&
+                <InforModal
+                    product={product}
+                    setOpenInforModal={setOpenInforModal}
+                    cart={cart}
+                    setOpenBuyModal={setOpenBuyModal}
+                    addCart={addCart}
+                />
+            }
         </div>
     )
 }

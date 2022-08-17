@@ -7,7 +7,7 @@ import ProductItem from "../Product/productItem"
 
 const cx = classNames.bind(styles)
 
-function SearchResult({ addCart, setOpenBuyModal, setProductActive, setOpenInforModal }) {
+function SearchResult({ addCart, cart }) {
 
     const result = useParams()
 
@@ -41,17 +41,15 @@ function SearchResult({ addCart, setOpenBuyModal, setProductActive, setOpenInfor
                                 <div className={cx('noti')}>
                                     Có {searchResult.length} kết quả tìm kiếm phù hợp
                                 </div>
-                                <div className='row'>
+                                <div className='row row-product'>
                                     {
                                         searchResult.map(product => {
                                             return (
                                                 <div className='col c-6 m-4 l-3' key={product.id}>
                                                     <ProductItem
+                                                        cart={cart}
                                                         addCart={addCart}
                                                         product={product}
-                                                        setOpenBuyModal={setOpenBuyModal}
-                                                        setProductActive={setProductActive}
-                                                        setOpenInforModal={setOpenInforModal}
                                                     />
                                                 </div>
                                             )

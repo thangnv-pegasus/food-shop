@@ -15,7 +15,7 @@ import data from '../../data/db.json'
 const cx = classNames.bind(styles)
 
 
-function Home({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenInforModal }) {
+function Home({ cart, addCart, removeCart }) {
     const [productKindRender, setProductKindRender] = useState([])
     const [check, setCheck] = useState(0)
     const [elementActive, setElementActive] = useState()
@@ -256,11 +256,9 @@ function Home({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenI
                                             return (
                                                 <div key={index} className='col c-6 m-4 l-3'>
                                                     <ProductItem
+                                                        cart={cart}
                                                         addCart={addCart}
                                                         product={product}
-                                                        setOpenBuyModal={setOpenBuyModal}
-                                                        setProductActive={setProductActive}
-                                                        setOpenInforModal={setOpenInforModal}
                                                     />
                                                 </div>
                                             )
@@ -306,11 +304,9 @@ function Home({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenI
                                     return (
                                         <div key={index} className='col c-6 m-4 l-3'>
                                             <ProductItem
+                                                cart={cart}
                                                 addCart={addCart}
                                                 product={product}
-                                                setOpenBuyModal={setOpenBuyModal}
-                                                setProductActive={setProductActive}
-                                                setOpenInforModal={setOpenInforModal}
                                             />
                                         </div>
                                     )

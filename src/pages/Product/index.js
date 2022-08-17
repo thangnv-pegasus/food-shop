@@ -9,7 +9,7 @@ import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
 const cx = classNames.bind(styles)
 
-function Product({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenInforModal }) {
+function Product({ addCart, removeCart, cart }) {
 
     const [products, setProducts] = useState(data.products)
     const [currentPage, setCurrentPage] = useState(0)
@@ -65,7 +65,7 @@ function Product({ addCart, removeCart, setOpenBuyModal, setProductActive, setOp
 
         const element = refOption.current
         element.addEventListener('change', (e) => {
-            switch(e.target.value){
+            switch (e.target.value) {
                 case '1':
                     handleDefaultSort()
                     break;
@@ -129,11 +129,9 @@ function Product({ addCart, removeCart, setOpenBuyModal, setProductActive, setOp
                                     return (
                                         <div className='col c-6 m-4 l-3' key={index}>
                                             <ProductItem
+                                                cart={cart}
                                                 addCart={addCart}
                                                 product={product}
-                                                setOpenBuyModal={setOpenBuyModal}
-                                                setProductActive={setProductActive}
-                                                setOpenInforModal={setOpenInforModal}
                                             />
                                         </div>
                                     )

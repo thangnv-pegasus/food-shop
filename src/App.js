@@ -1,5 +1,5 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import className from 'classnames/bind'
 import styles from './App.module.scss'
 
@@ -13,10 +13,9 @@ import Menu from './component/Menu';
 const cx = className.bind(styles)
 
 function App() {
+
   const [cart, setCart] = useState([])
-  const [openBuyModal, setOpenBuyModal] = useState(false)
-  const [productActive, setProductActive] = useState()
-  const [openInforModal, setOpenInforModal] = useState(false)
+  
   const [userinfor, setUserinfor] = useState({
     username: '',
     email: '',
@@ -26,12 +25,11 @@ function App() {
   })
 
   const [indexScroll, setIndexScroll] = useState(0)
-  const [newAccount, setNewAccount] = useState({})
   const [menuModal, setMenuModal] = useState(false)
-
   const [login, setLogin] = useState(false)
   const [userLogin, setUserLogin] = useState()
-
+  
+  
   // getData all products
   const products = data.products
 
@@ -82,6 +80,7 @@ function App() {
   })
 
 
+
   return (
 
     <div className="App">
@@ -104,23 +103,20 @@ function App() {
                   element={
                     <Layout cart={cart}
                       removeCart={removeCart}
-                      setMenuModal = {setMenuModal}
-                      login = {login}
-                      setLogin = {setLogin}
-                      userLogin = {userLogin}
+                      setMenuModal={setMenuModal}
+                      login={login}
+                      setLogin={setLogin}
+                      userLogin={userLogin}
                     >
                       <Ele addCart={addCart}
                         removeCart={removeCart}
-                        setOpenBuyModal={setOpenBuyModal}
-                        setProductActive={setProductActive}
-                        setOpenInforModal={setOpenInforModal}
                         cart={cart}
                         setCart={setCart}
                         setUserinfor={setUserinfor}
                         userinfor={userinfor}
-                        setMenuModal = {setMenuModal}
-                        setLogin = {setLogin}
-                        setUserLogin = {setUserLogin}
+                        setMenuModal={setMenuModal}
+                        setLogin={setLogin}
+                        setUserLogin={setUserLogin}
                       />
                     </Layout>
                   }
@@ -130,26 +126,6 @@ function App() {
 
           }
         </Routes>
-        {
-          (openBuyModal)
-          &&
-          <BuyModal
-            cart={cart}
-            product={productActive}
-            setOpenBuyModal={setOpenBuyModal}
-            setCart={setCart}
-          />
-        }
-        {
-          (openInforModal)
-          &&
-          <InforModal
-            product={productActive}
-            setOpenInforModal={setOpenInforModal}
-            setOpenBuyModal={setOpenBuyModal}
-            addCart={addCart}
-          />
-        }
         {indexScroll > 120 && <GoToTop />}
         {menuModal && <Menu setMenuModal={setMenuModal} />}
       </BrowserRouter>

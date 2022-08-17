@@ -107,6 +107,7 @@ function InforModal({ product, setOpenInforModal, addCart, setOpenBuyModal }) {
                     </div>
                 </div>
             </div>
+            
         </div>
     )
 }

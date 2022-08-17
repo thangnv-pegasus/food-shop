@@ -19,7 +19,7 @@ function MemberOrder() {
             <div className='grid wide'>
                 <div className={cx('page-section')}>
                     <div className='row row-product'>
-                        <div className='col l-3'>
+                        <div className='col l-3 m-12 c-12'>
                             <div className={cx('nav')}>
                                 <div className={cx('title')}>
                                     Trang tài khoản
@@ -68,7 +68,7 @@ function MemberOrder() {
                                 </ul>
                             </div>
                         </div>
-                        <div className='col l-9'>
+                        <div className='col l-9 m-12 c-12'>
                             <div className={cx('title')}>
                                 Đơn hàng của bạn
                             </div>

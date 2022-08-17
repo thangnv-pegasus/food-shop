@@ -19,6 +19,7 @@
         overflow: hidden;
         padding: 20px;
         display: flex;
+        
     }
 }
 
@@ -26,7 +27,7 @@
 .product-infor {
     width: 50%;
     position: relative;
-
+    text-align: left;
     .product-name {
         font-size: 3rem;
         line-height: 36px;

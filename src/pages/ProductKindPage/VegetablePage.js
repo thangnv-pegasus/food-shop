@@ -7,7 +7,7 @@ import data from '../../data/db.json'
 
 const cx = classNames.bind(styles)
 
-function VegetablePage({ addCart, removeCart, setOpenBuyModal, setProductActive, setOpenInforModal }) {
+function VegetablePage({ addCart, removeCart, cart }) {
 
     const [products, setProducts] = useState(data.productKind[0].products)
 
@@ -42,7 +42,7 @@ function VegetablePage({ addCart, removeCart, setOpenBuyModal, setProductActive,
 
         const element = refOption.current
         element.addEventListener('change', (e) => {
-            switch(e.target.value){
+            switch (e.target.value) {
                 case '1':
                     handleDefaultSort()
                     break;
@@ -88,16 +88,16 @@ function VegetablePage({ addCart, removeCart, setOpenBuyModal, setProductActive,
                         </div>
                     </div>
                     <div className={cx('option-group')}>
-                            <div className={cx('group-title')}>
-                                Sắp xếp theo:
-                            </div>
-                            <select className={cx('select-btns-mobile')} ref={refOption}>
-                                <option value="1">Hàng mới nhất</option>
-                                <option value="2">Hàng cũ nhất</option>
-                                <option value="3">Giá tăng dần</option>
-                                <option value="4">Giá giảm dần</option>
-                            </select>
+                        <div className={cx('group-title')}>
+                            Sắp xếp theo:
                         </div>
+                        <select className={cx('select-btns-mobile')} ref={refOption}>
+                            <option value="1">Hàng mới nhất</option>
+                            <option value="2">Hàng cũ nhất</option>
+                            <option value="3">Giá tăng dần</option>
+                            <option value="4">Giá giảm dần</option>
+                        </select>
+                    </div>
                     <div className={cx('products-section')}>
                         <div className='row row-product'>
                             {
@@ -106,11 +106,9 @@ function VegetablePage({ addCart, removeCart, setOpenBuyModal, setProductActive,
                                         return (
                                             <div className='col l-3 m-4 c-6' key={index}>
                                                 <ProductItem
+                                                    cart={cart}
                                                     addCart={addCart}
                                                     product={product}
-                                                    setOpenBuyModal={setOpenBuyModal}
-                                                    setProductActive={setProductActive}
-                                                    setOpenInforModal={setOpenInforModal}
                                                 />
                                             </div>
                                         )

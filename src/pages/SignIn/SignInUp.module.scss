@@ -85,3 +85,16 @@
         margin-left: 5px;
     }
 }
+
+@media (max-width: 740px){
+    .login-section{
+        
+        form{
+            width: 100%;
+            padding: 0 20px;
+        }
+        input{
+            width: 100%;
+        }
+    }
+}

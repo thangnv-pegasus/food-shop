@@ -25,7 +25,7 @@ function BuyModal({ product, cart, setOpenBuyModal }) {
 
     const goToCart = () => {
         navigate('/cart')
-        window.scrollTo(0,0)
+        window.scrollTo(0, 0)
         setOpenBuyModal(false)
     }
 
@@ -35,7 +35,7 @@ function BuyModal({ product, cart, setOpenBuyModal }) {
                 setOpenBuyModal(false)
             }}
         >
-            <div className={cx('section')} onClick={(e)=>e.stopPropagation()}>
+            <div className={cx('section')} onClick={(e) => e.stopPropagation()}>
                 <div className={cx('infor-product', 'left')}>
                     <div className={cx('noti')}>
                         <span>
@@ -62,12 +62,13 @@ function BuyModal({ product, cart, setOpenBuyModal }) {
                     <div className={cx('total-price')}>
                         Tổng tiền: <span>{total}đ</span>
                     </div>
-                    <button className={cx('pay')} onClick = {()=>goToCart()}>
+                    <button className={cx('pay')} onClick={() => goToCart()}>
                         Tiến hành thanh toán
                     </button>
-                    <div className={cx('close-modal')} onClick={() => setOpenBuyModal(false)}>
-                        <FontAwesomeIcon icon={faXmark} />
-                    </div>
+
+                </div>
+                <div className={cx('close-modal')} onClick={() => setOpenBuyModal(false)}>
+                    <FontAwesomeIcon icon={faXmark} />
                 </div>
             </div>
         </div>

@@ -12,12 +12,14 @@
 }
 
 .section {
+    position: relative;
     width: 750px;
     min-height: 200px;
     background-color: var(--white-color);
     border-radius: 10px;
     display: flex;
     overflow: hidden;
+    flex-wrap: wrap;
     color: var(--text-color);
 
     .infor-product {
@@ -108,4 +110,14 @@
     padding: 10px 15px;
     border-top-right-radius:10px;
     cursor: pointer;
+}
+
+@media (max-width: 740px) {
+    .section{
+        width: 100%;
+        
+    }
+    .infor-product{
+        width: 100% !important; 
+    }
 }

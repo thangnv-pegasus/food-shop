@@ -1,12 +1,10 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
-import { useEffect, useState } from "react";
+import {useState } from "react";
 import className from 'classnames/bind'
 import styles from './App.module.scss'
 
 import DefaultLayout from "./component/DefaultLayout";
 import { privateRoutes, publicRoutes } from "./routes"
-import BuyModal from "./component/BuyModal";
-import InforModal from "./component/InforModal";
 import data from './data/db.json'
 import Menu from './component/Menu';
 
@@ -15,7 +13,7 @@ const cx = className.bind(styles)
 function App() {
 
   const [cart, setCart] = useState([])
-  
+
   const [userinfor, setUserinfor] = useState({
     username: '',
     email: '',
@@ -28,8 +26,8 @@ function App() {
   const [menuModal, setMenuModal] = useState(false)
   const [login, setLogin] = useState(false)
   const [userLogin, setUserLogin] = useState()
-  
-  
+
+
   // getData all products
   const products = data.products
 
@@ -123,7 +121,44 @@ function App() {
                 />
               )
             })
-
+          }
+          {
+            login && privateRoutes.map((routeI, index) => {
+              let Ele = routeI.component
+              let Layout = DefaultLayout
+              if (routeI.layout) {
+                Layout = routeI.layout
+              }
+              else if (routeI.layout === null) {
+                Layout = 'div'
+              }
+              return (
+                <Route
+                  path={routeI.path}
+                  key={index}
+                  element={
+                    <Layout cart={cart}
+                      removeCart={removeCart}
+                      setMenuModal={setMenuModal}
+                      login={login}
+                      setLogin={setLogin}
+                      userLogin={userLogin}
+                    >
+                      <Ele addCart={addCart}
+                        removeCart={removeCart}
+                        cart={cart}
+                        setCart={setCart}
+                        setUserinfor={setUserinfor}
+                        userinfor={userinfor}
+                        setMenuModal={setMenuModal}
+                        setLogin={setLogin}
+                        setUserLogin={setUserLogin}
+                      />
+                    </Layout>
+                  }
+                />
+              )
+            })
           }
         </Routes>
         {indexScroll > 120 && <GoToTop />}

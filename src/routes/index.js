@@ -89,16 +89,35 @@ const publicRoutes = [
         component: SearchResult
     },
     {
-        path: routes.member,
-        component: Member
-    },
-    {
         path: routes.signup,
         component: SignUp
     },
     {
         path: routes.login,
         component: SignIn
+    },
+    // {
+    //     path: routes.member,
+    //     component: Member
+    // },
+    // {
+    //     path: routes.memberOrder,
+    //     component: MemberOrder
+    // },
+    // {
+    //     path: routes.memberChangePassword,
+    //     component: MemberUpdate
+    // },
+    // {
+    //     path: routes.memberAddress,
+    //     component: MemberAdd
+    // }
+]
+
+const privateRoutes = [
+    {
+        path: routes.member,
+        component: Member
     },
     {
         path: routes.memberOrder,
@@ -112,10 +131,6 @@ const publicRoutes = [
         path: routes.memberAddress,
         component: MemberAdd
     }
-]
-
-const privateRoutes = [
-
 ]
 
 export { publicRoutes,privateRoutes } 
